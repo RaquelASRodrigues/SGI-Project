@@ -1,0 +1,10 @@
+﻿source,target,interaction_type,evidence_chapter,evidence_quote_or_summary,notes
+C01,C03,family,,,Carlos é filho de Afonso
+C01,C04,family,,,Carlos é filho de Pedro
+C01,C05,family,,,Carlos é neto de Maria Monforte
+C03,C04,family,,,Afonso é pai de Pedro
+C04,C05,family,,,Pedro é marido de Maria Monforte
+C04,C06,family,,,Pedro é filho de Caetano
+C04,C07,family,,,Pedro é filho de Maria Eduarda Runa
+C01,C07,family,,,Carlos é neto de Maria Eduarda Runa
+# ATENÇÃO: exemplos apenas, depois remover estas linhas e acresentar ligaçoes reais
