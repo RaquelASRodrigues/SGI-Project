@@ -1,0 +1,663 @@
+candidate,total,mid_sentence,also_spacy_per
+Carlos,1606,1100,True
+Ega,999,713,True
+Dâmaso,348,289,True
+Sr,242,234,False
+Vilaça,274,201,True
+Lisboa,185,178,False
+Maria,264,174,True
+Craft,212,168,True
+Ramalhete,161,161,True
+Afonso,188,146,True
+Alencar,176,139,True
+Cruges,163,131,True
+D,174,114,False
+Gouvarinho,114,110,True
+Paris,105,101,True
+Santa Olávia,97,97,True
+Sintra,104,96,False
+Pedro,101,82,True
+Cohen,89,80,True
+Maria Eduarda,114,78,True
+Taveira,77,68,True
+Maia,87,67,True
+Rua de S,68,67,False
+Olivais,65,65,False
+Castro Gomes,82,61,True
+Rosa,74,61,True
+Sol,60,60,True
+Deus,65,59,True
+Inverno,57,57,False
+Monforte,56,56,False
+Portugal,56,54,False
+Toca,54,53,False
+Afonso da Maia,104,51,True
+Excelência,50,50,False
+Baptista,77,49,True
+Vossa Excelência,95,48,True
+Steinbroken,59,46,True
+Eusebiozinho,51,44,True
+Verão,43,43,False
+Porto,43,43,False
+Aterro,41,41,False
+Londres,37,37,False
+Grémio,37,37,False
+Itália,36,36,False
+Chiado,35,35,False
+Sra,35,35,False
+Maias,34,34,True
+Cohens,33,33,False
+Palma,46,32,True
+S,34,32,False
+Domingos,34,31,True
+Guimarães,85,30,False
+E,1575,29,False
+Miss Sara,38,29,True
+Sequeira,30,29,True
+Benfica,29,29,False
+Inglaterra,29,29,False
+Niniche,36,28,False
+Celorico,29,28,False
+Corneta,27,27,False
+Arroios,26,26,False
+Darque,24,24,False
+Raquel,28,23,True
+Melanie,37,22,True
+Mac Gren,26,22,True
+Rufino,26,22,True
+Terra,23,22,False
+Hotel Central,22,22,False
+Coimbra,21,21,False
+Finlândia,20,20,False
+Neves,20,19,True
+Eusébio,22,18,True
+Charlie,20,18,True
+Outono,18,18,False
+Renascença,18,18,False
+França,18,18,False
+João da Ega,26,17,True
+Mr,22,17,False
+Índia,17,17,False
+Gouvarinhos,17,17,False
+Alvim,17,17,True
+Clifford,19,16,True
+Pedro da Maia,18,16,True
+Brown,18,16,True
+Carlinhos,18,16,True
+Lawrence,16,16,True
+Vladimiro,22,15,True
+Teixeira,16,15,True
+Brasil,15,15,False
+Natureza,15,15,True
+Figaro,15,15,False
+Seteais,15,15,True
+Gambetta,17,14,True
+John,15,14,True
+Europa,14,14,False
+República,14,14,False
+Santa Apolónia,14,14,False
+Douro,13,13,False
+Vargas,13,13,True
+Loreto,13,13,False
+Casa Havanesa,13,13,True
+Companhia,13,13,False
+Revista,13,13,False
+Carlos da Maia,40,12,True
+Vila Balzac,22,12,False
+Concha,14,12,False
+Queluz,12,12,False
+Dr,12,12,False
+Luís XV,12,12,True
+Estado,12,12,False
+Teles da Gama,21,11,True
+Madame Rughel,17,11,True
+Cricri,12,11,True
+Japão,11,11,False
+Satanás,11,11,True
+Fontainebleau,11,11,False
+Diabo,14,10,True
+Cristo,10,10,True
+Primavera,10,10,True
+África,10,10,False
+Lua,10,10,False
+Bíblia,10,10,False
+Democracia,10,10,False
+Câmara,10,10,False
+Rússia,10,10,False
+Central,10,10,False
+Abraão,10,10,True
+Gazeta Ilustrada,10,10,False
+Nunes,10,10,True
+Tarde,10,10,True
+Não,517,9,False
+Silveirinha,11,9,True
+Pimenta,11,9,True
+Proudhon,10,9,True
+Runa,9,9,True
+Paço,9,9,False
+Bordéus,9,9,False
+Céu,9,9,False
+Craveiro,9,9,True
+Chopin,9,9,True
+Universo,9,9,False
+Gazeta,9,9,False
+Jockey Club,9,9,False
+Mist,9,9,True
+Rappel,9,9,True
+Salcede,23,8,True
+Minhoto,14,8,False
+Sua Excelência,9,8,False
+Maria Monforte,9,8,True
+Rabino,9,8,True
+Teles,9,8,True
+Senhor dos Passos,8,8,True
+Silveira,8,8,True
+Madrid,8,8,False
+Foz,8,8,False
+Pena,8,8,True
+Tours,8,8,False
+Corneta do Diabo,8,8,False
+Melchior,11,7,True
+Abril,10,7,False
+Carlos Eduardo,10,7,True
+João,8,7,True
+André,8,7,True
+Silva,8,7,True
+Lola,8,7,True
+Vicenta,8,7,True
+Espanha,7,7,False
+Oriente,7,7,False
+Marrare,7,7,False
+Silveiras,7,7,False
+Elvira,7,7,True
+Viena,7,7,False
+Hugo,7,7,True
+Encarnación,7,7,True
+Baixa,7,7,False
+Revista dos Dois Mundos,7,7,False
+Rua do Alecrim,7,7,False
+Joaninha Vilar,7,7,True
+Trindade,7,7,False
+Mas,628,6,False
+Sousa Neto,23,6,True
+Manuel,7,6,True
+Custódio,7,6,True
+Mefistófeles,7,6,True
+Margarida,7,6,True
+Rosicler,7,6,True
+Constable,6,6,True
+Papa,6,6,True
+Melo,6,6,False
+Alemanha,6,6,False
+XVI,6,6,False
+Senhor,6,6,True
+Tancredo,6,6,True
+América,6,6,False
+Estorade,6,6,False
+Celas,6,6,False
+Serafim,6,6,True
+Reino,6,6,False
+High Life,6,6,False
+Romão,6,6,True
+Tomás,6,6,True
+Bragança,6,6,False
+Rampa de Santos,6,6,False
+Chambertin,6,6,False
+Madame Gomes,6,6,True
+Tejo,6,6,False
+Santarém,6,6,False
+Penafiel,6,6,False
+Price,6,6,True
+Rua do Ouro,6,6,False
+Mulato,6,6,True
+Vítor,6,6,True
+Trevernnes,6,6,False
+História,6,6,False
+Ministério,6,6,False
+Jesus,15,5,True
+Madame,8,5,True
+Azevedo,7,5,True
+Bucelas,6,5,False
+Paços de Celas,6,5,False
+Bismarck,6,5,True
+Joana,6,5,True
+Gonçalo,6,5,True
+Igreja,5,5,False
+Tojeira,5,5,False
+Regeneração,5,5,False
+Nápoles,5,5,False
+Rubens,5,5,True
+Áustria,5,5,False
+Vasques,5,5,True
+Roma,5,5,False
+Panamá,5,5,False
+Saldanha,5,5,True
+Campos Elísios,5,5,False
+Legação,5,5,False
+Gertrudes,5,5,True
+Resende,5,5,False
+Colares,5,5,False
+Teresinha,5,5,True
+Janeiro,5,5,False
+Aveiro,5,5,False
+Alfândega,5,5,False
+Rossio,5,5,False
+Tribunal de Contas,5,5,False
+Madeira,5,5,False
+Norte,5,5,False
+Átomo,5,5,True
+Memórias de Um Átomo,5,5,False
+Francisco I,5,5,True
+Poder,5,5,False
+Soutal,5,5,True
+Craben,5,5,False
+Barros,5,5,True
+Ginásio,5,5,False
+Tchi,5,5,True
+Palma Cavalão,5,5,False
+Avenida,5,5,False
+Que,294,4,False
+Depois,254,4,False
+Dâmaso Salcede,12,4,True
+Damasozinho,7,4,True
+Madame Mac Gren,6,4,True
+Mac-Mahon,5,4,True
+Lolita,5,4,False
+Guizot,4,4,True
+Centro,4,4,False
+XVIII,4,4,False
+Fanny,4,4,True
+Richmond,4,4,False
+Pedrinho,4,4,True
+Inferno,4,4,False
+Vozes de Aurora,4,4,False
+Monfortes,4,4,True
+Bois,4,4,False
+Vénus,4,4,False
+Times,4,4,False
+Dama das Camélias,4,4,True
+Julho,4,4,False
+Academia,4,4,False
+Mozart,4,4,True
+Michelet,4,4,True
+Universidade,4,4,False
+Royal Mail,4,4,False
+Holanda,4,4,False
+Babilónia,4,4,False
+Universal,4,4,False
+Memórias,4,4,True
+Balzac,4,4,True
+St,4,4,False
+Sá Nunes,4,4,True
+Gazeta Médica,4,4,False
+Ester,4,4,True
+Fazenda,4,4,False
+Minho,4,4,False
+XIX,4,4,False
+Génova,4,4,False
+Darwin,4,4,True
+Ilustração,4,4,False
+Carlos V,4,4,True
+Cais do Sodré,4,4,False
+Balada,4,4,False
+Beethoven,4,4,True
+Comenda da Conceição,4,4,False
+Belém,4,4,False
+Castros Gomes,4,4,True
+Mendonça,4,4,True
+Maio,4,4,False
+Tommy,4,4,True
+Santa Isabel,4,4,False
+Outubro,4,4,False
+Clemence,4,4,True
+Rua da Prata,4,4,False
+Augusto,4,4,True
+O,660,3,False
+Afonso de Albuquerque,5,3,True
+Guedes,5,3,True
+Juno,4,3,True
+Guimaran,4,3,False
+Passeio,4,3,False
+Torres Valente,4,3,False
+Musset,4,3,True
+Janelas Verdes,3,3,True
+Vénus Citereia,3,3,True
+Vilaça Júnior,3,3,True
+Beira,3,3,False
+Voltaire,3,3,True
+Esteves,3,3,False
+Tácito,3,3,True
+Robespierre,3,3,True
+Minerva,3,3,True
+Revolução,3,3,False
+Março,3,3,False
+Açores,3,3,False
+Nova Orleães,3,3,False
+Nova Linda,3,3,True
+Pirenéus,3,3,False
+Setembro,3,3,True
+Boulevard,3,3,False
+Byron,3,3,True
+Stuart,3,3,True
+Bourbons,3,3,True
+Dezembro,3,3,False
+Brancos,3,3,False
+Escócia,3,3,False
+Manuel Vilaça,3,3,True
+Direito,3,3,False
+Governo Civil,3,3,False
+Hermengarda,3,3,True
+Claude Bernard,3,3,True
+Centro Progressista,3,3,False
+Souselas,3,3,False
+Tunante,3,3,False
+Valois,3,3,True
+Strauss,3,3,True
+Banco Nacional,3,3,False
+Carcel,3,3,True
+Rua dos Condes,3,3,False
+Assembleia,3,3,False
+Hino da Carta,3,3,False
+Marinha,3,3,False
+Moderna,3,3,False
+Ecclesiastes,3,3,True
+Tista,3,3,True
+Lamego,3,3,False
+Formoselha,3,3,False
+Excelências,3,3,False
+Jacob,3,3,True
+Rochefort,3,3,False
+Rio de Janeiro,3,3,False
+Simão Craveiro,3,3,True
+Alentejo,3,3,False
+Medeiros,3,3,True
+Susana,3,3,True
+Praça Nova,3,3,False
+Fausto,3,3,True
+Rua Nova do Almada,3,3,False
+Herculano,3,3,True
+Carvalhosa,3,3,False
+Mafra,3,3,False
+Torral,3,3,False
+Governo,3,3,False
+Guarda Municipal,3,3,True
+Jornal do Comércio,3,3,False
+Parque Monceaux,3,3,False
+Borgonha,3,3,False
+Bíblias,3,3,False
+Ferregial,3,3,False
+Wedgewood,3,3,False
+Secretarias,3,3,False
+Pedrosos,3,3,False
+Júpiter,3,3,False
+Escocês,3,3,False
+Baviera,3,3,False
+Sevilha,3,3,False
+Cármen,3,3,True
+Vitorino,3,3,True
+Mademoiselle Rosa,3,3,True
+Orléans,3,3,True
+Renan,3,3,True
+Southampton,3,3,False
+Paraíso,3,3,False
+Isola Bela,3,3,False
+Marte,3,3,False
+Justiça,3,3,False
+Israel,3,3,False
+Lola Gorda,3,3,True
+China,3,3,False
+Egipto,3,3,False
+Montepio,3,3,False
+Torto,3,3,False
+Madre Superiora,3,3,True
+Baden,3,3,False
+Arc,3,3,False
+Prussianos,3,3,False
+Havanesa,3,3,False
+Ribatejo,3,3,False
+Gazette,3,3,False
+Conselho,3,3,False
+Calvário,3,3,False
+Ofélia,3,3,True
+Anjo da Esmola,3,3,True
+Prata,3,3,False
+Igualdade,3,3,False
+Aliança,3,3,False
+Pelourinho,3,3,False
+Alfeite,3,3,False
+Paca,3,3,False
+Cármen Filósofa,3,3,True
+Offenbach,3,3,True
+Vila Medina,3,3,False
+Barradas,3,3,True
+Oh,92,2,False
+Assim,42,2,False
+Então Ega,20,2,False
+Ou,16,2,False
+Vicente,7,2,True
+A Democracia,5,2,False
+Monsenhor,3,2,False
+Ordem,3,2,True
+Don Juan,3,2,True
+Zola,3,2,True
+Ideia Nova,3,2,False
+Hotel Bragança,3,2,False
+Sebastião da Maia,2,2,True
+Jones Bule,2,2,True
+Gobelins,2,2,False
+Versalhes,2,2,False
+Rousseau,2,2,True
+Marat,2,2,True
+Quinta de Santa Olávia,2,2,False
+Belzebu,2,2,True
+Bairro Alto,2,2,False
+Galiza,2,2,False
+Romeu,2,2,False
+Caxemira,2,2,False
+Ticiano,2,2,True
+Havana,2,2,False
+Forte,2,2,False
+Virgínia,2,2,False
+Barbeiro,2,2,True
+Marselhesa,2,2,False
+Barbatanas,2,2,False
+Helena,2,2,True
+Judite,2,2,True
+André da Ega,2,2,True
+Síria,2,2,False
+Apolo,2,2,True
+Madona,2,2,True
+Natais,2,2,False
+Páscoa,2,2,False
+Urigo de La Sierra,2,2,True
+Senhoria,2,2,False
+Brígida,2,2,False
+Ato de Contrição,2,2,False
+Os Costumes de Todos,2,2,False
+Sicília,2,2,False
+Teresa,2,2,True
+Macedo,2,2,False
+Maison,2,2,False
+Or,2,2,False
+Viena de Áustria,2,2,False
+Medicina,2,2,False
+Berlim,2,2,False
+Arte,2,2,False
+Realismo,2,2,False
+Amor,2,2,False
+Instituto,2,2,False
+R,2,2,False
+Celorico de Basto,2,2,False
+Joãozinho,2,2,True
+Lírio de Israel,2,2,False
+Haia,2,2,False
+Prússia,2,2,False
+Morny,2,2,False
+Ruão,2,2,False
+Boa Hora,2,2,False
+Estrasburgo,2,2,False
+Eternidade,2,2,False
+Canções de Gounod,2,2,False
+Diário de Notícias,2,2,False
+Novembro,2,2,False
+Salomão,2,2,True
+Madame Cohen,2,2,True
+Marrocos,2,2,False
+São Tomé,2,2,False
+Naturalismo,2,2,False
+Humanidade,2,2,False
+Convenção,2,2,False
+Marcelino,2,2,False
+Marcelina,2,2,True
+Travassos,2,2,True
+Broglie,2,2,True
+Punch,2,2,False
+Mendelssohn,2,2,True
+Dioguinho,2,2,True
+Beauvais,2,2,True
+Morelli,2,2,True
+Medicina Antiga,2,2,False
+Raquel Cohen,2,2,True
+Brummel,2,2,True
+Viegas,2,2,True
+Heidelberga,2,2,False
+Caos,2,2,False
+Franck,2,2,True
+Virgem,2,2,True
+Mefistófeles de Celorico,2,2,False
+Lúcia,2,2,True
+Rua das Flores,2,2,False
+Hamburgo,2,2,False
+Hungria,2,2,False
+Patti,2,2,True
+Penha de França,2,2,False
+Largo da Graça,2,2,False
+Cruz dos Quatro Caminhos,2,2,False
+Tulherias,2,2,True
+Baudelaire,2,2,True
+Badajoz,2,2,False
+Mephisto,2,2,False
+Pequim,2,2,False
+Golegã,2,2,False
+Rua do Arsenal,2,2,False
+Luís XIV,2,2,True
+Mouraria,2,2,False
+Ermidinha,2,2,False
+Sé,2,2,False
+Moral,2,2,False
+Chipre,2,2,False
+Arcada,2,2,False
+Morte,2,2,True
+Alenquer Quer,2,2,False
+Marco de Canaveses,2,2,False
+Coroa,2,2,False
+Mateus,2,2,False
+Seixas,2,2,True
+Lapa,2,2,False
+Providência,2,2,False
+Daudet,2,2,True
+Nice,2,2,False
+Trouville,2,2,False
+Lumiar,2,2,False
+Norfolk,2,2,False
+Trapa,2,2,False
+Margarida de Navarra,2,2,True
+Garibaldi,2,2,True
+Fonte dos Amores,2,2,False
+Reno,2,2,False
+Wagner,2,2,True
+Diana,2,2,True
+São Pedro,2,2,True
+Gaspar,2,2,True
+Agosto,2,2,False
+Grã-Bretanha,2,2,False
+Descartes,2,2,True
+Matos,2,2,False
+I,2,2,False
+Sara,2,2,True
+York,2,2,True
+Lima,2,2,False
+Gregos,2,2,False
+Tennyson,2,2,True
+Câmara dos Pares,2,2,False
+Patriarcal,2,2,False
+Miss Jones,2,2,True
+Borges,2,2,True
+O Lodaçal,2,2,False
+Córdova,2,2,False
+Grande Prémio Nacional,2,2,False
+Ingleses,2,2,False
+Traviata,2,2,False
+Sol de Junho,2,2,False
+El-rei,2,2,True
+Produtos,2,2,False
+Madame Angot,2,2,True
+Pinheiro,2,2,False
+Josefina do Salazar,2,2,True
+Manuel Godinho,2,2,True
+Camões,2,2,True
+Saxe,2,2,True
+Thompson,2,2,True
+Ilustrações,2,2,True
+Feuillet,2,2,True
+Sociedade Protetora dos Animais,2,2,False
+Hotel Espanhol,2,2,False
+Sauterne,2,2,False
+Ormuz,2,2,True
+Sociedade de Geografia,2,2,True
+Café,2,2,False
+Paix,2,2,False
+Folies Bergères,2,2,False
+Travessa da Parreirinha,2,2,False
+Nevers,2,2,False
+Hamlet,2,2,False
+Liga Hanseática,2,2,False
+Capuchos,2,2,False
+Victor Hugo,2,2,True
+Nilo,2,2,False
+Terreiro do Paço,2,2,False
+Micaela,2,2,True
+Saint-Privat,2,2,False
+Soho,2,2,False
+Comuna,2,2,False
+Egazinho,2,2,False
+Sousela,2,2,False
+Termópilas,2,2,False
+Leónidas,2,2,True
+Vira-Vira,2,2,False
+Cornetas do Diabo,2,2,False
+Lisbonense,2,2,False
+Fancelli,2,2,True
+Eusébio Silveira,2,2,True
+Bordeaux,2,2,False
+Estrangeiros,2,2,False
+Gladstone,2,2,True
+Jardim da Estrela,2,2,False
+Romanos,2,2,False
+A Tarde,2,2,False
+Rua Nova da Trindade,2,2,False
+Hotel Aliança,2,2,False
+José Clemente,2,2,True
+Liberdade,2,2,False
+Progresso,2,2,False
+Bulgária,2,2,False
+Tapada,2,2,False
+Littré,2,2,True
+Spencer,2,2,True
+Príncipe Tenebroso,2,2,True
+Sul,2,2,False
+Suas Excelências,2,2,False
+Dafundo,2,2,False
+Danton,2,2,False
+Quinas,2,2,False
+Flor de Martírio,2,2,True
+Gólgota,2,2,False
+Bastilha,2,2,False
+Hotel Paris,2,2,False
+Império,2,2,False
+Largo,2,2,False
+Talloux,2,2,True
+Nova Iorque,2,2,False
+Atenas,2,2,False
+Grécia,2,2,False
+Trelain,2,2,False
