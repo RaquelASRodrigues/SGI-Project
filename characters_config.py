@@ -6,8 +6,9 @@ Configuração EDITÁVEL da resolução de entidades (03_entity_resolution.py).
 Como usar:
   1. Corre 02_ner.py e 03_entity_resolution.py.
   2. Abre Data/unresolved_mentions.csv e Data/candidates_capitalised.csv.
-  3. Para cada menção frequente, acrescenta a forma ao nome canónico certo em ALIASES
-     (ou cria uma personagem nova). Volta a correr o 03.
+  3. Para cada menção frequente, acrescenta a forma ao nome certo, na coluna
+     `aliases` de Data/os_maias_ground_truth_nodes.csv (ou cria uma personagem nova).
+     Volta a correr o 03.
   4. Formas ambíguas (o mesmo nome para pessoas diferentes) vão para CONTEXT_RULES.
 
 Atenção: o dicionário vem pré-preenchido. As personagens da secção A foram vistas
@@ -23,11 +24,13 @@ RUNA_LAST_CHAPTER = 2
 VILACA_PAI_LAST_CHAPTER = 3
 
 # Palavras que se retiram do início de uma menção antes de a comparar
-ARTICLES = {"o", "a", "os", "as", "um", "uma"}
+ARTICLES = {"o", "a", "os", "as", "um", "uma"} # falta do da?
 TITLE_TOKENS = {"sr", "sra", "d", "dr", "dra", "dom", "dona", "senhor", "senhora", "mr", "mrs"}
 
 # Nome canónico -> outras formas como aparece no texto.
 # (O próprio nome canónico já conta como forma; não é preciso repeti-lo.)
+# Deprecated at runtime: aliases are loaded from the `aliases` column in
+# Data/os_maias_ground_truth_nodes.csv. Retained as migration/reference data.
 ALIASES = {
     # ===================== A. Vistas no texto (capítulos I-III) =====================
     "Caetano da Maia": ["Caetano"],
@@ -102,12 +105,12 @@ CONTEXT_RULES = {
     # D. Maria Eduarda Runa (avó) vs Maria Eduarda (amante de Carlos)
     "maria eduarda": {
         "type": "chapter", "upto": RUNA_LAST_CHAPTER,
-        "before": "D. Maria Eduarda Runa", "after": "Maria Eduarda",
+        "before": "Maria Eduarda Runa", "after": "Maria Eduarda",
     },
     # Vilaça pai vs filho
     "vilaca": {
         "type": "chapter", "upto": VILACA_PAI_LAST_CHAPTER,
-        "before": "Vilaça (pai)", "after": "Vilaça Júnior",
+        "before": "Vilaça (pai)", "after": "Vilaça Júnior (Manuel Vilaça)",
     },
     # "a Monforte" = Maria; "o Monforte", "papá Monforte", "o velho Monforte" = Manuel
     "monforte": {
@@ -131,4 +134,5 @@ CONTEXT_RULES = {
         "map": {"a": "Raquel Cohen", "o": "Jacob Cohen"},
         "default": "Jacob Cohen",
     },
+    # TODO: acrescentar mais regras?
 }

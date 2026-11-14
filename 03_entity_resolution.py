@@ -51,11 +51,28 @@ def norm_mention(s):
 
 # ------------------------- dicionário -------------------------
 
-def build_lookup():
+def load_character_aliases(nodes_path):
+    """Load canonical names and semicolon-separated aliases from ground truth."""
+    nodes = pd.read_csv(nodes_path, dtype=str).fillna("")
+    required = {"id", "name", "aliases"}
+    missing = required - set(nodes.columns)
+    if missing:
+        raise ValueError(f"Missing columns in {nodes_path}: {', '.join(sorted(missing))}")
+    if nodes["id"].duplicated().any() or nodes["name"].duplicated().any():
+        raise ValueError("Ground-truth IDs and canonical names must be unique.")
+
+    characters = {}
+    for row in nodes.itertuples(index=False):
+        aliases = [alias.strip() for alias in row.aliases.split(";") if alias.strip()]
+        characters[row.name.strip()] = aliases
+    return characters
+
+
+def build_lookup(characters):
     """lookup: forma normalizada -> nome canónico.
     raw_forms: forma tal como escrita -> nome canónico (para a procura por dicionário)."""
     lookup, raw_forms = {}, {}
-    for canon, aliases in cfg.ALIASES.items():
+    for canon, aliases in characters.items():
         for form in [canon] + list(aliases):
             key = norm_mention(form)
             if not key or key in cfg.CONTEXT_RULES:
@@ -176,9 +193,10 @@ def main():
         starts = starts_by_pid.get(pid, [0])
         return max(0, bisect.bisect_right(starts, pos) - 1)
 
-    lookup, raw_forms = build_lookup()
+    characters = load_character_aliases(d / "os_maias_ground_truth_nodes.csv")
+    lookup, raw_forms = build_lookup(characters)
     rx = build_dict_regex(raw_forms)
-    print(f"{len(lookup)} formas normalizadas | {len(cfg.ALIASES)} personagens | "
+    print(f"{len(lookup)} formas normalizadas | {len(characters)} personagens do ground truth | "
           f"{len(cfg.CONTEXT_RULES)} regras de contexto")
 
     # 1. candidatos: spaCy + dicionário
@@ -269,10 +287,7 @@ def main():
     else:
         summ = pd.DataFrame(columns=["n_mentions", "n_paragraphs", "first_chapter",
                                      "last_chapter", "n_chapters"])
-    all_names = set(cfg.ALIASES) | {n for r in cfg.CONTEXT_RULES.values()
-                                    for n in ([r.get("before"), r.get("after"), r.get("default")]
-                                              + list(r.get("map", {}).values())) if n}
-    summ = summ.reindex(sorted(all_names)).fillna(0).astype(int)
+    summ = summ.reindex(sorted(characters)).fillna(0).astype(int)
     summ = summ.sort_values("n_mentions", ascending=False)
     summ.to_csv(d / "characters_summary.csv", encoding="utf-8")
     print("\nPersonagens por nº de menções (as 25 primeiras):")
