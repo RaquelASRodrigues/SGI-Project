@@ -1,10 +1,10 @@
 """
 03_entity_resolution.py
 -----------------------
-Lê  Data/paragraphs.csv, sentences.csv, entities_raw.csv  (do 02_ner.py)
-e a configuração em characters_config.py.
+Combines spaCy entities with character names and aliases found directly in
+the source text. Character IDs are loaded from the ground-truth nodes CSV.
 
-Produz:
+Outputs:
   Data/entities_resolved.csv     todas as menções (resolvidas ou não)
   Data/mentions_characters.csv   só as menções resolvidas -> entrada da rede de co-ocorrência
   Data/unresolved_mentions.csv   menções por resolver, com exemplo e sugestão -> o teu TRABALHO
@@ -33,251 +33,309 @@ import pandas as pd
 import characters_config as cfg
 
 
-# ------------------------- normalização -------------------------
+# ------------------------- normalisation -------------------------
 
 def norm_text(s):
+    """Lowercase text, remove accents, and replace punctuation with spaces."""
     s = unicodedata.normalize("NFKD", str(s))
     s = "".join(c for c in s if not unicodedata.combining(c)).lower()
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
 def norm_mention(s):
-    """Minúsculas, sem acentos/pontuação, sem artigos nem títulos no início."""
+    """Normalize a mention and remove leading articles and titles."""
     tokens = norm_text(s).split()
     while tokens and (tokens[0] in cfg.ARTICLES or tokens[0] in cfg.TITLE_TOKENS):
         tokens = tokens[1:]
     return " ".join(tokens)
 
 
-# ------------------------- dicionário -------------------------
+# ------------------------- lookup -------------------------
 
-def load_character_aliases(nodes_path):
-    """Load canonical names and semicolon-separated aliases from ground truth."""
+def load_characters(nodes_path):
+    """Load character IDs, canonical names, and semicolon-separated aliases."""
     nodes = pd.read_csv(nodes_path, dtype=str).fillna("")
     required = {"id", "name", "aliases"}
     missing = required - set(nodes.columns)
     if missing:
-        raise ValueError(f"Missing columns in {nodes_path}: {', '.join(sorted(missing))}")
+        raise ValueError(f"Missing required columns in {nodes_path}: {', '.join(sorted(missing))}")
+    
+    nodes["id"] = nodes["id"].str.strip()
+    nodes["name"] = nodes["name"].str.strip()
+    if (nodes["id"] == "").any() or (nodes["name"] == "").any():
+        raise ValueError("Every character must have a non-empty ID and name.")
     if nodes["id"].duplicated().any() or nodes["name"].duplicated().any():
-        raise ValueError("Ground-truth IDs and canonical names must be unique.")
+        raise ValueError("Character IDs and canonical names must be unique.")
 
     characters = {}
     for row in nodes.itertuples(index=False):
-        aliases = [alias.strip() for alias in row.aliases.split(";") if alias.strip()]
-        characters[row.name.strip()] = aliases
+        characters[row.name] = {
+            "id": row.id,
+            "name": row.name,
+            "aliases": [x.strip() for x in row.aliases.split(";") if x.strip()],
+        }
     return characters
 
 
 def build_lookup(characters):
-    """lookup: forma normalizada -> nome canónico.
-    raw_forms: forma tal como escrita -> nome canónico (para a procura por dicionário)."""
+    """Build normalized and exact-form lookups, excluding context-dependent forms."""
     lookup, raw_forms = {}, {}
-    for canon, aliases in characters.items():
-        for form in [canon] + list(aliases):
+    for canonical, character in characters.items():
+        for form in [canonical] + character["aliases"]:
             key = norm_mention(form)
             if not key or key in cfg.CONTEXT_RULES:
-                continue                     # formas ambíguas só se resolvem por regra
-            if key in lookup and lookup[key] != canon:
-                print(f"AVISO: '{form}' está em '{lookup[key]}' e em '{canon}'. Mantive o primeiro.")
                 continue
-            lookup[key] = canon
+            if key in lookup and lookup[key] != canonical:
+                print(
+                    f"WARNING: '{form}' maps to both '{lookup[key]}' and "
+                    f"'{canonical}'. Keeping the first mapping."
+                )
+                continue
+            lookup[key] = canonical
             if "(" not in form:
-                raw_forms[form] = canon
+                raw_forms[form] = canonical
     return lookup, raw_forms
 
 
 def build_dict_regex(raw_forms):
+    """Build a case-sensitive regex, preferring longer forms."""
     forms = sorted(raw_forms, key=len, reverse=True)       # formas mais longas primeiro
     if not forms:
         return None
-    body = "|".join(re.escape(f) for f in forms)
-    return re.compile(r"(?<![\wÀ-ÿ])(?:" + body + r")(?![\wÀ-ÿ])")
+    alternatives = "|".join(re.escape(x) for x in forms)
+    return re.compile(r"(?<![\wÀ-ÿ])(?:" + alternatives + r")(?![\wÀ-ÿ])")
 
 
 def prev_word(text, start):
+    """Return the normalized word immediately before a mention."""
     words = re.findall(r"[\wÀ-ÿ]+", text[max(0, start - 40):start])
     return norm_text(words[-1]) if words else ""
 
 
-def apply_rule(rule, chapter, text, start):
+def apply_context_rule(rule, chapter, text, start):
+    """Apply a chapter-based or previous-word disambiguation rule."""
     if rule["type"] == "chapter":
         return rule["before"] if chapter <= rule["upto"] else rule["after"]
     if rule["type"] == "prev_word":
         return rule["map"].get(prev_word(text, start), rule.get("default"))
-    raise ValueError(f"Tipo de regra desconhecido: {rule['type']}")
+    raise ValueError(f"Unknown context rule type: {rule['type']}")
 
 
-def resolve(mention, chapter, text, start, lookup):
+def resolve_mention(mention, chapter, text, start, lookup):
+    """Resolve a mention to a canonical character name, if possible."""
     key = norm_mention(mention)
     if not key:
         return None, "empty"
     if key in cfg.CONTEXT_RULES:
-        name = apply_rule(cfg.CONTEXT_RULES[key], chapter, text, start)
+        name = apply_context_rule(cfg.CONTEXT_RULES[key], chapter, text, start)
         return (name, "context_rule") if name else (None, "ambiguous")
     if key in lookup:
         return lookup[key], "alias"
     return None, "unresolved"
 
 
-def suggest(key, lookup):
-    """Sugere personagens parecidas (nunca aplica automaticamente)."""
-    toks = set(key.split())
-    if not toks:
-        return ""
-    out = []
-    for k, canon in lookup.items():
-        kt = set(k.split())
-        if toks < kt or (kt < toks and len(kt) >= 2):
-            if canon not in out:
-                out.append(canon)
-    return " | ".join(out[:3])
+def suggest_characters(key, lookup):
+    """Suggest similar character forms without applying a match automatically."""
+    tokens = set(key.split())
+    suggestions = []
+    for candidate_key, canonical in lookup.items():
+        candidate_tokens = set(candidate_key.split())
+        if tokens < candidate_tokens or (
+            candidate_tokens < tokens and len(candidate_tokens) >= 2
+        ):
+            if canonical not in suggestions:
+                suggestions.append(canonical)
+    return " | ".join(suggestions[:3])
 
 
-# ------------------------- fusão de candidatos -------------------------
+# ------------------------- fusion of candidates -------------------------
 
-def select_non_overlapping(cands):
-    """Entre menções sobrepostas fica a resolvida; depois a mais longa; depois a do spaCy."""
-    cands = sorted(cands, key=lambda c: (c["character"] is None,
-                                         -(c["end"] - c["start"]),
-                                         c["source"] != "spacy",
-                                         c["start"]))
-    chosen = []
-    for c in cands:
-        if all(c["end"] <= o["start"] or c["start"] >= o["end"] for o in chosen):
-            chosen.append(c)
-    return sorted(chosen, key=lambda c: c["start"])
+def select_non_overlapping(candidates):
+    """Prefer resolved, longer, then spaCy candidates when spans overlap."""
+    candidates = sorted(
+        candidates,
+        key=lambda c: (
+            c["character"] is None,
+            -(c["end"] - c["start"]),
+            c["source"] != "spacy",
+            c["start"],
+        ),
+    )
+    selected = []
+    for candidate in candidates:
+        if all(
+            candidate["end"] <= old["start"] or candidate["start"] >= old["end"]
+            for old in selected
+        ):
+            selected.append(candidate)
+    return sorted(selected, key=lambda c: c["start"])
 
 
-# ------------------------- ferramenta de validação -------------------------
+# ------------------------- validation -------------------------
 
-def show(name, ents, text_by_pid):
+def show_mentions(name, entities, text_by_pid):
+    """Display spaCy occurrences of a mention, grouped by chapter."""
     key = norm_mention(name)
-    sub = ents[ents["mention"].map(norm_mention) == key]
-    if sub.empty:
-        print(f"Nenhuma menção '{name}' em entities_raw.csv")
+    subset = entities[entities["mention"].map(norm_mention) == key]
+    if subset.empty:
+        print(f"No occurrence of '{name}' was found in entities_raw.csv.")
         return
-    print(f"Menções de '{name}' por capítulo:")
-    print(sub.groupby("chapter").size().to_string())
-    for chapter, grp in sub.groupby("chapter"):
-        for r in grp.head(2).itertuples():
-            t = text_by_pid[r.paragraph_id]
-            print(f"\n[cap. {chapter}] ...{t[max(0, r.start_char - 70):r.end_char + 70]}...")
+    print(f"Occurrences of '{name}' by chapter:")
+    print(subset.groupby("chapter").size().to_string())
+    for chapter, group in subset.groupby("chapter"):
+        for row in group.head(2).itertuples():
+            text = text_by_pid[row.paragraph_id]
+            print(f"\n[Chapter {chapter}] ...{text[max(0, row.start_char-70):row.end_char+70]}...")
 
 
-# ------------------------- principal -------------------------
+# ------------------------- main -------------------------
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--data-dir", default="Data")
-    ap.add_argument("--min-count", type=int, default=2, help="mínimo de menções no relatório de não resolvidas")
-    ap.add_argument("--labels", default="PER,MISC,ORG", help="etiquetas do spaCy a listar como não resolvidas")
-    ap.add_argument("--show", default=None, help="mostra onde aparece uma menção, por capítulo")
-    args = ap.parse_args()
+    parser = argparse.ArgumentParser(description="Resolve character mentions in Os Maias.")
+    parser.add_argument("--data-dir", default="Data")
+    parser.add_argument("--min-count", type=int, default=2) #TODO: MÍNIMO 2 NAO, queremos personagens q aparecem só 1 vez
+    parser.add_argument("--labels", default="PER,MISC,ORG")
+    parser.add_argument("--show", default=None)
+    args = parser.parse_args()
 
-    d = Path(args.data_dir)
-    paras = pd.read_csv(d / "paragraphs.csv")
-    paras["text"] = paras["text"].fillna("")
-    text_by_pid = dict(zip(paras["paragraph_id"], paras["text"]))
-    chapter_by_pid = dict(zip(paras["paragraph_id"], paras["chapter"]))
-    sentences = pd.read_csv(d / "sentences.csv")
-    ents = pd.read_csv(d / "entities_raw.csv")
-    ents["mention"] = ents["mention"].astype(str)
+    data_dir = Path(args.data_dir)
+    paragraphs = pd.read_csv(data_dir / "paragraphs.csv")
+    paragraphs["text"] = paragraphs["text"].fillna("")
+    text_by_pid = dict(zip(paragraphs["paragraph_id"], paragraphs["text"]))
+    chapter_by_pid = dict(zip(paragraphs["paragraph_id"], paragraphs["chapter"]))
+    sentences = pd.read_csv(data_dir / "sentences.csv")
+    entities = pd.read_csv(data_dir / "entities_raw.csv")
+    entities["mention"] = entities["mention"].astype(str)
 
     if args.show:
-        show(args.show, ents, text_by_pid)
+        show_mentions(args.show, entities, text_by_pid)
         return
 
-    starts_by_pid = {pid: sorted(g["start_char"]) for pid, g in sentences.groupby("paragraph_id")}
+    sentence_starts = {
+        pid: sorted(group["start_char"])
+        for pid, group in sentences.groupby("paragraph_id")
+    }
 
-    def sent_for(pid, pos):
-        starts = starts_by_pid.get(pid, [0])
-        return max(0, bisect.bisect_right(starts, pos) - 1)
+    def sentence_for(pid, position):
+        starts = sentence_starts.get(pid, [0])
+        return max(0, bisect.bisect_right(starts, position) - 1)
 
-    characters = load_character_aliases(d / "os_maias_ground_truth_nodes.csv")
+    characters = load_characters(data_dir / "os_maias_ground_truth_nodes.csv")
     lookup, raw_forms = build_lookup(characters)
-    rx = build_dict_regex(raw_forms)
-    print(f"{len(lookup)} formas normalizadas | {len(characters)} personagens do ground truth | "
-          f"{len(cfg.CONTEXT_RULES)} regras de contexto")
+    dictionary_regex = build_dict_regex(raw_forms)
+    print(
+        f"Loaded {len(characters)} characters, {len(lookup)} normalized forms, "
+        f"and {len(cfg.CONTEXT_RULES)} context rules."
+    )
 
-    # 1. candidatos: spaCy + dicionário
-    cands = defaultdict(list)
-    for r in ents.itertuples():
-        text = text_by_pid[r.paragraph_id]
-        chapter = chapter_by_pid[r.paragraph_id]
-        char, method = resolve(r.mention, chapter, text, r.start_char, lookup)
-        cands[r.paragraph_id].append({
-            "start": r.start_char, "end": r.end_char, "mention": r.mention, "label": r.label,
-            "source": "spacy", "character": char, "method": method,
+    # Collect candidates from spaCy and from direct dictionary matching.
+    candidates_by_pid = defaultdict(list)
+    for row in entities.itertuples():
+        pid = row.paragraph_id
+        text = text_by_pid[pid]
+        canonical, method = resolve_mention(
+            row.mention, chapter_by_pid[pid], text, row.start_char, lookup
+        )
+        candidates_by_pid[pid].append({
+            "start": row.start_char, "end": row.end_char,
+            "mention": row.mention, "label": row.label,
+            "source": "spacy", "character": canonical, "method": method,
         })
-    if rx:
+
+    if dictionary_regex:
         for pid, text in text_by_pid.items():
-            for m in rx.finditer(text):
-                cands[pid].append({
-                    "start": m.start(), "end": m.end(), "mention": m.group(0), "label": "DICT",
-                    "source": "dict", "character": raw_forms[m.group(0)], "method": "dict_alias",
+            for match in dictionary_regex.finditer(text):
+                candidates_by_pid[pid].append({
+                    "start": match.start(), "end": match.end(),
+                    "mention": match.group(0), "label": "DICT",
+                    "source": "dict", "character": raw_forms[match.group(0)],
+                    "method": "dict_alias",
                 })
 
-    # 2. escolher sem sobreposições e escrever
+    # Merge overlapping spans and attach the stable character ID.
+    columns = [
+        "paragraph_id", "sent_id", "chapter", "start_char", "end_char",
+        "mention", "label", "source", "character_id", "character", "method",
+    ]
     rows = []
-    for pid, items in cands.items():
-        for c in select_non_overlapping(items):
+    for pid, candidates in candidates_by_pid.items():
+        for candidate in select_non_overlapping(candidates):
+            name = candidate["character"]
+            character_id = characters[name]["id"] if name is not None else None
             rows.append({
                 "paragraph_id": pid,
-                "sent_id": sent_for(pid, c["start"]),
+                "sent_id": sentence_for(pid, candidate["start"]),
                 "chapter": chapter_by_pid[pid],
-                "start_char": c["start"], "end_char": c["end"],
-                "mention": c["mention"], "label": c["label"], "source": c["source"],
-                "character": c["character"], "method": c["method"],
+                "start_char": candidate["start"],
+                "end_char": candidate["end"],
+                "mention": candidate["mention"],
+                "label": candidate["label"],
+                "source": candidate["source"],
+                "character_id": character_id,
+                "character": name,
+                "method": candidate["method"],
             })
-    out = pd.DataFrame(rows).sort_values(["paragraph_id", "start_char"]).reset_index(drop=True)
-    out.to_csv(d / "entities_resolved.csv", index=False, encoding="utf-8")
 
-    resolved = out[out["character"].notna()].copy()
-    resolved.to_csv(d / "mentions_characters.csv", index=False, encoding="utf-8")
+    output = pd.DataFrame(rows, columns=columns)
+    if not output.empty:
+        output = output.sort_values(["paragraph_id", "start_char"]).reset_index(drop=True)
+    output.to_csv(data_dir / "entities_resolved.csv", index=False, encoding="utf-8")
 
-    # 3. cobertura
-    spacy_per = out[(out["source"] == "spacy") & (out["label"] == "PER")]
-    if len(spacy_per):
-        print(f"\nPER do spaCy resolvidas: {spacy_per['character'].notna().mean():.1%} "
-              f"({spacy_per['character'].notna().sum()}/{len(spacy_per)})")
-    print(f"Menções de personagens: {len(resolved)} "
-          f"({(resolved['source'] == 'dict').sum()} só pelo dicionário)")
-    n_amb = (out["method"] == "ambiguous").sum()
-    if n_amb:
-        print(f"Ambíguas sem regra de capítulo/contexto que resolva: {n_amb} (ver unresolved_mentions.csv)")
+    resolved = output[output["character_id"].notna()].copy()
+    resolved.to_csv(data_dir / "mentions_characters.csv", index=False, encoding="utf-8")
 
-    # 4. relatório de não resolvidas
+    # Report resolution coverage.
+    spacy_per = output[(output["source"] == "spacy") & (output["label"] == "PER")]
+    if not spacy_per.empty:
+        n_resolved = spacy_per["character_id"].notna().sum()
+        print(f"\nResolved spaCy PER mentions: {n_resolved/len(spacy_per):.1%} ({n_resolved}/{len(spacy_per)}).")
+    n_dictionary = (resolved["source"] == "dict").sum()
+    print(f"Resolved character mentions: {len(resolved)} ({n_dictionary} detected only by the dictionary).")
+    n_ambiguous = (output["method"] == "ambiguous").sum()
+    if n_ambiguous:
+        print(f"Unresolved ambiguous mentions: {n_ambiguous}. See unresolved_mentions.csv.")
+
+    # Create a frequency-based report of unresolved spaCy entities.
     labels = {x.strip() for x in args.labels.split(",") if x.strip()}
-    un = out[out["character"].isna() & out["label"].isin(labels)].copy()
-    un["key"] = un["mention"].map(norm_mention)
-    un = un[un["key"] != ""]
-    rep = []
-    for key, g in un.groupby("key"):
-        if len(g) < args.min_count:
+    unresolved = output[
+        output["character_id"].isna() & output["label"].isin(labels)
+    ].copy()
+    unresolved["key"] = unresolved["mention"].map(norm_mention)
+    unresolved = unresolved[unresolved["key"] != ""]
+    report_rows = []
+    for key, group in unresolved.groupby("key"):
+        if len(group) < args.min_count:
             continue
-        first = g.iloc[0]
-        t = text_by_pid[first["paragraph_id"]]
-        rep.append({
+        first = group.iloc[0]
+        text = text_by_pid[first["paragraph_id"]]
+        start = max(0, first["start_char"] - 50)
+        end = first["end_char"] + 50
+        report_rows.append({
             "normalised": key,
-            "most_common_form": g["mention"].mode().iloc[0],
-            "label": g["label"].mode().iloc[0],
-            "count": len(g),
-            "n_chapters": g["chapter"].nunique(),
-            "method": g["method"].mode().iloc[0],
-            "suggestion": suggest(key, lookup),
-            "example": t[max(0, first["start_char"] - 50):first["end_char"] + 50].replace("\n", " "),
+            "most_common_form": group["mention"].mode().iloc[0],
+            "label": group["label"].mode().iloc[0],
+            "count": len(group),
+            "n_chapters": group["chapter"].nunique(),
+            "method": group["method"].mode().iloc[0],
+            "suggestion": suggest_characters(key, lookup),
+            "example": text[start:end].replace("\n", " "),
         })
-    rep = pd.DataFrame(rep)
-    if len(rep):
-        rep = rep.sort_values("count", ascending=False).reset_index(drop=True)
-    rep.to_csv(d / "unresolved_mentions.csv", index=False, encoding="utf-8")
-    print(f"\nPor resolver (>= {args.min_count} menções): {len(rep)} formas. As 25 mais frequentes:")
-    if len(rep):
-        print(rep.head(25)[["most_common_form", "label", "count", "suggestion"]].to_string(index=False))
 
-    # 5. resumo por personagem (inclui as que não aparecem nenhuma vez)
-    if len(resolved):
-        summ = resolved.groupby("character").agg(
+    report_columns = [
+        "normalised", "most_common_form", "label", "count",
+        "n_chapters", "method", "suggestion", "example",
+    ]
+    report = pd.DataFrame(report_rows, columns=report_columns)
+    if not report.empty:
+        report = report.sort_values("count", ascending=False).reset_index(drop=True)
+    report.to_csv(data_dir / "unresolved_mentions.csv", index=False, encoding="utf-8")
+    print(f"\nUnresolved forms with at least {args.min_count} mentions: {len(report)}. Top 25:")
+    if not report.empty:
+        print(report.head(25)[["most_common_form", "label", "count", "suggestion"]].to_string(index=False))
+
+    # Summarize every ground-truth character, including those with no mentions.
+    if not resolved.empty:
+        summary = resolved.groupby(["character_id", "character"]).agg(
             n_mentions=("mention", "size"),
             n_paragraphs=("paragraph_id", "nunique"),
             first_chapter=("chapter", "min"),
@@ -285,17 +343,29 @@ def main():
             n_chapters=("chapter", "nunique"),
         )
     else:
-        summ = pd.DataFrame(columns=["n_mentions", "n_paragraphs", "first_chapter",
-                                     "last_chapter", "n_chapters"])
-    summ = summ.reindex(sorted(characters)).fillna(0).astype(int)
-    summ = summ.sort_values("n_mentions", ascending=False)
-    summ.to_csv(d / "characters_summary.csv", encoding="utf-8")
-    print("\nPersonagens por nº de menções (as 25 primeiras):")
-    print(summ.head(25).to_string())
-    zero = summ[summ["n_mentions"] == 0].index.tolist()
-    if zero:
-        print(f"\nSem nenhuma menção ({len(zero)}): {zero}")
-        print("Ou não estão no texto, ou falta uma forma em ALIASES. Verifica com --show.")
+        summary = pd.DataFrame(columns=[
+            "n_mentions", "n_paragraphs", "first_chapter", "last_chapter", "n_chapters"
+        ])
+        summary.index = pd.MultiIndex.from_arrays([[], []], names=["character_id", "character"])
+
+    all_characters = pd.DataFrame([
+        {"character_id": item["id"], "character": item["name"]}
+        for item in characters.values()
+    ]).set_index(["character_id", "character"])
+    summary = all_characters.join(summary, how="left").fillna(0).reset_index()
+    summary = summary.astype({
+        "n_mentions": int, "n_paragraphs": int, "first_chapter": int,
+        "last_chapter": int, "n_chapters": int,
+    })
+    summary = summary.sort_values("n_mentions", ascending=False)
+    summary.to_csv(data_dir / "characters_summary.csv", index=False, encoding="utf-8")
+
+    print("\nCharacters ranked by number of mentions (top 25):")
+    print(summary.head(25).to_string(index=False))
+    no_mentions = summary.loc[summary["n_mentions"] == 0, "character"].tolist()
+    if no_mentions:
+        print(f"\nCharacters with no detected mentions ({len(no_mentions)}): {no_mentions}")
+        print("They may not occur in the text, or their names/aliases may be missing from the nodes CSV.")
 
 
 if __name__ == "__main__":
