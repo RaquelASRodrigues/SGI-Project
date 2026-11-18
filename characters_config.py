@@ -23,6 +23,8 @@ RUNA_LAST_CHAPTER = 2
 # Até este capítulo, "Vilaça" sem mais é o pai; depois, o filho. Heurística: confirma.
 VILACA_PAI_LAST_CHAPTER = 3
 
+MANUEL_MONFORTE_LAST_CHAPTER = 3
+
 # Palavras que se retiram do início de uma menção antes de a comparar
 ARTICLES = {"o", "a", "os", "as", "um", "uma"} # falta do da?
 TITLE_TOKENS = {"sr", "sra", "d", "dr", "dra", "dom", "dona", "senhor", "senhora", "mr", "mrs"}
@@ -112,6 +114,12 @@ CONTEXT_RULES = {
         "type": "chapter", "upto": VILACA_PAI_LAST_CHAPTER,
         "before": "Vilaça", "after": "Vilaça Júnior",
     },
+
+    "manuel": {
+            "type": "chapter", "upto": MANUEL_MONFORTE_LAST_CHAPTER,
+            "before": "Manuel Monforte", "after": "Vilaça Júnior",
+        },
+
     # "a Monforte" = Maria; "o Monforte", "papá Monforte", "o velho Monforte" = Manuel
     "monforte": {
         "type": "prev_word",
@@ -120,12 +128,12 @@ CONTEXT_RULES = {
         "default": "Manuel Monforte",
     },
     # "Maria" sozinho: Maria Monforte nos primeiros capítulos; depois fica por resolver
-    "maria": {"type": "chapter", "upto": 2, "before": "Maria Monforte", "after": None},
+    "maria": {"type": "chapter", "upto": 10, "before": "Maria Monforte", "after": "Maria Eduarda"},
     # Gouvarinho: conde ou condessa (da memória; confirma)
     "gouvarinho": {
         "type": "prev_word",
-        "map": {"o": "Conde de Gouvarinho", "conde": "Conde de Gouvarinho",
-                "a": "Condessa de Gouvarinho", "condessa": "Condessa de Gouvarinho"},
+        "map": {"o": "Conde de Gouvarinho", "conde": "Conde de Gouvarinho", "do": "Conde de Gouvarinho", "conde de Gouvarinho": "Conde de Gouvarinho",
+                "a": "Condessa de Gouvarinho", "condessa": "Condessa de Gouvarinho", "da": "Condessa de Gouvarinho", "boa": "Condessa de Gouvarinho", "condessa de Gouvarinho": "Condessa de Gouvarinho", "na Gouvarinho": "Condessa de Gouvarinho"},
         "default": None,
     },
     # Cohen: Jacob ou Raquel (da memória; confirma)
@@ -139,5 +147,22 @@ CONTEXT_RULES = {
     "type": "multiple",
     "characters": ["Joaquim Álvares de Castro Gomes", "Maria Eduarda"],
 },
-    
+
+    "gouvarinhos": {
+    "type": "multiple",
+    "characters": ["Conde de Gouvarinho", "Condessa de Gouvarinho"],
+
+},
+    "cohens": {
+    "type": "multiple",
+    "characters": ["Jacob Cohen", "Raquel Cohen"],
+   
+    },
+
+    "monfortes": {
+    "type": "multiple",
+    "characters": ["Maria Monforte", "Manuel Monforte"],
+   
+    },
+
 }

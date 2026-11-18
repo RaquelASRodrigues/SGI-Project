@@ -1,7 +1,7 @@
 id,name,role_or_group,aliases
-carlos_maia,Carlos da Maia,,Carlos; Carlinhos; Carlos Eduardo; Carlos de Mata-Sete
+carlos_maia,Carlos da Maia,,Carlos; Carlinhos; Carlos Eduardo; Carlos de Mata-Sete; Sr. D. Carlos; D. Carlos da Maia; Sr. Maia
 maria_eduarda,Maria Eduarda,,
-afonso_maia,Afonso da Maia,,Afonso
+afonso_maia,Afonso da Maia,,Afonso; D. Fuas
 pedro_maia,Pedro da Maia,,Pedro; Pedrinho
 maria_monforte,Maria Monforte,,
 caetano_maia,Caetano da Maia,,Caetano
@@ -15,13 +15,13 @@ conde_gouvarinho,Conde de Gouvarinho,,
 condessa_gouvarinho,Condessa de Gouvarinho,,
 craft,Craft,,Guilherme Craft
 cruges,Cruges,,
-damaso_salcede,Dâmaso Salcede,,Dâmaso; Salcede
+damaso_salcede,Dâmaso Salcede,,Dâmaso; Salcede; Damasozinho; Sr. Damasozinho
 damaso_guedes,Dâmaso Guedes,,Guedes
-eusebiozinho_silveira,Eusebiozinho Silveira,,Eusebiozinho; Eusébiozinho; Eusébio
-tomas_alencar,Tomás de Alencar,,Alencar
+eusebiozinho_silveira,Eusebiozinho Silveira,,Eusebiozinho; Eusébiozinho; Eusébio; Silveirinha
+tomas_alencar,Tomás de Alencar,,Alencar; Tomás
 jacob_cohen,Jacob Cohen,,Jacob; Cohen
-raquel_cohen,Raquel Cohen,,Raquel; Cohen
-palma_cavalao,Palma Cavalão,,Cavalão
+raquel_cohen,Raquel Cohen,,Raquel; Cohen; Madame Cohen
+palma_cavalao,Palma Cavalão,,Cavalão; Palma; Sr. Palma
 neves,Neves,,
 sousa_neto,Sousa Neto,,
 steinbroken,Steinbroken,,
@@ -29,10 +29,10 @@ taveira,Taveira,,
 marques_souselas,Marquês de Souselas,,Souselas
 abade_custodio,abade Custódio,,Custódio; padre Custódio
 eugenia_silveira,D. Eugénia Silveira,,Eugénia
-ana_silveira,D. Ana Silveira,,Ana Silveira
+ana_silveira,D. Ana Silveira,,Ana Silveira; D. Ana
 teresinha_silveira,Teresinha Silveira,,Teresinha
-joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,,Castro Gomes
-rosa,Rosa,,
+joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,,Castro Gomes; Sr. Gomes
+rosa,Rosa,,Rosicler
 gertrudes,Gertrudes,,
 melanie,Melanie,,
 miss_sara,Miss Sara,,Sara
@@ -42,8 +42,8 @@ viscondessa_alvim,Viscondessa de Alvim,,
 joaninha_vilar,Joaninha Vilar,,
 domingos,Domingos,,
 sequeira,Sequeira,,Coronel Sequeira; General Sequeira
-diogo_coutinho,D. Diogo Coutinho,,
-joana_coutinho,D. Joana Coutinho,,
+diogo_coutinho,D. Diogo Coutinho,,D. Diogo
+joana_coutinho,D. Joana Coutinho,,Sra. D. Joana
 joao_coutinho,D. João Coutinho,,
 maria_cunha,D. Maria da Cunha,,Maria da Cunha
 joao_cunha,D. João da Cunha,,
@@ -57,7 +57,7 @@ brown,Brown,,Mr. Brown
 vladimiro,Vladimiro,,
 mr_theodore,Mr. Théodore,,Théodore
 encarnacion,Encarnación,,
-lola,Lola,,
+lola,Lola,,Lolita
 rufino,Rufino,,
 mac_gren,Mac Gren,,
 teixeira,Teixeira,,
@@ -73,7 +73,30 @@ melo, Melo,,
 andre_ega, André da Ega,,
 luis_runa, Luís Runa,,
 conde_runa, Conde de Runa,,
-condessa_runa, Condessa de Runa,,
+condessa_runa, Condessa de Runa,,condessa de Runa
 sebastiao_maia, Sebastião da Maia,,
 esteves, Esteves,,
 cazoti, Cazoti,,
+susana, Susana,,
+madame_rughel, Madame Rughel,,
+madame_trelain, Madame Trelain,,Mr. de Trelain
+adosinda,D. Adosinda,,D. Adosinda
+saldanha,Saldanha,,duque de Saldanha
+augusta,Augusta,,D. Augusta; Sra. Augusta
+ana_craveiro,D. Ana Craveiro,,
+madame_estorade,Madame  de  l'Estorade,,
+estorade, l'Estorade,,Mr. de l'Estorade
+trigueiros,Trigueiros,,Dr. Trigueiros; velho Trigueiros
+andre_noronha, André de Noronha,,primo André; André de Noronha; tio André
+vicente, Vicente,,Sr. Vicente; S. Vicente
+padre_serafim,Padre Serafim,,
+gonçalo,Gonçalo,,
+chaplain,Chaplain,,Dr. Chaplain
+madame_chaplain,Madame Chaplain,,Sra. Chaplain
+charlie,Charlie,,
+clifford,Clifford,,
+savedra,Savedra,,Sr. Savedra
+azevedo,Azevedo,,
+vargas,Vargas,,D. Pedro Vargas; Sr. Vargas
+mendonça,Mendonça,,
+josefa,Josefa,,Sra. Josefa
