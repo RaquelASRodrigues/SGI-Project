@@ -2518,7 +2518,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 992,1,5,20,27,Sr. Ega,PER,spacy,joao_ega,João da Ega,alias
 993,0,5,17,25,Baptista,PER,spacy,baptista,Baptista,alias
 993,0,5,65,71,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-994,1,5,36,46,Gouvarinho,PER,spacy,,,ambiguous
+994,1,5,36,46,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 994,1,5,48,53,Tista,PER,spacy,,,unresolved
 995,1,5,2,19,Conheço o Pimenta,LOC,spacy,,,unresolved
 996,0,5,23,32,Tormenta?,MISC,spacy,,,unresolved
@@ -2616,7 +2616,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 1022,0,5,0,6,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 1022,1,5,19,35,Vossa Excelência,PER,spacy,,,unresolved
 1022,2,5,60,63,Ega,PER,spacy,joao_ega,João da Ega,alias
-1022,3,5,102,112,Gouvarinho,PER,spacy,,,ambiguous
+1022,3,5,102,112,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 1023,0,5,39,42,Ega,PER,spacy,joao_ega,João da Ega,alias
 1023,1,5,76,82,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 1024,0,5,74,80,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
@@ -2757,7 +2757,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 1094,0,6,0,19,Je suis Mephisto...,MISC,spacy,,,unresolved
 1095,0,6,0,19,Je suis Mephisto...,MISC,spacy,,,unresolved
 1096,0,6,0,6,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-1096,0,6,67,77,Gouvarinho,PER,spacy,,,ambiguous
+1096,0,6,67,77,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 1096,2,6,509,517,Universo,LOC,spacy,,,unresolved
 1097,1,6,82,89,Satanás,PER,spacy,,,unresolved
 1097,2,6,114,120,Igreja,ORG,spacy,,,unresolved
@@ -3552,7 +3552,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 1376,0,7,45,51,Dâmaso,PER,spacy,damaso_salcede,Dâmaso Salcede,alias
 1376,1,7,162,168,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 1376,1,7,174,179,Craft,PER,spacy,craft,Craft,alias
-1376,3,7,434,444,Gouvarinho,PER,spacy,,,ambiguous
+1376,3,7,434,444,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 1377,0,7,72,78,Grémio,ORG,spacy,,,unresolved
 1378,1,7,34,38,Maia,LOC,spacy,carlos_maia,Carlos da Maia,alias
 1378,2,7,55,66,bricabraque,LOC,spacy,,,unresolved
@@ -3718,7 +3718,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 1446,0,7,62,86,Margarida das Margaridas,PER,spacy,,,unresolved
 1446,0,7,101,107,Valois,PER,spacy,,,unresolved
 1446,0,7,124,134,Renascença,ORG,spacy,,,unresolved
-1446,0,7,158,168,Gouvarinho,PER,spacy,,,ambiguous
+1446,0,7,158,168,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 1447,0,7,0,3,Riu,PER,spacy,,,unresolved
 1447,0,7,23,29,Afonso,PER,spacy,afonso_maia,Afonso da Maia,alias
 1447,0,7,72,78,Cohens,MISC,spacy,jacob_cohen,Jacob Cohen,context_rule
@@ -4679,7 +4679,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 1919,2,9,393,399,Vilaça,LOC,spacy,vilaca_junior,Vilaça Júnior,context_rule
 1920,1,9,70,82,Eusebiozinho,LOC,spacy,eusebiozinho_silveira,Eusebiozinho Silveira,alias
 1920,1,9,91,97,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-1921,0,9,80,90,Gouvarinho,PER,spacy,,,ambiguous
+1921,0,9,80,90,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 1921,1,9,283,292,Descartes,PER,spacy,,,unresolved
 1921,2,9,294,300,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 1921,2,9,348,353,Reino,LOC,spacy,,,unresolved
@@ -5154,11 +5154,11 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2225,1,9,37,43,Raquel,PER,spacy,raquel_cohen,Raquel Cohen,alias
 2225,2,9,145,150,Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
 2225,2,9,164,169,Índia,LOC,spacy,,,unresolved
-2226,1,9,29,40,Sra. Adélia,PER,spacy,,,unresolved
+2226,1,9,29,40,Sra. Adélia,PER,spacy,adelia,Adélia,alias
 2226,6,9,229,248,Santíssima Trindade,MISC,spacy,,,unresolved
-2226,7,9,260,271,Sra. Adélia,LOC,spacy,,,unresolved
-2226,10,9,331,342,Sra. Adélia,PER,spacy,,,unresolved
-2227,0,9,2,13,Sra. Adélia,LOC,spacy,,,unresolved
+2226,7,9,260,271,Sra. Adélia,LOC,spacy,adelia,Adélia,alias
+2226,10,9,331,342,Sra. Adélia,PER,spacy,adelia,Adélia,alias
+2227,0,9,2,13,Sra. Adélia,LOC,spacy,adelia,Adélia,alias
 2227,2,9,155,162,Sr. Ega,PER,spacy,joao_ega,João da Ega,alias
 2228,3,9,257,265,Domingos,PER,spacy,domingos,Domingos,alias
 2228,7,9,405,413,Domingos,PER,spacy,domingos,Domingos,alias
@@ -5169,31 +5169,31 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2228,18,9,1247,1255,Domingos,PER,spacy,domingos,Domingos,alias
 2228,18,9,1321,1330,Sr. Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
 2228,18,9,1353,1363,Inglaterra,LOC,spacy,,,unresolved
-2229,0,9,2,13,Sra. Adélia,LOC,spacy,,,unresolved
+2229,0,9,2,13,Sra. Adélia,LOC,spacy,adelia,Adélia,alias
 2229,1,9,65,68,Ega,PER,spacy,joao_ega,João da Ega,alias
-2230,0,9,6,17,Sra. Adélia,PER,spacy,,,unresolved
+2230,0,9,6,17,Sra. Adélia,PER,spacy,adelia,Adélia,alias
 2230,0,9,31,36,Craft,PER,spacy,craft,Craft,alias
 2231,2,9,36,39,Ega,PER,spacy,joao_ega,João da Ega,alias
 2232,2,9,105,116,Vila Balzac,LOC,spacy,,,unresolved
 2233,1,9,34,39,Craft,PER,spacy,craft,Craft,alias
-2234,1,9,21,32,Sra. Adélia,PER,spacy,,,unresolved
+2234,1,9,21,32,Sra. Adélia,PER,spacy,adelia,Adélia,alias
 2235,0,9,2,11,Pois olhe,MISC,spacy,,,unresolved
 2235,0,9,13,20,Sr. Ega,PER,spacy,joao_ega,João da Ega,alias
 2235,2,9,162,172,Excelência,ORG,spacy,,,unresolved
 2235,2,9,188,197,Sr. Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
 2236,0,9,0,3,Ega,PER,spacy,joao_ega,João da Ega,alias
-2236,0,9,15,26,Sra. Adélia,PER,spacy,,,unresolved
-2238,0,9,2,13,Sra. Adélia,PER,spacy,,,unresolved
+2236,0,9,15,26,Sra. Adélia,PER,spacy,adelia,Adélia,alias
+2238,0,9,2,13,Sra. Adélia,PER,spacy,adelia,Adélia,alias
 2238,0,9,89,108,trouxazinha redonda,ORG,spacy,,,unresolved
 2240,2,9,110,113,Ega,PER,spacy,joao_ega,João da Ega,alias
 2240,3,9,242,248,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2241,1,9,39,42,Ega,PER,spacy,joao_ega,João da Ega,alias
-2242,0,9,26,37,Sra. Adélia,LOC,spacy,,,unresolved
+2242,0,9,26,37,Sra. Adélia,LOC,spacy,adelia,Adélia,alias
 2243,1,9,29,34,Craft,PER,spacy,craft,Craft,alias
 2243,2,9,47,53,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2245,2,9,62,68,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2245,3,9,162,165,Ega,PER,spacy,joao_ega,João da Ega,alias
-2245,4,9,214,225,Sra. Adélia,PER,spacy,,,unresolved
+2245,4,9,214,225,Sra. Adélia,PER,spacy,adelia,Adélia,alias
 2247,0,9,22,27,André,LOC,spacy,,,unresolved
 2247,0,9,32,38,Chiado,LOC,spacy,,,unresolved
 2247,1,9,67,73,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
@@ -5205,14 +5205,14 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2248,3,9,472,477,Craft,PER,spacy,craft,Craft,alias
 2248,3,9,533,548,Diário da Manhã,MISC,spacy,,,unresolved
 2249,0,9,13,16,Ega,PER,spacy,joao_ega,João da Ega,alias
-2251,0,9,16,27,Sra. Adélia,PER,spacy,,,unresolved
+2251,0,9,16,27,Sra. Adélia,PER,spacy,adelia,Adélia,alias
 2251,0,9,36,41,Craft,PER,spacy,craft,Craft,alias
 2252,0,9,0,3,Ega,PER,spacy,joao_ega,João da Ega,alias
-2253,0,9,34,40,Adélia,PER,spacy,,,unresolved
+2253,0,9,34,40,Adélia,PER,spacy,adelia,Adélia,alias
 2253,2,9,192,202,Gouvarinho,PER,spacy,conde_gouvarinho,Conde de Gouvarinho,context_rule
-2253,2,9,206,219,D. Maria Lima,PER,spacy,,,unresolved
+2253,2,9,206,219,D. Maria Lima,PER,spacy,maria_lima,Maria Lima,alias
 2253,3,9,247,253,Raquel,PER,spacy,raquel_cohen,Raquel Cohen,alias
-2253,4,9,296,309,D. Maria Lima,PER,spacy,,,unresolved
+2253,4,9,296,309,D. Maria Lima,PER,spacy,maria_lima,Maria Lima,alias
 2253,9,9,695,702,casa da,PER,spacy,,,unresolved
 2253,9,9,703,707,Lima,LOC,spacy,,,unresolved
 2253,12,9,759,766,casa da,LOC,spacy,,,unresolved
@@ -5258,7 +5258,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2267,2,9,268,274,Raquel,PER,spacy,raquel_cohen,Raquel Cohen,alias
 2267,2,9,313,316,Ega,PER,spacy,joao_ega,João da Ega,alias
 2267,3,9,417,422,Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
-2267,3,9,451,461,Gouvarinho,PER,spacy,,,ambiguous
+2267,3,9,451,461,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2267,3,9,478,481,Ega,PER,spacy,joao_ega,João da Ega,alias
 2267,4,9,577,587,Gouvarinho,PER,spacy,conde_gouvarinho,Conde de Gouvarinho,context_rule
 2267,4,9,697,700,Ega,PER,spacy,joao_ega,João da Ega,alias
@@ -5451,7 +5451,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2344,1,10,220,230,Patriarcal,LOC,spacy,,,unresolved
 2344,3,10,522,528,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2344,3,10,565,571,Queluz,LOC,spacy,,,unresolved
-2344,3,10,599,609,Gouvarinho,PER,spacy,,,ambiguous
+2344,3,10,599,609,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2345,0,10,28,47,Largo das Amoreiras,LOC,spacy,,,unresolved
 2345,1,10,51,57,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2345,1,10,83,93,Patriarcal,LOC,spacy,,,unresolved
@@ -5479,7 +5479,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2348,0,10,4,10,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2348,1,10,229,234,Pedro,DICT,dict,pedro_maia,Pedro da Maia,dict_alias
 2348,7,10,1063,1079,Rua de S. Marçal,LOC,spacy,,,unresolved
-2348,9,10,1164,1174,Gouvarinho,PER,spacy,,,ambiguous
+2348,9,10,1164,1174,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2350,1,10,69,75,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2350,1,10,85,100,Rua de S. Roque,LOC,spacy,,,unresolved
 2351,2,10,39,45,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
@@ -5730,7 +5730,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2439,2,10,524,535,Steinbroken,PER,spacy,steinbroken,Steinbroken,alias
 2439,2,10,551,557,Soutal,PER,spacy,,,unresolved
 2439,3,10,641,647,Vilaça,PER,spacy,vilaca_junior,Vilaça Júnior,context_rule
-2440,0,10,14,24,Gouvarinho,PER,spacy,,,ambiguous
+2440,0,10,14,24,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2440,1,10,85,91,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2441,1,10,49,56,Taveira,LOC,spacy,taveira,Taveira,alias
 2441,1,10,79,82,Ega,LOC,spacy,joao_ega,João da Ega,alias
@@ -5788,7 +5788,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2462,1,10,26,32,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2462,2,10,100,106,sports,ORG,spacy,,,unresolved
 2463,1,10,60,66,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-2464,0,10,73,83,Gouvarinho,PER,spacy,,,ambiguous
+2464,0,10,73,83,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2464,2,10,238,252,Joaninha Vilar,PER,spacy,joaninha_vilar,Joaninha Vilar,alias
 2464,2,10,279,288,Ramalhete,LOC,spacy,,,unresolved
 2465,1,10,46,56,Sá Videira,PER,spacy,,,unresolved
@@ -5960,7 +5960,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2553,0,10,32,40,D. Maria,PER,spacy,maria_monforte,Maria Monforte,context_rule
 2553,1,10,44,57,Teles da Gama,PER,spacy,teles_gama,Teles da Gama,alias
 2553,1,10,147,153,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-2554,0,10,2,15,Ó Gouvarinho!,LOC,spacy,,,ambiguous
+2554,0,10,2,15,Ó Gouvarinho!,LOC,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2554,2,10,59,69,Que diabo!,MISC,spacy,,,unresolved
 2556,1,10,42,48,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2556,2,10,109,115,Câmara,LOC,spacy,,,unresolved
@@ -6131,7 +6131,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2625,3,10,144,155,Gouvarinho!,MISC,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2625,5,10,178,186,Good-bye,LOC,spacy,,,unresolved
 2626,0,10,10,16,Carlos,DICT,dict,carlos_maia,Carlos da Maia,dict_alias
-2626,0,10,31,41,Gouvarinho,PER,spacy,,,ambiguous
+2626,0,10,31,41,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2626,0,10,55,63,D. Maria,PER,spacy,maria_monforte,Maria Monforte,context_rule
 2626,0,10,89,94,Alvim,LOC,spacy,,,unresolved
 2626,0,10,97,111,Joaninha Vilar,PER,spacy,joaninha_vilar,Joaninha Vilar,alias
@@ -6512,7 +6512,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2841,0,11,90,98,Penafiel,LOC,spacy,,,unresolved
 2842,0,11,0,23,Debruçado da portinhola,LOC,spacy,,,unresolved
 2842,0,11,73,79,Dâmaso,PER,spacy,damaso_salcede,Dâmaso Salcede,alias
-2842,1,11,150,160,Gouvarinho,PER,spacy,,,ambiguous
+2842,1,11,150,160,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2842,1,11,222,228,pêsame,LOC,spacy,,,unresolved
 2843,0,11,45,51,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2846,0,11,0,6,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
@@ -6602,10 +6602,10 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 2872,3,11,158,174,Vossa Excelência,PER,spacy,,,unresolved
 2872,3,11,203,211,Baptista,DICT,dict,baptista,Baptista,dict_alias
 2872,3,11,214,225,Notre- Dame,LOC,spacy,,,unresolved
-2873,1,11,86,96,Gouvarinho,PER,spacy,,,ambiguous
-2873,1,11,131,141,Gouvarinho,PER,spacy,,,ambiguous
-2873,1,11,176,186,Gouvarinho,PER,spacy,,,ambiguous
-2873,1,11,230,240,Gouvarinho,PER,spacy,,,ambiguous
+2873,1,11,86,96,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
+2873,1,11,131,141,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
+2873,1,11,176,186,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
+2873,1,11,230,240,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2874,0,11,0,6,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 2874,1,11,69,79,Gouvarinho,LOC,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 2874,3,11,134,141,Decerto,PER,spacy,,,unresolved
@@ -7539,7 +7539,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 3384,2,13,61,71,Arrasta-te,LOC,spacy,,,unresolved
 3384,2,13,96,108,casa da titi,PER,spacy,,,unresolved
 3385,0,13,0,6,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-3385,0,13,68,78,Gouvarinho,PER,spacy,,,ambiguous
+3385,0,13,68,78,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 3387,0,13,0,3,Ega,PER,spacy,joao_ega,João da Ega,alias
 3388,1,13,22,28,Dâmaso,PER,spacy,damaso_salcede,Dâmaso Salcede,alias
 3389,0,13,33,39,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
@@ -7637,7 +7637,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 3414,0,13,2,9,Acho-te,PER,spacy,,,unresolved
 3414,0,13,23,30,Alencar,PER,spacy,tomas_alencar,Tomás de Alencar,alias
 3416,2,13,55,63,Memórias,PER,spacy,,,unresolved
-3418,2,13,38,48,Gouvarinho,PER,spacy,,,ambiguous
+3418,2,13,38,48,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 3418,2,13,83,103,Instrução pública...,MISC,spacy,,,unresolved
 3418,3,13,156,173,Diário do Governo,MISC,spacy,,,unresolved
 3419,0,13,68,78,Gouvarinho,PER,spacy,conde_gouvarinho,Conde de Gouvarinho,context_rule
@@ -7652,12 +7652,12 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 3420,0,13,106,112,Dâmaso,PER,spacy,damaso_salcede,Dâmaso Salcede,alias
 3423,0,13,2,6,Maia,LOC,spacy,carlos_maia,Carlos da Maia,alias
 3423,1,13,28,34,Chiado,LOC,spacy,,,unresolved
-3424,1,13,14,24,Gouvarinho,PER,spacy,,,ambiguous
+3424,1,13,14,24,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 3424,1,13,33,39,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 3425,1,13,65,71,Dâmaso,PER,spacy,damaso_salcede,Dâmaso Salcede,alias
 3426,0,13,2,8,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 3426,0,13,82,87,Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
-3426,0,13,107,117,Gouvarinho,PER,spacy,,,ambiguous
+3426,0,13,107,117,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 3427,0,13,0,5,Vinha,LOC,spacy,,,unresolved
 3427,0,13,55,58,Ega,PER,spacy,joao_ega,João da Ega,alias
 3427,0,13,98,103,Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
@@ -9205,7 +9205,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4131,0,15,0,5,Maria,PER,spacy,maria_eduarda,Maria Eduarda,context_rule
 4131,1,15,49,55,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4133,1,15,30,33,Ega,LOC,spacy,joao_ega,João da Ega,alias
-4133,2,15,114,124,Gouvarinho,PER,spacy,,,ambiguous
+4133,2,15,114,124,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4133,11,15,606,622,Vossa Excelência,PER,spacy,,,unresolved
 4134,0,15,0,6,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4134,0,15,77,84,Madeira,LOC,spacy,,,unresolved
@@ -9743,7 +9743,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4284,3,15,244,253,cher Maia,PER,spacy,,,unresolved
 4284,3,15,291,297,Afonso,PER,spacy,afonso_maia,Afonso da Maia,alias
 4284,3,15,303,315,Santa Olávia,LOC,spacy,,,unresolved
-4284,4,15,317,327,Gouvarinho,PER,spacy,,,ambiguous
+4284,4,15,317,327,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4284,4,15,338,341,Ega,PER,spacy,joao_ega,João da Ega,alias
 4284,4,15,419,424,Verão,MISC,spacy,,,unresolved
 4284,4,15,429,435,Sintra,LOC,spacy,,,unresolved
@@ -9754,7 +9754,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4284,7,15,720,726,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4284,7,15,778,790,Santa Isabel,LOC,spacy,,,unresolved
 4284,8,15,802,808,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-4284,8,15,842,852,Gouvarinho,PER,spacy,,,ambiguous
+4284,8,15,842,852,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4284,8,15,856,872,Rua de S. Marçal,LOC,spacy,,,unresolved
 4285,1,15,2,7,Tenho,LOC,spacy,,,unresolved
 4285,1,15,53,59,Sintra,LOC,spacy,,,unresolved
@@ -9813,7 +9813,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4299,3,15,273,279,Centro,LOC,spacy,,,unresolved
 4299,5,15,408,431,Revista dos Dois Mundos,MISC,spacy,,,unresolved
 4300,0,15,15,21,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-4301,1,15,16,26,Gouvarinho,PER,spacy,,,ambiguous
+4301,1,15,16,26,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4303,1,15,46,57,Steinbroken,ORG,spacy,steinbroken,Steinbroken,alias
 4303,1,15,239,248,Finlândia,LOC,spacy,,,unresolved
 4303,2,15,250,253,Ega,PER,spacy,joao_ega,João da Ega,alias
@@ -9826,7 +9826,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4308,2,15,23,26,Ega,PER,spacy,joao_ega,João da Ega,alias
 4308,8,15,577,583,Europa,LOC,spacy,,,unresolved
 4309,1,15,77,83,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
-4310,0,15,27,37,Gouvarinho,PER,spacy,,,ambiguous
+4310,0,15,27,37,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4310,1,15,73,85,Estrangeiros,ORG,spacy,,,unresolved
 4311,4,15,340,352,Estrangeiros,ORG,spacy,,,unresolved
 4312,3,15,85,91,Europa,LOC,spacy,,,unresolved
@@ -9837,7 +9837,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4314,1,15,2,17,Certainement...,MISC,spacy,,,unresolved
 4314,4,15,38,43,C'est,MISC,spacy,,,unresolved
 4315,0,15,0,3,Ega,PER,spacy,joao_ega,João da Ega,alias
-4315,0,15,30,40,Gouvarinho,PER,spacy,,,ambiguous
+4315,0,15,30,40,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4315,0,15,78,84,África,LOC,spacy,,,unresolved
 4315,0,15,107,124,Marinha iniciador,ORG,spacy,,,unresolved
 4316,0,15,15,28,conde reluzia,PER,spacy,,,unresolved
@@ -9847,7 +9847,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4318,0,15,40,46,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4318,0,15,53,63,Sr. Cruges,PER,spacy,cruges,Cruges,alias
 4319,1,15,2,16,Extraordinário,MISC,spacy,,,unresolved
-4319,1,15,23,34,Gouvarinho!,PER,spacy,,,ambiguous
+4319,1,15,23,34,Gouvarinho!,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4319,2,15,45,48,Ega,PER,spacy,joao_ega,João da Ega,alias
 4320,0,15,20,26,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4321,0,15,10,16,Cruges,ORG,spacy,cruges,Cruges,alias
@@ -9867,7 +9867,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4328,0,15,2,10,Ó Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4330,0,15,36,42,Grémio,ORG,spacy,,,unresolved
 4330,1,15,98,111,Teles da Gama,LOC,spacy,teles_gama,Teles da Gama,alias
-4331,1,15,2,15,O Gouvarinho?,MISC,spacy,,,ambiguous
+4331,1,15,2,15,O Gouvarinho?,MISC,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4333,2,15,34,42,Sá Nunes,PER,spacy,,,unresolved
 4334,1,15,31,37,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4334,1,15,40,43,Ega,PER,spacy,joao_ega,João da Ega,alias
@@ -10166,7 +10166,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4455,0,15,86,92,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 4455,1,15,172,177,Craft,MISC,spacy,craft,Craft,alias
 4455,1,15,194,199,Teles,LOC,spacy,,,unresolved
-4455,1,15,204,214,Gouvarinho,PER,spacy,,,ambiguous
+4455,1,15,204,214,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4455,1,15,228,233,Cohen,PER,spacy,jacob_cohen,Jacob Cohen,context_rule
 4455,2,15,235,240,Podia,ORG,spacy,,,unresolved
 4455,2,15,268,275,Taveira,LOC,spacy,taveira,Taveira,alias
@@ -10408,7 +10408,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4527,1,15,2,13,Vai depois!,MISC,spacy,,,unresolved
 4527,2,15,25,30,Neves,LOC,spacy,neves,Neves,alias
 4528,0,15,47,66,conde de Gouvarinho,PER,spacy,conde_gouvarinho,Conde de Gouvarinho,alias
-4528,0,15,147,157,Gouvarinho,PER,spacy,,,ambiguous
+4528,0,15,147,157,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4529,0,15,0,3,Ega,PER,spacy,joao_ega,João da Ega,alias
 4529,0,15,99,104,Neves,LOC,spacy,neves,Neves,alias
 4529,1,15,153,159,Lisboa,LOC,spacy,,,unresolved
@@ -10429,16 +10429,16 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4533,0,15,38,43,Neves,LOC,spacy,neves,Neves,alias
 4533,1,15,80,96,Câmara dos Pares,LOC,spacy,,,unresolved
 4533,2,15,140,154,Torres Valente,LOC,spacy,,,unresolved
-4533,3,15,247,257,Gouvarinho,PER,spacy,,,ambiguous
+4533,3,15,247,257,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4533,4,15,286,300,Sr. Presidente,PER,spacy,,,unresolved
 4533,5,15,324,332,Portugal,LOC,spacy,,,unresolved
 4533,5,15,479,488,trapézio!,MISC,spacy,,,unresolved
 4535,1,15,29,37,conde de,PER,spacy,,,unresolved
-4535,1,15,38,48,Gouvarinho,PER,spacy,,,ambiguous
+4535,1,15,38,48,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4536,1,15,152,157,Neves,LOC,spacy,neves,Neves,alias
 4537,1,15,2,8,Carola,PER,spacy,,,unresolved
 4537,4,15,56,74,Gouvarinho carola!,PER,spacy,,,unresolved
-4537,7,15,289,299,Gouvarinho,PER,spacy,,,ambiguous
+4537,7,15,289,299,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4537,7,15,337,342,Renan,PER,spacy,,,unresolved
 4537,10,15,447,450,Ega,PER,spacy,joao_ega,João da Ega,alias
 4538,0,15,0,3,Ega,PER,spacy,joao_ega,João da Ega,alias
@@ -10504,7 +10504,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4570,3,15,182,191,Progresso,ORG,spacy,,,unresolved
 4570,5,15,239,250,A Liberdade,MISC,spacy,,,unresolved
 4570,5,15,276,285,Progresso,ORG,spacy,,,unresolved
-4570,7,15,338,348,Gouvarinho,PER,spacy,,,ambiguous
+4570,7,15,338,348,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4570,9,15,397,403,Câmara,LOC,spacy,,,unresolved
 4570,9,15,436,444,Tondela?,MISC,spacy,,,unresolved
 4570,14,15,524,532,S. Bento,PER,spacy,,,unresolved
@@ -10577,7 +10577,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4595,1,15,81,87,Chiado,LOC,spacy,,,unresolved
 4595,1,15,92,105,Casa Havanesa,LOC,spacy,,,unresolved
 4595,2,15,109,119,Ministério,LOC,spacy,,,unresolved
-4595,3,15,146,156,Gouvarinho,PER,spacy,,,ambiguous
+4595,3,15,146,156,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4595,3,15,168,175,Marinha,ORG,spacy,,,unresolved
 4595,3,15,178,183,Neves,LOC,spacy,neves,Neves,alias
 4595,3,15,187,205,Tribunal de Contas,LOC,spacy,,,unresolved
@@ -10988,7 +10988,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 4765,0,16,11,18,Alencar,PER,spacy,tomas_alencar,Tomás de Alencar,alias
 4766,1,16,82,90,in-fólio,PER,spacy,,,unresolved
 4769,0,16,54,57,Ega,LOC,spacy,joao_ega,João da Ega,alias
-4769,3,16,291,301,Gouvarinho,PER,spacy,,,ambiguous
+4769,3,16,291,301,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 4769,4,16,519,535,Suas Excelências,MISC,spacy,,,unresolved
 4769,5,16,570,587,D. Maria da Cunha,PER,spacy,maria_cunha,D. Maria da Cunha,alias
 4769,5,16,610,618,Pedrosos,LOC,spacy,,,unresolved
@@ -12223,7 +12223,7 @@ paragraph_id,sent_id,chapter,start_char,end_char,mention,label,source,character_
 5255,5,17,682,688,Carlos,PER,spacy,carlos_maia,Carlos da Maia,alias
 5255,5,17,732,737,Craft,PER,spacy,craft,Craft,alias
 5255,6,17,739,744,Vinha,LOC,spacy,,,unresolved
-5255,6,17,810,820,Gouvarinho,PER,spacy,,,ambiguous
+5255,6,17,810,820,Gouvarinho,PER,spacy,condessa_gouvarinho,Condessa de Gouvarinho,context_rule
 5256,1,17,2,13,Diverte-te!,MISC,spacy,,,unresolved
 5258,0,17,23,28,ceia!,MISC,spacy,,,unresolved
 5258,1,17,40,47,Taveira,LOC,spacy,taveira,Taveira,alias

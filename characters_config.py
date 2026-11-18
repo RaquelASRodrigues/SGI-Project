@@ -132,9 +132,9 @@ CONTEXT_RULES = {
     # Gouvarinho: conde ou condessa (da memória; confirma)
     "gouvarinho": {
         "type": "prev_word",
-        "map": {"o": "Conde de Gouvarinho", "conde": "Conde de Gouvarinho", "do": "Conde de Gouvarinho", "conde de Gouvarinho": "Conde de Gouvarinho",
-                "a": "Condessa de Gouvarinho", "condessa": "Condessa de Gouvarinho", "da": "Condessa de Gouvarinho", "boa": "Condessa de Gouvarinho", "condessa de Gouvarinho": "Condessa de Gouvarinho", "na Gouvarinho": "Condessa de Gouvarinho"},
-        "default": None,
+        "map": {"o": "Conde de Gouvarinho", "conde": "Conde de Gouvarinho", "do": "Conde de Gouvarinho", "conde de": "Conde de Gouvarinho",
+                "a": "Condessa de Gouvarinho", "condessa": "Condessa de Gouvarinho", "da": "Condessa de Gouvarinho", "boa": "Condessa de Gouvarinho", "condessa de": "Condessa de Gouvarinho", "na": "Condessa de Gouvarinho"},
+        "default": "Condessa de Gouvarinho",
     },
     # Cohen: Jacob ou Raquel (da memória; confirma)
     "cohen": {
