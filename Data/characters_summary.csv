@@ -1,61 +1,79 @@
-character,n_mentions,n_paragraphs,first_chapter,last_chapter,n_chapters
-Carlos da Maia,1814,1518,1,18,18
-João da Ega,1123,950,4,18,15
-Dâmaso Salcede,420,332,5,18,14
-Afonso da Maia,320,286,1,18,17
-Guilherme Craft,239,202,4,18,13
-Tomás de Alencar,204,174,1,18,13
-Cruges,177,154,4,18,15
-Vilaça Júnior,161,143,1,18,13
-Vilaça (pai),136,122,1,3,3
-Pedro da Maia,135,122,1,18,12
-Maria Eduarda,115,107,11,18,8
-Jacob Cohen,98,84,4,15,9
-Sr. Guimarães,94,85,6,18,8
-Castro Gomes,90,68,6,16,10
-Rosa,86,76,9,18,10
-Taveira,83,75,1,18,15
-Eusébiozinho,83,73,3,18,13
-Maria Monforte,75,62,1,17,6
-Steinbroken,62,55,4,18,12
-Domingos,45,38,7,17,7
-Miss Sara,43,38,9,17,8
-Raquel Cohen,42,37,5,18,11
-Melanie,41,36,9,17,6
-Manuel Monforte,37,33,1,17,5
-Mac Gren,36,25,14,17,4
-Coronel Sequeira,34,32,1,18,10
-Conde de Gouvarinho,32,31,5,18,11
-Rufino,30,26,15,17,3
-Condessa de Gouvarinho,26,23,5,18,12
-Teixeira,25,23,1,4,4
-Sousa Neto,24,22,12,16,3
-Teles da Gama,23,20,9,18,8
-Mr. Brown,21,19,3,5,2
-D. Maria da Cunha,20,18,9,18,6
-Reverendo Bonifácio,18,14,1,18,9
-Gertrudes,10,10,2,4,3
-Abade Custódio,9,9,3,3,1
-Palma Cavalão,7,6,15,18,2
-D. Eugénia Silveira,7,7,3,4,2
-Dr. Guedes,6,4,2,15,2
-Tancredo,6,5,2,3,2
-Melo,6,5,1,8,2
-Padre Vasques,6,6,1,1,1
-D. Ana Silveira,5,5,3,4,2
-D. Maria Eduarda Runa,5,5,1,1,1
-Teresinha,5,5,3,4,2
-Tia Fanny,4,4,1,1,1
-Marquês de Souselas,4,4,4,5,2
-D. João da Cunha,4,4,2,17,2
-Esteves,3,2,1,1,1
-Conde de Runa,3,3,1,1,1
-André da Ega,2,2,2,4,2
-Sebastião da Maia,2,2,1,17,2
-D. Maria da Gama,2,2,1,2,2
-Caetano da Maia,2,2,1,1,1
-Cazoti,1,1,2,2,1
-D. João Coutinho,1,1,2,2,1
-Luís Runa,1,1,1,1,1
-Tobias,1,1,1,1,1
-Soveral,0,0,0,0,0
+character_id,character,n_mentions,n_paragraphs,first_chapter,last_chapter,n_chapters
+carlos_maia,Carlos da Maia,1814,1518,1,18,18
+joao_ega,João da Ega,1138,962,4,18,15
+damaso_salcede,Dâmaso Salcede,419,332,5,18,14
+afonso_maia,Afonso da Maia,320,286,1,18,17
+craft,Craft,239,202,4,18,13
+tomas_alencar,Tomás de Alencar,204,174,1,18,13
+cruges,Cruges,173,150,4,18,14
+vilaca_junior,Vilaça Júnior,161,143,1,18,13
+vilaca_pai,Vilaça,136,122,1,3,3
+pedro_maia,Pedro da Maia,135,122,1,18,12
+maria_eduarda,Maria Eduarda,119,110,10,18,9
+jacob_cohen,Jacob Cohen,94,81,4,15,9
+joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,94,70,6,16,10
+guimaraes,Guimarães,94,85,6,18,8
+baptista,Baptista,87,83,4,17,9
+rosa,Rosa,86,76,9,18,10
+taveira,Taveira,83,75,1,18,15
+eusebiozinho_silveira,Eusebiozinho Silveira,83,73,3,18,13
+maria_monforte,Maria Monforte,75,62,1,17,6
+steinbroken,Steinbroken,62,55,4,18,12
+raquel_cohen,Raquel Cohen,46,39,5,18,11
+domingos,Domingos,45,38,7,17,7
+miss_sara,Miss Sara,43,38,9,17,8
+niniche,Niniche,41,33,11,17,5
+melanie,Melanie,41,36,9,17,6
+manuel_monforte,Manuel Monforte,37,33,1,17,5
+mac_gren,Mac Gren,36,25,14,17,4
+sequeira,Sequeira,34,32,1,18,10
+conde_gouvarinho,Conde de Gouvarinho,32,31,5,18,11
+rufino,Rufino,30,26,15,17,3
+darque,Darque,27,23,10,18,5
+condessa_gouvarinho,Condessa de Gouvarinho,26,23,5,18,12
+teixeira,Teixeira,25,23,1,4,4
+neves,Neves,25,20,15,17,3
+sousa_neto,Sousa Neto,24,22,12,16,3
+teles_gama,Teles da Gama,23,20,9,18,8
+vladimiro,Vladimiro,22,17,10,10,1
+brown,Brown,21,19,3,5,2
+maria_cunha,D. Maria da Cunha,20,18,9,18,6
+reverendo_bonifacio,Reverendo Bonifácio,18,14,1,18,9
+lola,Lola,12,11,6,17,5
+gertrudes,Gertrudes,10,10,2,4,3
+abade_custodio,abade Custódio,9,9,3,3,1
+encarnacion,Encarnación,8,4,4,8,2
+eugenia_silveira,D. Eugénia Silveira,7,7,3,4,2
+palma_cavalao,Palma Cavalão,7,6,15,18,2
+joaninha_vilar,Joaninha Vilar,7,7,10,16,2
+mulato,Mulato,6,6,14,15,2
+melo,Melo,6,5,1,8,2
+tancredo,Tancredo,6,5,2,3,2
+damaso_guedes,Dâmaso Guedes,6,4,2,15,2
+vitor,Vítor,6,6,14,15,2
+padre_vasques,Padre Vasques,6,6,1,1,1
+maria_eduarda_runa,Maria Eduarda Runa,5,5,1,1,1
+ana_silveira,D. Ana Silveira,5,5,3,4,2
+teresinha_silveira,Teresinha Silveira,5,5,3,4,2
+joao_cunha,D. João da Cunha,4,4,2,17,2
+tia_fanny,Tia Fanny,4,4,1,1,1
+mae_cruges,Mãe Cruges,4,4,11,16,4
+marques_souselas,Marquês de Souselas,4,4,4,5,2
+esteves,Esteves,3,2,1,1,1
+viscondessa_alvim,Viscondessa de Alvim,3,3,10,10,1
+conde_runa,Conde de Runa,3,3,1,1,1
+baronesa_craben,Baronesa de Craben,3,3,10,16,2
+caetano_maia,Caetano da Maia,2,2,1,1,1
+diogo_coutinho,D. Diogo Coutinho,2,2,2,4,2
+sebastiao_maia,Sebastião da Maia,2,2,1,17,2
+marcelina,Marcelina,2,2,5,5,1
+jones_bule,Jones Bule,2,2,1,1,1
+maria_gama,D. Maria da Gama,2,2,1,2,2
+andre_ega,André da Ega,2,2,2,4,2
+joao_coutinho,D. João Coutinho,1,1,2,2,1
+viscondessa_gafanha,Viscondessa da Gafanha,1,1,7,7,1
+joana_coutinho,D. Joana Coutinho,1,1,6,6,1
+mr_theodore,Mr. Théodore,1,1,4,4,1
+luis_runa,Luís Runa,1,1,1,1,1
+condessa_runa,Condessa de Runa,1,1,14,14,1
+cazoti,Cazoti,1,1,2,2,1

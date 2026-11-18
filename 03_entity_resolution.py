@@ -23,6 +23,7 @@ Uso:
 """
 import argparse
 import bisect
+import difflib
 import re
 import unicodedata
 from collections import defaultdict
@@ -77,6 +78,32 @@ def load_characters(nodes_path):
     return characters
 
 
+def canonicalize_character_name(name, characters):
+    """
+    Match a configured character name to the exact canonical name in the
+    ground-truth nodes CSV. Matching ignores case and accents, but not
+    substantive spelling differences.
+    """
+    if name is None:
+        return None
+
+    # Build a normalized lookup from the canonical names in the nodes file.
+    normalized_names = {norm_text(canonical): canonical for canonical in characters}
+    key = norm_text(name)
+
+    if key in normalized_names:
+        return normalized_names[key]
+
+    suggestions = difflib.get_close_matches(
+        str(name), list(characters.keys()), n=5, cutoff=0.45
+    )
+    raise ValueError(
+        f"Context rule refers to '{name}', but this name is not present in "
+        f"os_maias_ground_truth_nodes.csv. Use the exact canonical name from "
+        f"the CSV. Possible matches: {suggestions or 'none'}"
+    )
+
+
 def build_lookup(characters):
     """Build normalized and exact-form lookups, excluding context-dependent forms."""
     lookup, raw_forms = {}, {}
@@ -118,6 +145,8 @@ def apply_context_rule(rule, chapter, text, start):
         return rule["before"] if chapter <= rule["upto"] else rule["after"]
     if rule["type"] == "prev_word":
         return rule["map"].get(prev_word(text, start), rule.get("default"))
+    if rule["type"] == "multiple":
+        return rule["characters"]
     raise ValueError(f"Unknown context rule type: {rule['type']}")
 
 
@@ -221,6 +250,32 @@ def main():
         return max(0, bisect.bisect_right(starts, position) - 1)
 
     characters = load_characters(data_dir / "os_maias_ground_truth_nodes.csv")
+
+    # Validate and canonicalize every target in CONTEXT_RULES before processing
+    # any mentions. This prevents a late KeyError during row creation.
+    for rule_key, rule in cfg.CONTEXT_RULES.items():
+        if rule["type"] == "multiple":
+            rule["characters"] = [
+                canonicalize_character_name(name, characters)
+                for name in rule["characters"]
+            ]
+        elif rule["type"] == "chapter":
+            rule["before"] = canonicalize_character_name(
+                rule.get("before"), characters
+            )
+            rule["after"] = canonicalize_character_name(
+                rule.get("after"), characters
+            )
+        elif rule["type"] == "prev_word":
+            rule["map"] = {
+                previous_word: canonicalize_character_name(name, characters)
+                for previous_word, name in rule["map"].items()
+            }
+            if rule.get("default") is not None:
+                rule["default"] = canonicalize_character_name(
+                    rule["default"], characters
+                )
+
     lookup, raw_forms = build_lookup(characters)
     dictionary_regex = build_dict_regex(raw_forms)
     print(
@@ -260,21 +315,40 @@ def main():
     rows = []
     for pid, candidates in candidates_by_pid.items():
         for candidate in select_non_overlapping(candidates):
-            name = candidate["character"]
-            character_id = characters[name]["id"] if name is not None else None
-            rows.append({
-                "paragraph_id": pid,
-                "sent_id": sentence_for(pid, candidate["start"]),
-                "chapter": chapter_by_pid[pid],
-                "start_char": candidate["start"],
-                "end_char": candidate["end"],
-                "mention": candidate["mention"],
-                "label": candidate["label"],
-                "source": candidate["source"],
-                "character_id": character_id,
-                "character": name,
-                "method": candidate["method"],
-            })
+            resolved_value = candidate["character"]
+
+            # A collective mention may resolve to multiple canonical characters.
+            resolved_names = (
+                resolved_value if isinstance(resolved_value, list)
+                else [resolved_value]
+            )
+
+            # Avoid duplicate rows if a config accidentally repeats a target.
+            resolved_names = list(dict.fromkeys(resolved_names))
+
+            for configured_name in resolved_names:
+                if configured_name is None:
+                    canonical_name = None
+                    character_id = None
+                else:
+                    canonical_name = canonicalize_character_name(
+                        configured_name, characters
+                    )
+                    character_id = characters[canonical_name]["id"]
+
+                rows.append({
+                    "paragraph_id": pid,
+                    "sent_id": sentence_for(pid, candidate["start"]),
+                    "chapter": chapter_by_pid[pid],
+                    "start_char": candidate["start"],
+                    "end_char": candidate["end"],
+                    "mention": candidate["mention"],
+                    "label": candidate["label"],
+                    "source": candidate["source"],
+                    "character_id": character_id,
+                    "character": canonical_name,
+                    "method": candidate["method"],
+                })
 
     output = pd.DataFrame(rows, columns=columns)
     if not output.empty:

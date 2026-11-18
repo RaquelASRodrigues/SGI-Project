@@ -110,7 +110,7 @@ CONTEXT_RULES = {
     # Vilaça pai vs filho
     "vilaca": {
         "type": "chapter", "upto": VILACA_PAI_LAST_CHAPTER,
-        "before": "Vilaça (pai)", "after": "Vilaça Júnior (Manuel Vilaça)",
+        "before": "Vilaça", "after": "Vilaça Júnior",
     },
     # "a Monforte" = Maria; "o Monforte", "papá Monforte", "o velho Monforte" = Manuel
     "monforte": {
@@ -131,8 +131,13 @@ CONTEXT_RULES = {
     # Cohen: Jacob ou Raquel (da memória; confirma)
     "cohen": {
         "type": "prev_word",
-        "map": {"a": "Raquel Cohen", "o": "Jacob Cohen"},
+        "map": {"a": "Raquel Cohen", "o": "Jacob Cohen", "da": "Raquel Cohen", "do": "Jacob Cohen"},
         "default": "Jacob Cohen",
     },
-    # TODO: acrescentar mais regras?
+
+    "castros gomes": {
+    "type": "multiple",
+    "characters": ["Joaquim Álvares de Castro Gomes", "Maria Eduarda"],
+},
+    
 }
