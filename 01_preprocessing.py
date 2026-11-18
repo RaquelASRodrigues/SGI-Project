@@ -1,8 +1,28 @@
+"""
+01_preprocess.py
+----------------
+Reads  Data/Os Maias - Eca de Queiros.pdf  and produces:
+  Data/novel_text.txt     clean extracted novel text (starting from Chapter I)
+  Data/paragraphs.csv     structured paragraph table with chapter, dialogue flag, and word count
+
+What it does, in order:
+  1. Extracts visual text lines and baseline coordinates from each PDF page.
+  2. Removes isolated page numbers and repeated running headers/footers.
+  3. Measures line vs. paragraph vertical spacing across the book to reconstruct paragraphs.
+  4. Strips front matter before Chapter I and splits the text into indexed paragraphs.
+
+Usage:
+  pip install pymupdf pandas tqdm
+  python 01_preprocess.py
+  python 01_preprocess.py --force-pdf
+"""
+import argparse
 import re
 import statistics
 from collections import Counter
 from pathlib import Path
 
+import pandas as pd
 import pymupdf
 from tqdm.auto import tqdm
 
@@ -11,11 +31,11 @@ HEADING = re.compile(r"^CAP[IÍ]TULO\b", re.IGNORECASE)
 DASHES = ("—", "–")
 
 
-# ---------- 1. Ler as linhas de cada página ----------
+# ---------- 1. Read lines from each page ----------
 
 def read_page_lines(page):
-    """Devolve as linhas visuais da página, com a linha de base (y) estável.
-    O travessão que vem noutro fragmento é juntado ao texto da mesma linha."""
+    """Return visual lines of the page using a stable baseline (y).
+    Leading dashes in separate fragments are merged into the same line."""
     data = page.get_text("dict", sort=True)
     frags = []
     for block in data["blocks"]:
@@ -26,7 +46,7 @@ def read_page_lines(page):
             if not spans:
                 continue
             frags.append({
-                "y": spans[0]["origin"][1],          # linha de base, não o topo da caixa
+                "y": spans[0]["origin"][1],          # text baseline, not bounding-box top
                 "x0": line["bbox"][0],
                 "x1": line["bbox"][2],
                 "size": max(s["size"] for s in spans),
@@ -54,10 +74,10 @@ def read_page_lines(page):
     return lines
 
 
-# ---------- 2. Limpar números de página e cabeçalhos ----------
+# ---------- 2. Clean page numbers and running headers ----------
 
 def drop_page_number(lines):
-    """Só remove números isolados na primeira ou na última linha da página."""
+    """Remove standalone numbers on the first or last line of a page."""
     if lines and re.fullmatch(r"\d{1,4}", lines[-1]["text"]):
         lines = lines[:-1]
     if lines and re.fullmatch(r"\d{1,4}", lines[0]["text"]):
@@ -66,14 +86,14 @@ def drop_page_number(lines):
 
 
 def drop_running_headers(pages, min_share=0.3):
-    """Remove cabeçalhos/rodapés que se repetem no topo ou fundo de muitas páginas."""
+    """Remove headers/footers that repeat at the top or bottom of many pages."""
     n = len(pages)
     firsts = Counter(p[0]["text"] for p in pages if p)
     lasts = Counter(p[-1]["text"] for p in pages if p)
     bad = {t for t, c in (firsts + lasts).items()
            if c >= max(3, min_share * n) and len(t) <= 60 and not HEADING.match(t)}
     if bad:
-        print("Cabeçalhos/rodapés removidos:", bad)
+        print("Removed headers/footers:", bad)
     cleaned = []
     for p in pages:
         if p and p[0]["text"] in bad:
@@ -85,7 +105,7 @@ def drop_running_headers(pages, min_share=0.3):
     return cleaned
 
 
-# ---------- 3. Medir o espaçamento do livro inteiro ----------
+# ---------- 3. Measure spacing across the entire book ----------
 
 def layout_stats(pages):
     gaps = []
@@ -94,16 +114,16 @@ def layout_stats(pages):
             g = b["y"] - a["y"]
             if g > 5:
                 gaps.append(g)
-    line_gap = statistics.median(gaps)                       # espaçamento normal
+    line_gap = statistics.median(gaps)                       # standard line spacing
     bigger = [round(g) for g in gaps if 1.15 * line_gap < g < 2.5 * line_gap]
     para_gap = Counter(bigger).most_common(1)[0][0] if bigger else 1.3 * line_gap
-    threshold = (line_gap + para_gap) / 2                    # ponto médio
+    threshold = (line_gap + para_gap) / 2                    # midpoint threshold
     rights = sorted(l["x1"] for p in pages for l in p)
-    right = rights[int(0.9 * len(rights))]                   # margem direita
+    right = rights[int(0.9 * len(rights))]                   # right margin estimate
     return line_gap, para_gap, threshold, right
 
 
-# ---------- 4. Decidir onde começa um parágrafo ----------
+# ---------- 4. Decide where a new paragraph starts ----------
 
 def starts_new_paragraph(prev, cur, threshold, right):
     em = cur["size"]
@@ -111,7 +131,7 @@ def starts_new_paragraph(prev, cur, threshold, right):
     ended = prev["text"].rstrip().endswith(TERMINAL)
     heading = bool(HEADING.match(prev["text"]) or HEADING.match(cur["text"]))
 
-    if gap < 0:   # mudança de página: não há sinal de espaço, usa-se a forma da linha
+    if gap < 0:   # page break: no vertical gap signal, rely on line geometry
         dialogue = cur["text"].startswith(DASHES) and ended
         short_end = ended and prev["x1"] < right - 3 * em
         return heading or dialogue or short_end
@@ -120,12 +140,12 @@ def starts_new_paragraph(prev, cur, threshold, right):
 
 
 def join_lines(a, b):
-    if a.endswith("-") and b[:1].islower():        # "arquiteto-" + "decorador"
+    if a.endswith("-") and b[:1].islower():        # de-hyphenate line wraps ("arquiteto-" + "decorador")
         return a + b
     return a + " " + b
 
 
-# ---------- 5. Extrair o PDF ----------
+# ---------- 5. Extract text from PDF ----------
 
 def extract_pdf_text(pdf_path):
     pdf_path = Path(pdf_path)
@@ -152,7 +172,7 @@ def extract_pdf_text(pdf_path):
     return "\n\n".join(re.sub(r"[ \t]+", " ", p).strip() for p in paragraphs)
 
 
-# ---------- 6. Limpeza final ----------
+# ---------- 6. Final cleanup and paragraph table ----------
 
 def normalize_extracted_text(text):
     text = text.replace("\r\n", "\n").replace("\r", "\n")
@@ -162,7 +182,7 @@ def normalize_extracted_text(text):
 
 
 def extract_novel(text):
-    """Mantém o texto a partir do Capítulo I."""
+    """Keep text starting from Chapter I."""
     m = re.search(r"\bCAP[IÍ]TULO\s+I\b", text, flags=re.IGNORECASE)
     if m is None:
         raise ValueError("Chapter I was not found. Check the extracted PDF text.")
@@ -170,8 +190,7 @@ def extract_novel(text):
 
 
 def clean_extracted_text(text, min_repeats=5, max_len=60):
-    """Remove parágrafos curtos, em maiúsculas, que se repetem muitas vezes
-    (cabeçalhos que tenham escapado). Mostra o que removeu."""
+    """Remove short, uppercase paragraphs repeated many times (stray headers)."""
     paras = text.split("\n\n")
     counts = Counter(p.strip() for p in paras)
     remove = {p for p, c in counts.items()
@@ -180,7 +199,7 @@ def clean_extracted_text(text, min_repeats=5, max_len=60):
               and not HEADING.match(p)
               and p == p.upper()}
     if remove:
-        print("Removidos:", remove)
+        print("Removed:", remove)
     return "\n\n".join(p for p in paras if p.strip() not in remove)
 
 
@@ -199,3 +218,56 @@ def preprocess_novel(pdf_path, output_path):
     print("Novel words:", len(novel_text.split()))
     print("Saved to:", output_path)
     return novel_text
+
+
+def build_paragraph_table(text):
+    rows, chapter, para_in_ch = [], 0, 0
+    for p in text.split("\n\n"):
+        p = p.strip()
+        if not p:
+            continue
+        if re.match(r"^CAP[IÍ]TULO\b", p, re.IGNORECASE):
+            chapter += 1
+            para_in_ch = 0
+            continue
+        para_in_ch += 1
+        rows.append({
+            "paragraph_id": len(rows),
+            "chapter": chapter,
+            "para_in_chapter": para_in_ch,
+            "is_dialogue": p.startswith(DASHES),
+            "n_words": len(p.split()),
+            "text": p,
+        })
+    return pd.DataFrame(rows)
+
+
+# ---------- 7. Main ----------
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data-dir", default="Data")
+    ap.add_argument("--pdf", default="Os Maias - Eca de Queiros.pdf")
+    ap.add_argument("--force-pdf", action="store_true",
+                    help="Re-extract the PDF even if novel_text.txt already exists")
+    args = ap.parse_args()
+
+    data_dir = Path(args.data_dir)
+    pdf_path = data_dir / args.pdf
+    novel_text_path = data_dir / "novel_text.txt"
+
+    if args.force_pdf or not novel_text_path.exists():
+        novel_text = preprocess_novel(pdf_path, novel_text_path)
+    else:
+        novel_text = novel_text_path.read_text(encoding="utf-8")
+
+    cleaned_text = clean_extracted_text(novel_text)
+    df = build_paragraph_table(cleaned_text)
+    out_csv = data_dir / "paragraphs.csv"
+    df.to_csv(out_csv, index=False, encoding="utf-8")
+
+    print(f"Saved {len(df)} paragraphs ({df['chapter'].nunique()} chapters) to {out_csv}")
+
+
+if __name__ == "__main__":
+    main()
