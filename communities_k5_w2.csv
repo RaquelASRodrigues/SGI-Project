@@ -1,0 +1,68 @@
+community_id,community_size,character_id,character,is_overlap
+1,52,andre_ega, André da Ega,False
+1,52,afonso_maia,Afonso da Maia,True
+1,52,azevedo,Azevedo,False
+1,52,baptista,Baptista,False
+1,52,carlos_maia,Carlos da Maia,True
+1,52,charlie,Charlie,False
+1,52,clifford,Clifford,False
+1,52,conde_gouvarinho,Conde de Gouvarinho,False
+1,52,condessa_gouvarinho,Condessa de Gouvarinho,False
+1,52,craft,Craft,False
+1,52,cruges,Cruges,False
+1,52,ana_silveira,D. Ana Silveira,True
+1,52,diogo_coutinho,D. Diogo Coutinho,False
+1,52,maria_cunha,D. Maria da Cunha,False
+1,52,darque,Darque,False
+1,52,domingos,Domingos,False
+1,52,damaso_salcede,Dâmaso Salcede,False
+1,52,eusebiozinho_silveira,Eusebiozinho Silveira,True
+1,52,gonçalo,Gonçalo,False
+1,52,guimaraes,Guimarães,False
+1,52,jacob_cohen,Jacob Cohen,False
+1,52,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,False
+1,52,joao_ega,João da Ega,False
+1,52,lola,Lola,False
+1,52,mac_gren,Mac Gren,False
+1,52,manuel_monforte,Manuel Monforte,False
+1,52,maria_eduarda,Maria Eduarda,False
+1,52,maria_monforte,Maria Monforte,False
+1,52,marques_souselas,Marquês de Souselas,False
+1,52,melanie,Melanie,False
+1,52,mendonça,Mendonça,False
+1,52,miss_sara,Miss Sara,False
+1,52,mulato,Mulato,False
+1,52,neves,Neves,False
+1,52,niniche,Niniche,False
+1,52,palma_cavalao,Palma Cavalão,False
+1,52,pedro_maia,Pedro da Maia,True
+1,52,raquel_cohen,Raquel Cohen,False
+1,52,reverendo_bonifacio,Reverendo Bonifácio,False
+1,52,rosa,Rosa,False
+1,52,rufino,Rufino,False
+1,52,sequeira,Sequeira,False
+1,52,sousa_neto,Sousa Neto,False
+1,52,steinbroken,Steinbroken,False
+1,52,taveira,Taveira,False
+1,52,teixeira,Teixeira,False
+1,52,teles_gama,Teles da Gama,False
+1,52,tomas_alencar,Tomás de Alencar,False
+1,52,vargas,Vargas,False
+1,52,vilaca_pai,Vilaça,True
+1,52,vilaca_junior,Vilaça Júnior,False
+1,52,vladimiro,Vladimiro,False
+2,5,abade_custodio,abade Custódio,False
+2,5,afonso_maia,Afonso da Maia,True
+2,5,brown,Brown,False
+2,5,carlos_maia,Carlos da Maia,True
+2,5,vilaca_pai,Vilaça,True
+3,5,conde_runa, Conde de Runa,False
+3,5,afonso_maia,Afonso da Maia,True
+3,5,maria_eduarda_runa,Maria Eduarda Runa,False
+3,5,padre_vasques,Padre Vasques,False
+3,5,pedro_maia,Pedro da Maia,True
+4,5,carlos_maia,Carlos da Maia,True
+4,5,ana_silveira,D. Ana Silveira,True
+4,5,eugenia_silveira,D. Eugénia Silveira,False
+4,5,eusebiozinho_silveira,Eusebiozinho Silveira,True
+4,5,teresinha_silveira,Teresinha Silveira,False
