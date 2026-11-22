@@ -1,0 +1,299 @@
+community,link source,link target,weight
+1,Domingos,Melanie,7.0
+1,Domingos,Miss Sara,5.0
+1,Domingos,Niniche,4.0
+1,Domingos,Rosa,6.0
+1,Joaquim Álvares de Castro Gomes,Melanie,3.0
+1,Joaquim Álvares de Castro Gomes,Niniche,3.0
+1,Joaquim Álvares de Castro Gomes,Rosa,3.0
+1,Melanie,Miss Sara,12.0
+1,Melanie,Niniche,3.0
+1,Melanie,Rosa,3.0
+1,Miss Sara,Niniche,3.0
+1,Miss Sara,Rosa,15.0
+1,Niniche,Rosa,11.0
+2,Guimarães,Manuel Monforte,10.0
+2,Guimarães,Maria Monforte,7.0
+2,Guimarães,Pedro da Maia,5.0
+2,Manuel Monforte,Maria Monforte,17.0
+2,Manuel Monforte,Pedro da Maia,8.0
+2,Maria Monforte,Pedro da Maia,49.0
+3,Gonçalo,Neves,4.0
+3,Gonçalo,Sousa Neto,4.0
+3,Neves,Sousa Neto,3.0
+4,Conde de Gouvarinho,Darque,5.0
+4,Craft,Darque,11.0
+4,Darque,Sequeira,3.0
+4,Darque,Taveira,4.0
+5,Carlos da Maia,Darque,16.0
+5,Carlos da Maia,Teles da Gama,9.0
+5,Darque,João da Ega,3.0
+5,João da Ega,Teles da Gama,3.0
+6,Cruges,Lola,4.0
+6,Cruges,Palma Cavalão,5.0
+6,Eusebiozinho Silveira,Lola,4.0
+6,Eusebiozinho Silveira,Palma Cavalão,18.0
+6,Jacob Cohen,Lola,3.0
+6,Lola,Taveira,5.0
+7,Carlos da Maia,Lola,12.0
+7,Carlos da Maia,Palma Cavalão,21.0
+7,Dâmaso Salcede,Lola,3.0
+7,Dâmaso Salcede,Palma Cavalão,10.0
+7,João da Ega,Palma Cavalão,10.0
+8,Carlos da Maia,Reverendo Bonifácio,7.0
+8,Dâmaso Salcede,Reverendo Bonifácio,3.0
+8,João da Ega,Reverendo Bonifácio,9.0
+9,Afonso da Maia,Carlos da Maia,99.0
+9,Afonso da Maia,Conde de Gouvarinho,4.0
+9,Afonso da Maia,Craft,27.0
+9,Afonso da Maia,Cruges,6.0
+9,Afonso da Maia,Dâmaso Salcede,20.0
+9,Afonso da Maia,D. Diogo Coutinho,13.0
+9,Afonso da Maia,Eusebiozinho Silveira,7.0
+9,Afonso da Maia,Jacob Cohen,3.0
+9,Afonso da Maia,João da Ega,73.0
+9,Afonso da Maia,Maria Eduarda,19.0
+9,Afonso da Maia,Sequeira,21.0
+9,Afonso da Maia,Steinbroken,16.0
+9,Afonso da Maia,Taveira,6.0
+9,Afonso da Maia,Tomás de Alencar,4.0
+9,Afonso da Maia,Vilaça Júnior,25.0
+9,Carlos da Maia,Conde de Gouvarinho,32.0
+9,Carlos da Maia,Condessa de Gouvarinho,59.0
+9,Carlos da Maia,Craft,130.0
+9,Carlos da Maia,Cruges,86.0
+9,Carlos da Maia,Dâmaso Salcede,214.0
+9,Carlos da Maia,D. Diogo Coutinho,18.0
+9,Carlos da Maia,Eusebiozinho Silveira,48.0
+9,Carlos da Maia,Jacob Cohen,45.0
+9,Carlos da Maia,João da Ega,515.0
+9,Carlos da Maia,Maria Eduarda,212.0
+9,Carlos da Maia,Raquel Cohen,35.0
+9,Carlos da Maia,Sequeira,19.0
+9,Carlos da Maia,Steinbroken,21.0
+9,Carlos da Maia,Taveira,44.0
+9,Carlos da Maia,Tomás de Alencar,71.0
+9,Carlos da Maia,Vilaça Júnior,64.0
+9,Conde de Gouvarinho,Condessa de Gouvarinho,37.0
+9,Conde de Gouvarinho,Craft,6.0
+9,Conde de Gouvarinho,Cruges,3.0
+9,Conde de Gouvarinho,Dâmaso Salcede,7.0
+9,Conde de Gouvarinho,Jacob Cohen,7.0
+9,Conde de Gouvarinho,João da Ega,29.0
+9,Conde de Gouvarinho,Raquel Cohen,4.0
+9,Conde de Gouvarinho,Sequeira,5.0
+9,Conde de Gouvarinho,Steinbroken,4.0
+9,Conde de Gouvarinho,Taveira,4.0
+9,Conde de Gouvarinho,Tomás de Alencar,6.0
+9,Conde de Gouvarinho,Vilaça Júnior,3.0
+9,Condessa de Gouvarinho,Craft,6.0
+9,Condessa de Gouvarinho,Cruges,3.0
+9,Condessa de Gouvarinho,Dâmaso Salcede,12.0
+9,Condessa de Gouvarinho,Jacob Cohen,8.0
+9,Condessa de Gouvarinho,João da Ega,25.0
+9,Condessa de Gouvarinho,Raquel Cohen,3.0
+9,Condessa de Gouvarinho,Taveira,4.0
+9,Craft,Cruges,11.0
+9,Craft,Dâmaso Salcede,25.0
+9,Craft,D. Diogo Coutinho,6.0
+9,Craft,Eusebiozinho Silveira,4.0
+9,Craft,Jacob Cohen,14.0
+9,Craft,João da Ega,77.0
+9,Craft,Maria Eduarda,17.0
+9,Craft,Raquel Cohen,5.0
+9,Craft,Sequeira,15.0
+9,Craft,Steinbroken,8.0
+9,Craft,Taveira,24.0
+9,Craft,Tomás de Alencar,8.0
+9,Craft,Vilaça Júnior,3.0
+9,Cruges,Dâmaso Salcede,16.0
+9,Cruges,Eusebiozinho Silveira,13.0
+9,Cruges,Jacob Cohen,3.0
+9,Cruges,João da Ega,38.0
+9,Cruges,Maria Eduarda,12.0
+9,Cruges,Raquel Cohen,3.0
+9,Cruges,Sequeira,5.0
+9,Cruges,Steinbroken,13.0
+9,Cruges,Taveira,24.0
+9,Cruges,Tomás de Alencar,16.0
+9,Cruges,Vilaça Júnior,7.0
+9,Dâmaso Salcede,Eusebiozinho Silveira,5.0
+9,Dâmaso Salcede,Jacob Cohen,22.0
+9,Dâmaso Salcede,João da Ega,81.0
+9,Dâmaso Salcede,Maria Eduarda,32.0
+9,Dâmaso Salcede,Raquel Cohen,25.0
+9,Dâmaso Salcede,Taveira,12.0
+9,Dâmaso Salcede,Tomás de Alencar,16.0
+9,D. Diogo Coutinho,João da Ega,12.0
+9,D. Diogo Coutinho,Sequeira,19.0
+9,D. Diogo Coutinho,Steinbroken,10.0
+9,D. Diogo Coutinho,Tomás de Alencar,3.0
+9,D. Diogo Coutinho,Vilaça Júnior,10.0
+9,Eusebiozinho Silveira,João da Ega,8.0
+9,Eusebiozinho Silveira,Sequeira,3.0
+9,Eusebiozinho Silveira,Steinbroken,6.0
+9,Eusebiozinho Silveira,Tomás de Alencar,4.0
+9,Eusebiozinho Silveira,Vilaça Júnior,7.0
+9,Jacob Cohen,João da Ega,79.0
+9,Jacob Cohen,Raquel Cohen,79.0
+9,Jacob Cohen,Taveira,5.0
+9,Jacob Cohen,Tomás de Alencar,14.0
+9,João da Ega,Maria Eduarda,95.0
+9,João da Ega,Raquel Cohen,53.0
+9,João da Ega,Sequeira,13.0
+9,João da Ega,Steinbroken,17.0
+9,João da Ega,Taveira,32.0
+9,João da Ega,Tomás de Alencar,56.0
+9,João da Ega,Vilaça Júnior,70.0
+9,Maria Eduarda,Tomás de Alencar,7.0
+9,Maria Eduarda,Vilaça Júnior,14.0
+9,Raquel Cohen,Taveira,5.0
+9,Raquel Cohen,Tomás de Alencar,9.0
+9,Sequeira,Steinbroken,7.0
+9,Sequeira,Taveira,6.0
+9,Sequeira,Tomás de Alencar,3.0
+9,Sequeira,Vilaça Júnior,8.0
+9,Steinbroken,Taveira,6.0
+9,Steinbroken,Vilaça Júnior,4.0
+9,Taveira,Tomás de Alencar,5.0
+9,Taveira,Vilaça Júnior,6.0
+9,Tomás de Alencar,Vilaça Júnior,6.0
+10,Carlos da Maia,Domingos,21.0
+10,Carlos da Maia,Joaquim Álvares de Castro Gomes,45.0
+10,Carlos da Maia,Mac Gren,10.0
+10,Carlos da Maia,Melanie,15.0
+10,Carlos da Maia,Miss Sara,24.0
+10,Carlos da Maia,Niniche,24.0
+10,Carlos da Maia,Rosa,51.0
+10,Craft,Joaquim Álvares de Castro Gomes,12.0
+10,Dâmaso Salcede,Domingos,4.0
+10,Dâmaso Salcede,Joaquim Álvares de Castro Gomes,32.0
+10,Dâmaso Salcede,Melanie,5.0
+10,Dâmaso Salcede,Miss Sara,3.0
+10,Dâmaso Salcede,Niniche,4.0
+10,Dâmaso Salcede,Rosa,4.0
+10,Domingos,João da Ega,6.0
+10,Domingos,Maria Eduarda,15.0
+10,João da Ega,Joaquim Álvares de Castro Gomes,12.0
+10,João da Ega,Mac Gren,3.0
+10,João da Ega,Miss Sara,4.0
+10,João da Ega,Niniche,3.0
+10,João da Ega,Rosa,5.0
+10,Joaquim Álvares de Castro Gomes,Maria Eduarda,18.0
+10,Joaquim Álvares de Castro Gomes,Taveira,3.0
+10,Mac Gren,Maria Eduarda,9.0
+10,Maria Eduarda,Melanie,8.0
+10,Maria Eduarda,Miss Sara,13.0
+10,Maria Eduarda,Niniche,23.0
+10,Maria Eduarda,Rosa,30.0
+11,Afonso da Maia,Manuel Monforte,12.0
+11,Afonso da Maia,Maria Monforte,17.0
+11,Afonso da Maia,Pedro da Maia,43.0
+11,Carlos da Maia,Guimarães,23.0
+11,Carlos da Maia,Manuel Monforte,11.0
+11,Carlos da Maia,Maria Monforte,20.0
+11,Carlos da Maia,Pedro da Maia,16.0
+11,Dâmaso Salcede,Guimarães,17.0
+11,Dâmaso Salcede,Pedro da Maia,4.0
+11,Guimarães,João da Ega,56.0
+11,Guimarães,Maria Eduarda,7.0
+11,Guimarães,Tomás de Alencar,8.0
+11,Guimarães,Vilaça Júnior,6.0
+11,João da Ega,Manuel Monforte,17.0
+11,João da Ega,Maria Monforte,11.0
+11,João da Ega,Pedro da Maia,5.0
+11,Manuel Monforte,Maria Eduarda,3.0
+11,Manuel Monforte,Tomás de Alencar,6.0
+11,Manuel Monforte,Vilaça Júnior,11.0
+11,Maria Eduarda,Maria Monforte,4.0
+11,Maria Eduarda,Pedro da Maia,4.0
+11,Maria Monforte,Tomás de Alencar,14.0
+11,Pedro da Maia,Tomás de Alencar,17.0
+12,Carlos da Maia,Sousa Neto,13.0
+12,Conde de Gouvarinho,Gonçalo,5.0
+12,Conde de Gouvarinho,Neves,7.0
+12,Dâmaso Salcede,Neves,4.0
+12,Gonçalo,João da Ega,7.0
+12,João da Ega,Neves,13.0
+12,João da Ega,Sousa Neto,13.0
+13,Dâmaso Salcede,Vítor,3.0
+13,Jacob Cohen,Vítor,3.0
+13,Raquel Cohen,Vítor,5.0
+14,Darque,Teles da Gama,6.0
+14,Darque,Vladimiro,9.0
+14,Teles da Gama,Vladimiro,4.0
+15,Afonso da Maia,Baptista,5.0
+15,Baptista,Carlos da Maia,67.0
+15,Baptista,Conde de Gouvarinho,3.0
+15,Baptista,Dâmaso Salcede,3.0
+15,Baptista,João da Ega,30.0
+15,Baptista,Joaquim Álvares de Castro Gomes,4.0
+15,Baptista,Maria Eduarda,5.0
+15,Baptista,Tomás de Alencar,5.0
+15,Baptista,Vilaça Júnior,7.0
+16,Clifford,Craft,7.0
+16,Clifford,Dâmaso Salcede,4.0
+16,Clifford,Taveira,6.0
+17,Carlos da Maia,Marquês de Souselas,3.0
+17,Cruges,Marquês de Souselas,4.0
+17,João da Ega,Marquês de Souselas,3.0
+17,Marquês de Souselas,Taveira,4.0
+18,Condessa de Gouvarinho,Joaninha Vilar,3.0
+18,Joaninha Vilar,Taveira,3.0
+18,Taveira,Viscondessa de Alvim,3.0
+19,Afonso da Maia,Rufino,3.0
+19,Carlos da Maia,Rufino,6.0
+19,Conde de Gouvarinho,Rufino,4.0
+19,Guimarães,Rufino,4.0
+19,João da Ega,Rufino,15.0
+19,Rufino,Steinbroken,3.0
+19,Rufino,Tomás de Alencar,6.0
+20,Carlos da Maia,Vargas,10.0
+20,Craft,Vargas,3.0
+20,João da Ega,Vargas,3.0
+20,Pedro da Maia,Vargas,4.0
+20,Tomás de Alencar,Vargas,3.0
+21,abade Custódio,Afonso da Maia,5.0
+21,abade Custódio,Carlos da Maia,4.0
+21,Afonso da Maia,D. Ana Silveira,6.0
+21,Afonso da Maia,Brown,5.0
+21,Afonso da Maia,Marcelina,4.0
+21,Afonso da Maia,Teixeira,4.0
+21,Afonso da Maia,Vilaça,58.0
+21,D. Ana Silveira,Carlos da Maia,3.0
+21,Brown,Carlos da Maia,12.0
+21,Carlos da Maia,D. Eugénia Silveira,4.0
+21,Carlos da Maia,Gertrudes,4.0
+21,Carlos da Maia,Marcelina,3.0
+21,Carlos da Maia,Teixeira,5.0
+21,Carlos da Maia,Teresinha Silveira,7.0
+21,Carlos da Maia,Trigueiros,4.0
+21,Carlos da Maia,Vilaça,32.0
+22,Manuel Monforte,Vilaça,4.0
+22,Maria Monforte,Vilaça,8.0
+22,Pedro da Maia,Teixeira,4.0
+22,Pedro da Maia,Vilaça,18.0
+23,Baptista, Madame Rughel,8.0
+23,Baptista,Mulato,3.0
+23,Carlos da Maia, Madame Rughel,10.0
+23,Carlos da Maia,Mulato,6.0
+23,Maria Eduarda,Mulato,3.0
+24,abade Custódio,Vilaça,4.0
+24,D. Ana Silveira,Eusebiozinho Silveira,5.0
+24,D. Ana Silveira,Teresinha Silveira,4.0
+24,D. Ana Silveira,Vilaça,3.0
+24,Brown,Vilaça,11.0
+24,D. Eugénia Silveira,Eusebiozinho Silveira,4.0
+24,Eusebiozinho Silveira,Teresinha Silveira,4.0
+24,Eusebiozinho Silveira,Vilaça,4.0
+24,Teixeira,Vilaça,8.0
+25,Afonso da Maia, André da Ega,3.0
+25,Afonso da Maia, Conde de Runa,3.0
+25,Afonso da Maia, Sebastião da Maia,3.0
+25,Afonso da Maia,Tia Fanny,3.0
+26,Augusta,Carlos da Maia,3.0
+26,Carlos da Maia,Encarnación,7.0
+26,Carlos da Maia,Mãe Cruges,3.0
+26,Carlos da Maia,Mendonça,3.0
+26,Carlos da Maia,Padre Serafim,3.0
+26,Carlos da Maia, Vicente,5.0

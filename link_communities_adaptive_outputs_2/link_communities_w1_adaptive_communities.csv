@@ -1,0 +1,40 @@
+community,number of links,number of nodes,top characters by weighted degree,overlap characters,strongest character
+1,3,3," l'Estorade, Madame  de  l'Estorade, Tancredo"," l'Estorade, Madame  de  l'Estorade, Tancredo", l'Estorade
+2,3,4,"Vilaça,  l'Estorade, Madame  de  l'Estorade, Tancredo","Vilaça,  l'Estorade, Madame  de  l'Estorade, Tancredo",Vilaça
+3,5,4,"Maria Eduarda Runa,  Conde de Runa, Padre Vasques, Tia Fanny","Maria Eduarda Runa,  Conde de Runa, Padre Vasques, Tia Fanny",Maria Eduarda Runa
+4,4,5,"Padre Serafim, Carlos da Maia, João da Ega, Dâmaso Salcede, Maria Eduarda","Carlos da Maia, João da Ega, Dâmaso Salcede, Maria Eduarda",Padre Serafim
+5,6,5,"D. João Coutinho, Tomás de Alencar,  Cazoti, Maria Monforte, Pedro da Maia","Tomás de Alencar, Maria Monforte, Pedro da Maia",D. João Coutinho
+6,3,4,"Carlos da Maia, Encarnación, Saldanha, João da Ega","Carlos da Maia, Encarnación, Saldanha, João da Ega",Carlos da Maia
+7,17,7,"Rosa, Miss Sara, Melanie, Niniche, Domingos","Rosa, Miss Sara, Melanie, Niniche, Domingos, Joaquim Álvares de Castro Gomes, Mac Gren",Rosa
+8,4,5,"Mãe Cruges, Carlos da Maia, Maria Eduarda, Craft, João da Ega","Carlos da Maia, Maria Eduarda, Craft, João da Ega",Mãe Cruges
+9,5,6,"Marquês de Souselas, Cruges, Taveira, Carlos da Maia, João da Ega","Cruges, Taveira, Carlos da Maia, João da Ega, Steinbroken",Marquês de Souselas
+10,12,10,"Carlos da Maia, Afonso da Maia, Brown, abade Custódio, Teixeira","Carlos da Maia, Afonso da Maia, Brown, abade Custódio, Teixeira, D. Ana Silveira, Teresinha Silveira, D. Eugénia Silveira, Gertrudes, Trigueiros",Carlos da Maia
+11,3,4," André da Ega, Afonso da Maia, Carlos da Maia, João da Ega"," André da Ega, Afonso da Maia, Carlos da Maia, João da Ega", André da Ega
+12,9,10,"Charlie, Carlos da Maia, Condessa de Gouvarinho, Maria Eduarda, João da Ega","Carlos da Maia, Condessa de Gouvarinho, Maria Eduarda, João da Ega, Afonso da Maia, Conde de Gouvarinho, Craft, Cruges, Taveira",Charlie
+13,4,4," Esteves, Afonso da Maia, Carlos da Maia, Jones Bule"," Esteves, Afonso da Maia, Carlos da Maia, Jones Bule", Esteves
+14,12,8,"Azevedo, Afonso da Maia, Marcelina,  Sebastião da Maia, Carlos da Maia","Afonso da Maia, Carlos da Maia, João da Ega, Vilaça Júnior, Cruges",Azevedo
+15,3,4,"Eusebiozinho Silveira, Palma Cavalão, Lola, Vítor","Eusebiozinho Silveira, Palma Cavalão, Lola, Vítor",Eusebiozinho Silveira
+16,3,4,"Augusta, Carlos da Maia, Maria Eduarda, Afonso da Maia","Carlos da Maia, Maria Eduarda, Afonso da Maia",Augusta
+17,4,4,"Madame Chaplain, Carlos da Maia, Maria Eduarda,  Madame Trelain","Carlos da Maia, Maria Eduarda",Madame Chaplain
+18,8,6,"D. João da Cunha, Tomás de Alencar, Dâmaso Guedes, Pedro da Maia, Manuel Monforte","Tomás de Alencar, Pedro da Maia, Manuel Monforte, Maria Monforte",D. João da Cunha
+19,11,7,"Maria Monforte, Madame  de  l'Estorade, Tancredo, Tomás de Alencar, Pedro da Maia","Maria Monforte, Madame  de  l'Estorade, Tancredo, Tomás de Alencar, Pedro da Maia,  l'Estorade, Manuel Monforte",Maria Monforte
+20,5,5," Melo, Manuel Monforte, Pedro da Maia, Maria Monforte, D. Maria da Gama","Manuel Monforte, Pedro da Maia, Maria Monforte", Melo
+21,7,7,"Adélia, Craft, João da Ega, Conde de Gouvarinho, Maria Lima","Craft, João da Ega, Conde de Gouvarinho, Raquel Cohen, Carlos da Maia",Adélia
+22,3,4,"Baronesa de Craben, João da Ega, Conde de Gouvarinho, Sequeira","João da Ega, Conde de Gouvarinho, Sequeira",Baronesa de Craben
+23,310,34,"Carlos da Maia, João da Ega, Dâmaso Salcede, Maria Eduarda, Craft","Carlos da Maia, João da Ega, Dâmaso Salcede, Maria Eduarda, Craft, Afonso da Maia, Jacob Cohen, Tomás de Alencar, Cruges, Vilaça Júnior, Raquel Cohen, Taveira, Conde de Gouvarinho, Condessa de Gouvarinho, Pedro da Maia, Sequeira, Maria Monforte, Baptista, Steinbroken, Eusebiozinho Silveira, D. Diogo Coutinho, Manuel Monforte, Darque, Teles da Gama, Palma Cavalão, Rufino, Vargas, Lola, Vítor",Carlos da Maia
+24,4,5," André da Ega, D. Diogo Coutinho, Sequeira, Maria Monforte, Pedro da Maia"," André da Ega, D. Diogo Coutinho, Sequeira, Maria Monforte, Pedro da Maia", André da Ega
+25,3,4," Luís Runa, Maria Monforte, Pedro da Maia, Sequeira","Maria Monforte, Pedro da Maia, Sequeira", Luís Runa
+26,13,11,"Clifford, Vladimiro, Carlos da Maia, Darque, Craft","Carlos da Maia, Darque, Craft, Taveira, Dâmaso Salcede, Steinbroken, Teles da Gama, Vargas, Afonso da Maia",Clifford
+27,13,11,"Joaninha Vilar, Carlos da Maia, Viscondessa de Alvim, Taveira, Steinbroken","Carlos da Maia, Taveira, Steinbroken, Condessa de Gouvarinho, Vilaça Júnior, Cruges, Darque, Dâmaso Salcede, Rufino",Joaninha Vilar
+28,4,4,"Dâmaso Salcede, Viscondessa da Gafanha,  Susana, Carlos da Maia","Dâmaso Salcede, Carlos da Maia",Dâmaso Salcede
+29,64,24,"Carlos da Maia, Guimarães, Joaquim Álvares de Castro Gomes, Maria Eduarda, Rosa","Carlos da Maia, Joaquim Álvares de Castro Gomes, Maria Eduarda, Rosa, João da Ega, Dâmaso Salcede, Niniche, Domingos, Miss Sara, Melanie, Mac Gren, Craft, Vilaça Júnior, Manuel Monforte, Maria Monforte, Pedro da Maia, Tomás de Alencar, Afonso da Maia, Cruges, Baptista, Jacob Cohen, Taveira, Condessa de Gouvarinho",Carlos da Maia
+30,3,4,"D. Joana Coutinho, João da Ega, Tomás de Alencar, Afonso da Maia","João da Ega, Tomás de Alencar, Afonso da Maia",D. Joana Coutinho
+31,8,9,"Reverendo Bonifácio, Afonso da Maia, João da Ega, Carlos da Maia, Dâmaso Salcede","Reverendo Bonifácio, Afonso da Maia, João da Ega, Carlos da Maia, Dâmaso Salcede, Vilaça Júnior, Craft, D. Diogo Coutinho, Steinbroken",Reverendo Bonifácio
+32,25,9,"Eusebiozinho Silveira, Gertrudes, D. Ana Silveira, Teresinha Silveira, Teixeira","Eusebiozinho Silveira, Gertrudes, D. Ana Silveira, Teresinha Silveira, Teixeira, D. Eugénia Silveira, Trigueiros, Brown, Baptista",Eusebiozinho Silveira
+33,20,21,"Vilaça, Afonso da Maia, Carlos da Maia, Pedro da Maia, Brown","Vilaça, Afonso da Maia, Carlos da Maia, Pedro da Maia, Brown, Maria Monforte, Teixeira, abade Custódio, Eusebiozinho Silveira, Manuel Monforte,  Esteves, D. Ana Silveira, Jones Bule, Gertrudes, Tomás de Alencar, Vilaça Júnior,  André da Ega, D. Diogo Coutinho, D. Eugénia Silveira, Reverendo Bonifácio, Sequeira",Vilaça
+34,4,5,"Mulato, Carlos da Maia, Baptista, Maria Eduarda, João da Ega","Carlos da Maia, Baptista, Maria Eduarda, João da Ega",Mulato
+35,6,5," Vicente, Carlos da Maia, Afonso da Maia,  Condessa de Runa, Mr. Théodore","Carlos da Maia, Afonso da Maia", Vicente
+36,7,6,"Afonso da Maia, Padre Vasques, Pedro da Maia,  Conde de Runa, Maria Eduarda Runa","Afonso da Maia, Padre Vasques, Pedro da Maia,  Conde de Runa, Maria Eduarda Runa, Tia Fanny",Afonso da Maia
+37,3,4,"D. Ana Craveiro, Jacob Cohen, João da Ega, Tomás de Alencar","Jacob Cohen, João da Ega, Tomás de Alencar",D. Ana Craveiro
+38,3,4,"Carlos da Maia, Chaplain, Caetano da Maia, D. Adosinda",Carlos da Maia,Carlos da Maia
+39,4,4,"Saldanha, Lola, Encarnación, Palma Cavalão","Saldanha, Lola, Encarnación, Palma Cavalão",Saldanha

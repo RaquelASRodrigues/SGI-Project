@@ -1,0 +1,27 @@
+community,number of links,number of nodes,top characters by weighted degree,overlap characters,strongest character
+1,13,6,"Rosa, Miss Sara, Melanie, Niniche, Domingos","Rosa, Miss Sara, Melanie, Niniche, Domingos, Joaquim Álvares de Castro Gomes",Rosa
+2,6,4,"Maria Monforte, Pedro da Maia, Manuel Monforte, Guimarães","Maria Monforte, Pedro da Maia, Manuel Monforte, Guimarães",Maria Monforte
+3,3,3,"Gonçalo, Neves, Sousa Neto","Gonçalo, Neves, Sousa Neto",Gonçalo
+4,4,5,"Darque, Craft, Conde de Gouvarinho, Taveira, Sequeira","Darque, Craft, Conde de Gouvarinho, Taveira, Sequeira",Darque
+5,4,4,"Carlos da Maia, Darque, Teles da Gama, João da Ega","Carlos da Maia, Darque, Teles da Gama, João da Ega",Carlos da Maia
+6,6,6,"Palma Cavalão, Eusebiozinho Silveira, Lola, Cruges, Taveira","Palma Cavalão, Eusebiozinho Silveira, Lola, Cruges, Taveira, Jacob Cohen",Palma Cavalão
+7,5,5,"Palma Cavalão, Carlos da Maia, Lola, Dâmaso Salcede, João da Ega","Palma Cavalão, Carlos da Maia, Lola, Dâmaso Salcede, João da Ega",Palma Cavalão
+8,3,4,"Reverendo Bonifácio, João da Ega, Carlos da Maia, Dâmaso Salcede","João da Ega, Carlos da Maia, Dâmaso Salcede",Reverendo Bonifácio
+9,115,18,"Carlos da Maia, João da Ega, Dâmaso Salcede, Maria Eduarda, Craft","Carlos da Maia, João da Ega, Dâmaso Salcede, Maria Eduarda, Craft, Afonso da Maia, Jacob Cohen, Cruges, Tomás de Alencar, Vilaça Júnior, Raquel Cohen, Taveira, Condessa de Gouvarinho, Conde de Gouvarinho, Sequeira, Steinbroken, Eusebiozinho Silveira",Carlos da Maia
+10,28,13,"Carlos da Maia, Joaquim Álvares de Castro Gomes, Maria Eduarda, Rosa, Niniche","Carlos da Maia, Joaquim Álvares de Castro Gomes, Maria Eduarda, Rosa, Niniche, Dâmaso Salcede, Domingos, Miss Sara, João da Ega, Melanie, Craft, Taveira",Carlos da Maia
+11,23,11,"Guimarães, João da Ega, Pedro da Maia, Afonso da Maia, Carlos da Maia","Guimarães, João da Ega, Pedro da Maia, Afonso da Maia, Carlos da Maia, Maria Monforte, Manuel Monforte, Tomás de Alencar, Dâmaso Salcede, Maria Eduarda, Vilaça Júnior",Guimarães
+12,7,7,"João da Ega, Sousa Neto, Neves, Carlos da Maia, Conde de Gouvarinho","João da Ega, Sousa Neto, Neves, Carlos da Maia, Conde de Gouvarinho, Gonçalo, Dâmaso Salcede",João da Ega
+13,3,4,"Vítor, Raquel Cohen, Dâmaso Salcede, Jacob Cohen","Raquel Cohen, Dâmaso Salcede, Jacob Cohen",Vítor
+14,3,3,"Darque, Vladimiro, Teles da Gama","Darque, Teles da Gama",Darque
+15,9,10,"Baptista, Carlos da Maia, João da Ega, Vilaça Júnior, Afonso da Maia","Baptista, Carlos da Maia, João da Ega, Vilaça Júnior, Afonso da Maia, Maria Eduarda, Tomás de Alencar, Joaquim Álvares de Castro Gomes, Conde de Gouvarinho, Dâmaso Salcede",Baptista
+16,3,4,"Clifford, Craft, Taveira, Dâmaso Salcede","Craft, Taveira, Dâmaso Salcede",Clifford
+17,4,5,"Marquês de Souselas, Cruges, Taveira, Carlos da Maia, João da Ega","Cruges, Taveira, Carlos da Maia, João da Ega",Marquês de Souselas
+18,3,4,"Joaninha Vilar, Taveira, Condessa de Gouvarinho, Viscondessa de Alvim","Taveira, Condessa de Gouvarinho",Joaninha Vilar
+19,7,8,"Rufino, João da Ega, Carlos da Maia, Tomás de Alencar, Conde de Gouvarinho","João da Ega, Carlos da Maia, Tomás de Alencar, Conde de Gouvarinho, Guimarães, Afonso da Maia, Steinbroken",Rufino
+20,5,6,"Vargas, Carlos da Maia, Pedro da Maia, Craft, João da Ega","Carlos da Maia, Pedro da Maia, Craft, João da Ega, Tomás de Alencar",Vargas
+21,16,12,"Vilaça, Afonso da Maia, Carlos da Maia, Brown, abade Custódio","Vilaça, Afonso da Maia, Carlos da Maia, Brown, abade Custódio, D. Ana Silveira, Teixeira, Teresinha Silveira, D. Eugénia Silveira",Vilaça
+22,4,5,"Vilaça, Pedro da Maia, Maria Monforte, Manuel Monforte, Teixeira","Vilaça, Pedro da Maia, Maria Monforte, Manuel Monforte, Teixeira",Vilaça
+23,5,5," Madame Rughel, Carlos da Maia, Mulato, Baptista, Maria Eduarda","Carlos da Maia, Baptista, Maria Eduarda", Madame Rughel
+24,9,8,"Vilaça, Eusebiozinho Silveira, D. Ana Silveira, Brown, Teixeira","Vilaça, Eusebiozinho Silveira, D. Ana Silveira, Brown, Teixeira, Teresinha Silveira, abade Custódio, D. Eugénia Silveira",Vilaça
+25,4,5,"Afonso da Maia,  André da Ega,  Conde de Runa,  Sebastião da Maia, Tia Fanny",Afonso da Maia,Afonso da Maia
+26,6,7,"Carlos da Maia, Encarnación,  Vicente, Augusta, Mendonça",Carlos da Maia,Carlos da Maia

@@ -1,0 +1,104 @@
+character,character_id,communities,degree,communities per link,weighted degree,overlap
+Carlos da Maia,carlos_maia,14,62,0.22580645161290322,2313.0,True
+João da Ega,joao_ega,11,42,0.2619047619047619,1523.0,True
+Dâmaso Salcede,damaso_salcede,9,29,0.3103448275862069,593.0,True
+Taveira,taveira,7,21,0.3333333333333333,211.0,True
+Afonso da Maia,afonso_maia,6,32,0.1875,533.0,True
+Maria Eduarda,maria_eduarda,5,23,0.21739130434782608,556.0,True
+Craft,craft,5,22,0.22727272727272727,423.0,True
+Tomás de Alencar,tomas_alencar,5,25,0.2,301.0,True
+Conde de Gouvarinho,conde_gouvarinho,5,20,0.25,181.0,True
+Pedro da Maia,pedro_maia,4,17,0.23529411764705882,196.0,True
+Jacob Cohen,jacob_cohen,3,13,0.23076923076923078,285.0,True
+Cruges,cruges,3,19,0.15789473684210525,272.0,True
+Vilaça Júnior,vilaca_junior,3,17,0.17647058823529413,254.0,True
+Maria Monforte,maria_monforte,3,13,0.23076923076923078,165.0,True
+Vilaça,vilaca_pai,3,11,0.2727272727272727,153.0,True
+Eusebiozinho Silveira,eusebiozinho_silveira,3,16,0.1875,144.0,True
+Guimarães,guimaraes,3,10,0.3,143.0,True
+Joaquim Álvares de Castro Gomes,joaquim_alvares_castro_gomes,3,11,0.2727272727272727,139.0,True
+Manuel Monforte,manuel_monforte,3,11,0.2727272727272727,102.0,True
+Darque,darque,3,8,0.375,57.0,True
+Teixeira,teixeira,3,5,0.6,28.0,True
+Raquel Cohen,raquel_cohen,2,11,0.18181818181818182,226.0,True
+Condessa de Gouvarinho,condessa_gouvarinho,2,14,0.14285714285714285,176.0,True
+Baptista,baptista,2,11,0.18181818181818182,140.0,True
+Sequeira,sequeira,2,15,0.13333333333333333,138.0,True
+Rosa,rosa,2,10,0.2,135.0,True
+Steinbroken,steinbroken,2,14,0.14285714285714285,121.0,True
+Miss Sara,miss_sara,2,8,0.25,79.0,True
+Niniche,niniche,2,9,0.2222222222222222,78.0,True
+Palma Cavalão,palma_cavalao,2,7,0.2857142857142857,70.0,True
+Domingos,domingos,2,8,0.25,68.0,True
+Melanie,melanie,2,8,0.25,56.0,True
+Lola,lola,2,8,0.25,37.0,True
+Sousa Neto,sousa_neto,2,5,0.4,36.0,True
+Neves,neves,2,6,0.3333333333333333,35.0,True
+Teles da Gama,teles_gama,2,7,0.2857142857142857,34.0,True
+Brown,brown,2,3,0.6666666666666666,28.0,True
+D. Ana Silveira,ana_silveira,2,5,0.4,21.0,True
+Gonçalo,gonçalo,2,4,0.5,20.0,True
+Teresinha Silveira,teresinha_silveira,2,3,0.6666666666666666,15.0,True
+abade Custódio,abade_custodio,2,3,0.6666666666666666,13.0,True
+D. Eugénia Silveira,eugenia_silveira,2,2,1.0,8.0,True
+D. Diogo Coutinho,diogo_coutinho,1,8,0.125,91.0,False
+Rufino,rufino,1,7,0.14285714285714285,41.0,False
+Mac Gren,mac_gren,1,5,0.2,33.0,False
+Reverendo Bonifácio,reverendo_bonifacio,1,5,0.2,33.0,False
+Vladimiro,vladimiro,1,4,0.25,26.0,False
+Clifford,clifford,1,4,0.25,25.0,False
+Vargas,vargas,1,5,0.2,23.0,False
+ Madame Rughel,madame_rughel,1,2,0.5,18.0,False
+Joaninha Vilar,joaninha_vilar,1,5,0.2,18.0,False
+Gertrudes,gertrudes,1,3,0.3333333333333333,14.0,False
+Marquês de Souselas,marques_souselas,1,4,0.25,14.0,False
+Mulato,mulato,1,3,0.3333333333333333,12.0,False
+Vítor,vitor,1,3,0.3333333333333333,11.0,False
+Viscondessa de Alvim,viscondessa_alvim,1,2,0.5,8.0,False
+Encarnación,encarnacion,1,1,1.0,7.0,False
+Marcelina,marcelina,1,2,0.5,7.0,False
+Trigueiros,trigueiros,1,2,0.5,7.0,False
+ Vicente,vicente,1,1,1.0,5.0,False
+ André da Ega,andre_ega,1,1,1.0,3.0,False
+ Conde de Runa,conde_runa,1,1,1.0,3.0,False
+ Sebastião da Maia,sebastiao_maia,1,1,1.0,3.0,False
+Augusta,augusta,1,1,1.0,3.0,False
+Mendonça,mendonça,1,1,1.0,3.0,False
+Mãe Cruges,mae_cruges,1,1,1.0,3.0,False
+Padre Serafim,padre_serafim,1,1,1.0,3.0,False
+Tia Fanny,tia_fanny,1,1,1.0,3.0,False
+D. Maria da Cunha,maria_cunha,0,4,0.0,31.0,False
+Charlie,charlie,0,2,0.0,22.0,False
+D. João da Cunha,joao_cunha,0,2,0.0,10.0,False
+Adélia,adelia,0,2,0.0,9.0,False
+Padre Vasques,padre_vasques,0,2,0.0,9.0,False
+Tancredo,tancredo,0,2,0.0,9.0,False
+Madame  de  l'Estorade,madame_estorade,0,2,0.0,8.0,False
+ Melo,melo,0,2,0.0,6.0,False
+Saldanha,saldanha,0,2,0.0,6.0,False
+Azevedo,azevedo,0,1,0.0,4.0,False
+ Esteves,esteves,0,1,0.0,3.0,False
+D. Joana Coutinho,joana_coutinho,0,1,0.0,3.0,False
+Dâmaso Guedes,damaso_guedes,0,1,0.0,3.0,False
+ André de Noronha,andre_noronha,0,0,,0.0,False
+ Cazoti,cazoti,0,0,,0.0,False
+ Condessa de Runa,condessa_runa,0,0,,0.0,False
+ Luís Runa,luis_runa,0,0,,0.0,False
+ Madame Trelain,madame_trelain,0,0,,0.0,False
+ Susana,susana,0,0,,0.0,False
+ l'Estorade,estorade,0,0,,0.0,False
+Baronesa de Craben,baronesa_craben,0,0,,0.0,False
+Caetano da Maia,caetano_maia,0,0,,0.0,False
+Chaplain,chaplain,0,0,,0.0,False
+D. Adosinda,adosinda,0,0,,0.0,False
+D. Ana Craveiro,ana_craveiro,0,0,,0.0,False
+D. João Coutinho,joao_coutinho,0,0,,0.0,False
+D. Maria da Gama,maria_gama,0,0,,0.0,False
+Jones Bule,jones_bule,0,0,,0.0,False
+Josefa,josefa,0,0,,0.0,False
+Madame Chaplain,madame_chaplain,0,0,,0.0,False
+Maria Eduarda Runa,maria_eduarda_runa,0,0,,0.0,False
+Maria Lima,maria_lima,0,0,,0.0,False
+Mr. Théodore,mr_theodore,0,0,,0.0,False
+Savedra,savedra,0,0,,0.0,False
+Viscondessa da Gafanha,viscondessa_gafanha,0,0,,0.0,False

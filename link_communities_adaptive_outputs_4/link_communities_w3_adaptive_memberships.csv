@@ -1,0 +1,173 @@
+community,character_id,character,is_overlap
+1,domingos,Domingos,True
+1,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,True
+1,melanie,Melanie,True
+1,miss_sara,Miss Sara,True
+1,niniche,Niniche,True
+1,rosa,Rosa,True
+2,guimaraes,Guimarães,True
+2,manuel_monforte,Manuel Monforte,True
+2,maria_monforte,Maria Monforte,True
+2,pedro_maia,Pedro da Maia,True
+3,gonçalo,Gonçalo,True
+3,neves,Neves,True
+3,sousa_neto,Sousa Neto,True
+4,conde_gouvarinho,Conde de Gouvarinho,True
+4,craft,Craft,True
+4,darque,Darque,True
+4,sequeira,Sequeira,True
+4,taveira,Taveira,True
+5,carlos_maia,Carlos da Maia,True
+5,darque,Darque,True
+5,joao_ega,João da Ega,True
+5,teles_gama,Teles da Gama,True
+6,cruges,Cruges,True
+6,eusebiozinho_silveira,Eusebiozinho Silveira,True
+6,jacob_cohen,Jacob Cohen,True
+6,lola,Lola,True
+6,palma_cavalao,Palma Cavalão,True
+6,taveira,Taveira,True
+7,carlos_maia,Carlos da Maia,True
+7,damaso_salcede,Dâmaso Salcede,True
+7,joao_ega,João da Ega,True
+7,lola,Lola,True
+7,palma_cavalao,Palma Cavalão,True
+8,carlos_maia,Carlos da Maia,True
+8,damaso_salcede,Dâmaso Salcede,True
+8,joao_ega,João da Ega,True
+8,reverendo_bonifacio,Reverendo Bonifácio,False
+9,afonso_maia,Afonso da Maia,True
+9,carlos_maia,Carlos da Maia,True
+9,conde_gouvarinho,Conde de Gouvarinho,True
+9,condessa_gouvarinho,Condessa de Gouvarinho,True
+9,craft,Craft,True
+9,cruges,Cruges,True
+9,diogo_coutinho,D. Diogo Coutinho,False
+9,damaso_salcede,Dâmaso Salcede,True
+9,eusebiozinho_silveira,Eusebiozinho Silveira,True
+9,jacob_cohen,Jacob Cohen,True
+9,joao_ega,João da Ega,True
+9,maria_eduarda,Maria Eduarda,True
+9,raquel_cohen,Raquel Cohen,True
+9,sequeira,Sequeira,True
+9,steinbroken,Steinbroken,True
+9,taveira,Taveira,True
+9,tomas_alencar,Tomás de Alencar,True
+9,vilaca_junior,Vilaça Júnior,True
+10,carlos_maia,Carlos da Maia,True
+10,craft,Craft,True
+10,domingos,Domingos,True
+10,damaso_salcede,Dâmaso Salcede,True
+10,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,True
+10,joao_ega,João da Ega,True
+10,mac_gren,Mac Gren,False
+10,maria_eduarda,Maria Eduarda,True
+10,melanie,Melanie,True
+10,miss_sara,Miss Sara,True
+10,niniche,Niniche,True
+10,rosa,Rosa,True
+10,taveira,Taveira,True
+11,afonso_maia,Afonso da Maia,True
+11,carlos_maia,Carlos da Maia,True
+11,damaso_salcede,Dâmaso Salcede,True
+11,guimaraes,Guimarães,True
+11,joao_ega,João da Ega,True
+11,manuel_monforte,Manuel Monforte,True
+11,maria_eduarda,Maria Eduarda,True
+11,maria_monforte,Maria Monforte,True
+11,pedro_maia,Pedro da Maia,True
+11,tomas_alencar,Tomás de Alencar,True
+11,vilaca_junior,Vilaça Júnior,True
+12,carlos_maia,Carlos da Maia,True
+12,conde_gouvarinho,Conde de Gouvarinho,True
+12,damaso_salcede,Dâmaso Salcede,True
+12,gonçalo,Gonçalo,True
+12,joao_ega,João da Ega,True
+12,neves,Neves,True
+12,sousa_neto,Sousa Neto,True
+13,damaso_salcede,Dâmaso Salcede,True
+13,jacob_cohen,Jacob Cohen,True
+13,raquel_cohen,Raquel Cohen,True
+13,vitor,Vítor,False
+14,darque,Darque,True
+14,teles_gama,Teles da Gama,True
+14,vladimiro,Vladimiro,False
+15,afonso_maia,Afonso da Maia,True
+15,baptista,Baptista,True
+15,carlos_maia,Carlos da Maia,True
+15,conde_gouvarinho,Conde de Gouvarinho,True
+15,damaso_salcede,Dâmaso Salcede,True
+15,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,True
+15,joao_ega,João da Ega,True
+15,maria_eduarda,Maria Eduarda,True
+15,tomas_alencar,Tomás de Alencar,True
+15,vilaca_junior,Vilaça Júnior,True
+16,clifford,Clifford,False
+16,craft,Craft,True
+16,damaso_salcede,Dâmaso Salcede,True
+16,taveira,Taveira,True
+17,carlos_maia,Carlos da Maia,True
+17,cruges,Cruges,True
+17,joao_ega,João da Ega,True
+17,marques_souselas,Marquês de Souselas,False
+17,taveira,Taveira,True
+18,condessa_gouvarinho,Condessa de Gouvarinho,True
+18,joaninha_vilar,Joaninha Vilar,False
+18,taveira,Taveira,True
+18,viscondessa_alvim,Viscondessa de Alvim,False
+19,afonso_maia,Afonso da Maia,True
+19,carlos_maia,Carlos da Maia,True
+19,conde_gouvarinho,Conde de Gouvarinho,True
+19,guimaraes,Guimarães,True
+19,joao_ega,João da Ega,True
+19,rufino,Rufino,False
+19,steinbroken,Steinbroken,True
+19,tomas_alencar,Tomás de Alencar,True
+20,carlos_maia,Carlos da Maia,True
+20,craft,Craft,True
+20,joao_ega,João da Ega,True
+20,pedro_maia,Pedro da Maia,True
+20,tomas_alencar,Tomás de Alencar,True
+20,vargas,Vargas,False
+21,abade_custodio,abade Custódio,True
+21,afonso_maia,Afonso da Maia,True
+21,brown,Brown,True
+21,carlos_maia,Carlos da Maia,True
+21,ana_silveira,D. Ana Silveira,True
+21,eugenia_silveira,D. Eugénia Silveira,True
+21,gertrudes,Gertrudes,False
+21,marcelina,Marcelina,False
+21,teixeira,Teixeira,True
+21,teresinha_silveira,Teresinha Silveira,True
+21,trigueiros,Trigueiros,False
+21,vilaca_pai,Vilaça,True
+22,manuel_monforte,Manuel Monforte,True
+22,maria_monforte,Maria Monforte,True
+22,pedro_maia,Pedro da Maia,True
+22,teixeira,Teixeira,True
+22,vilaca_pai,Vilaça,True
+23,madame_rughel, Madame Rughel,False
+23,baptista,Baptista,True
+23,carlos_maia,Carlos da Maia,True
+23,maria_eduarda,Maria Eduarda,True
+23,mulato,Mulato,False
+24,abade_custodio,abade Custódio,True
+24,brown,Brown,True
+24,ana_silveira,D. Ana Silveira,True
+24,eugenia_silveira,D. Eugénia Silveira,True
+24,eusebiozinho_silveira,Eusebiozinho Silveira,True
+24,teixeira,Teixeira,True
+24,teresinha_silveira,Teresinha Silveira,True
+24,vilaca_pai,Vilaça,True
+25,andre_ega, André da Ega,False
+25,conde_runa, Conde de Runa,False
+25,sebastiao_maia, Sebastião da Maia,False
+25,afonso_maia,Afonso da Maia,True
+25,tia_fanny,Tia Fanny,False
+26,vicente, Vicente,False
+26,augusta,Augusta,False
+26,carlos_maia,Carlos da Maia,True
+26,encarnacion,Encarnación,False
+26,mendonça,Mendonça,False
+26,mae_cruges,Mãe Cruges,False
+26,padre_serafim,Padre Serafim,False

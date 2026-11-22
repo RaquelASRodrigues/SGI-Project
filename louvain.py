@@ -50,7 +50,7 @@ from sklearn.metrics import normalized_mutual_info_score
 # ==============================================================================
 # 1. CONFIGURATION & DATA LOADING
 # ==============================================================================
-DATA_DIR = r"C:\SGI_Final\SGI-Project\Data"
+DATA_DIR = r"Data"
 PROJECT_DIR = os.path.dirname(DATA_DIR)
 IMAGES_DIR = os.path.join(PROJECT_DIR, "images")
 os.makedirs(IMAGES_DIR, exist_ok=True)
