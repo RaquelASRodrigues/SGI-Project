@@ -1,0 +1,49 @@
+community,character_id,character,is_overlap,degree_in_threshold_graph
+1,conde_gouvarinho,Conde de Gouvarinho,True,20
+1,condessa_gouvarinho,Condessa de Gouvarinho,False,14
+1,craft,Craft,True,22
+1,cruges,Cruges,True,19
+1,eusebiozinho_silveira,Eusebiozinho Silveira,True,16
+1,jacob_cohen,Jacob Cohen,True,13
+1,raquel_cohen,Raquel Cohen,False,11
+1,sequeira,Sequeira,True,15
+1,steinbroken,Steinbroken,True,14
+1,taveira,Taveira,True,21
+1,vilaca_junior,Vilaça Júnior,True,17
+2,domingos,Domingos,False,8
+2,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,False,11
+2,melanie,Melanie,False,8
+2,miss_sara,Miss Sara,False,8
+2,niniche,Niniche,False,9
+2,rosa,Rosa,False,10
+3,cruges,Cruges,True,19
+3,eusebiozinho_silveira,Eusebiozinho Silveira,True,16
+3,jacob_cohen,Jacob Cohen,True,13
+3,lola,Lola,False,8
+3,palma_cavalao,Palma Cavalão,False,7
+3,taveira,Taveira,True,21
+4,guimaraes,Guimarães,False,10
+4,manuel_monforte,Manuel Monforte,True,11
+4,maria_monforte,Maria Monforte,True,13
+4,pedro_maia,Pedro da Maia,True,17
+5,conde_gouvarinho,Conde de Gouvarinho,True,20
+5,craft,Craft,True,22
+5,darque,Darque,True,8
+5,sequeira,Sequeira,True,15
+5,taveira,Taveira,True,21
+5,teles_gama,Teles da Gama,True,7
+6,craft,Craft,True,22
+6,diogo_coutinho,D. Diogo Coutinho,False,8
+6,sequeira,Sequeira,True,15
+6,steinbroken,Steinbroken,True,14
+6,vilaca_junior,Vilaça Júnior,True,17
+7,darque,Darque,True,8
+7,teles_gama,Teles da Gama,True,7
+7,vladimiro,Vladimiro,False,4
+8,gonçalo,Gonçalo,False,4
+8,neves,Neves,False,6
+8,sousa_neto,Sousa Neto,False,5
+9,manuel_monforte,Manuel Monforte,True,11
+9,maria_monforte,Maria Monforte,True,13
+9,pedro_maia,Pedro da Maia,True,17
+9,vilaca_pai,Vilaça,False,11

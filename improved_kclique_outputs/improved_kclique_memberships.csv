@@ -1,0 +1,208 @@
+community,character_id,character,membership_type,is_overlap
+1,adelia,Adélia,periphery,True
+1,afonso_maia,Afonso da Maia,core,True
+1,andre_ega,André da Ega,periphery,True
+1,andre_noronha,André de Noronha,periphery,True
+1,azevedo,Azevedo,periphery,True
+1,baptista,Baptista,periphery,True
+1,baronesa_craben,Baronesa de Craben,periphery,True
+1,carlos_maia,Carlos da Maia,core,True
+1,charlie,Charlie,periphery,True
+1,clifford,Clifford,periphery,True
+1,conde_gouvarinho,Conde de Gouvarinho,core,True
+1,condessa_runa,Condessa de Runa,periphery,True
+1,craft,Craft,core,True
+1,cruges,Cruges,core,True
+1,diogo_coutinho,D. Diogo Coutinho,periphery,True
+1,joana_coutinho,D. Joana Coutinho,periphery,True
+1,maria_cunha,D. Maria da Cunha,periphery,True
+1,darque,Darque,core,True
+1,eusebiozinho_silveira,Eusebiozinho Silveira,core,True
+1,joaninha_vilar,Joaninha Vilar,periphery,True
+1,joao_ega,João da Ega,core,True
+1,lola,Lola,periphery,True
+1,mac_gren,Mac Gren,periphery,True
+1,madame_estorade,Madame  de  l'Estorade,periphery,True
+1,marcelina,Marcelina,periphery,True
+1,marques_souselas,Marquês de Souselas,periphery,True
+1,mendonça,Mendonça,periphery,True
+1,mulato,Mulato,periphery,True
+1,padre_serafim,Padre Serafim,periphery,True
+1,palma_cavalao,Palma Cavalão,periphery,True
+1,reverendo_bonifacio,Reverendo Bonifácio,periphery,True
+1,rufino,Rufino,periphery,True
+1,sequeira,Sequeira,core,False
+1,steinbroken,Steinbroken,core,False
+1,taveira,Taveira,core,True
+1,teixeira,Teixeira,periphery,True
+1,teles_gama,Teles da Gama,core,True
+1,tomas_alencar,Tomás de Alencar,core,True
+1,vargas,Vargas,periphery,True
+1,vicente,Vicente,periphery,True
+1,vilaca_junior,Vilaça Júnior,core,False
+1,viscondessa_alvim,Viscondessa de Alvim,periphery,True
+1,vladimiro,Vladimiro,periphery,True
+2,adelia,Adélia,periphery,True
+2,afonso_maia,Afonso da Maia,core,True
+2,andre_ega,André da Ega,periphery,True
+2,andre_noronha,André de Noronha,periphery,True
+2,azevedo,Azevedo,periphery,True
+2,baptista,Baptista,periphery,True
+2,baronesa_craben,Baronesa de Craben,periphery,True
+2,carlos_maia,Carlos da Maia,core,True
+2,charlie,Charlie,periphery,True
+2,clifford,Clifford,periphery,True
+2,conde_gouvarinho,Conde de Gouvarinho,core,True
+2,condessa_gouvarinho,Condessa de Gouvarinho,core,False
+2,condessa_runa,Condessa de Runa,periphery,True
+2,craft,Craft,core,True
+2,cruges,Cruges,core,True
+2,diogo_coutinho,D. Diogo Coutinho,periphery,True
+2,joana_coutinho,D. Joana Coutinho,periphery,True
+2,maria_cunha,D. Maria da Cunha,periphery,True
+2,damaso_salcede,Dâmaso Salcede,core,True
+2,jacob_cohen,Jacob Cohen,core,False
+2,joaninha_vilar,Joaninha Vilar,periphery,True
+2,joao_ega,João da Ega,core,True
+2,lola,Lola,periphery,True
+2,mac_gren,Mac Gren,periphery,True
+2,madame_estorade,Madame  de  l'Estorade,periphery,True
+2,madame_rughel,Madame Rughel,periphery,False
+2,marcelina,Marcelina,periphery,True
+2,marques_souselas,Marquês de Souselas,periphery,True
+2,mendonça,Mendonça,periphery,True
+2,mulato,Mulato,periphery,True
+2,padre_serafim,Padre Serafim,periphery,True
+2,palma_cavalao,Palma Cavalão,periphery,True
+2,raquel_cohen,Raquel Cohen,core,False
+2,reverendo_bonifacio,Reverendo Bonifácio,periphery,True
+2,rufino,Rufino,periphery,True
+2,taveira,Taveira,core,True
+2,teixeira,Teixeira,periphery,True
+2,tomas_alencar,Tomás de Alencar,core,True
+2,vargas,Vargas,periphery,True
+2,vicente,Vicente,periphery,True
+2,viscondessa_alvim,Viscondessa de Alvim,periphery,True
+2,vitor,Vítor,periphery,False
+3,andre_ega,André da Ega,periphery,True
+3,augusta,Augusta,periphery,True
+3,azevedo,Azevedo,periphery,True
+3,baptista,Baptista,periphery,True
+3,carlos_maia,Carlos da Maia,core,True
+3,charlie,Charlie,periphery,True
+3,clifford,Clifford,periphery,True
+3,condessa_runa,Condessa de Runa,periphery,True
+3,maria_cunha,D. Maria da Cunha,periphery,True
+3,domingos,Domingos,core,False
+3,damaso_salcede,Dâmaso Salcede,core,True
+3,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,core,False
+3,joao_ega,João da Ega,core,True
+3,lola,Lola,periphery,True
+3,mac_gren,Mac Gren,periphery,True
+3,madame_chaplain,Madame Chaplain,periphery,True
+3,maria_eduarda,Maria Eduarda,core,True
+3,marques_souselas,Marquês de Souselas,periphery,True
+3,melanie,Melanie,core,False
+3,mendonça,Mendonça,periphery,True
+3,miss_sara,Miss Sara,core,False
+3,mulato,Mulato,periphery,True
+3,mae_cruges,Mãe Cruges,periphery,True
+3,niniche,Niniche,core,False
+3,padre_serafim,Padre Serafim,periphery,True
+3,palma_cavalao,Palma Cavalão,periphery,True
+3,reverendo_bonifacio,Reverendo Bonifácio,periphery,True
+3,rosa,Rosa,core,False
+3,rufino,Rufino,periphery,True
+4,afonso_maia,Afonso da Maia,core,True
+4,andre_ega,André da Ega,periphery,True
+4,andre_noronha,André de Noronha,periphery,True
+4,augusta,Augusta,periphery,True
+4,azevedo,Azevedo,periphery,True
+4,baptista,Baptista,periphery,True
+4,carlos_maia,Carlos da Maia,core,True
+4,charlie,Charlie,periphery,True
+4,condessa_runa,Condessa de Runa,periphery,True
+4,diogo_coutinho,D. Diogo Coutinho,periphery,True
+4,joana_coutinho,D. Joana Coutinho,periphery,True
+4,joao_cunha,D. João da Cunha,periphery,False
+4,maria_cunha,D. Maria da Cunha,periphery,True
+4,guimaraes,Guimarães,core,False
+4,joaninha_vilar,Joaninha Vilar,periphery,True
+4,joao_ega,João da Ega,core,True
+4,mac_gren,Mac Gren,periphery,True
+4,madame_estorade,Madame  de  l'Estorade,periphery,True
+4,madame_chaplain,Madame Chaplain,periphery,True
+4,manuel_monforte,Manuel Monforte,core,False
+4,marcelina,Marcelina,periphery,True
+4,maria_eduarda,Maria Eduarda,core,True
+4,maria_monforte,Maria Monforte,core,False
+4,marques_souselas,Marquês de Souselas,periphery,True
+4,melo,Melo,periphery,False
+4,mendonça,Mendonça,periphery,True
+4,mulato,Mulato,periphery,True
+4,mae_cruges,Mãe Cruges,periphery,True
+4,padre_serafim,Padre Serafim,periphery,True
+4,palma_cavalao,Palma Cavalão,periphery,True
+4,pedro_maia,Pedro da Maia,core,True
+4,reverendo_bonifacio,Reverendo Bonifácio,periphery,True
+4,rufino,Rufino,periphery,True
+4,tancredo,Tancredo,periphery,False
+4,teixeira,Teixeira,periphery,True
+4,tomas_alencar,Tomás de Alencar,core,True
+4,vargas,Vargas,periphery,True
+4,vicente,Vicente,periphery,True
+5,andre_ega,André da Ega,periphery,True
+5,azevedo,Azevedo,periphery,True
+5,baptista,Baptista,periphery,True
+5,baronesa_craben,Baronesa de Craben,periphery,True
+5,carlos_maia,Carlos da Maia,core,True
+5,charlie,Charlie,periphery,True
+5,conde_gouvarinho,Conde de Gouvarinho,core,True
+5,maria_cunha,D. Maria da Cunha,periphery,True
+5,darque,Darque,core,True
+5,gonçalo,Gonçalo,core,False
+5,joao_ega,João da Ega,core,True
+5,mac_gren,Mac Gren,periphery,True
+5,marques_souselas,Marquês de Souselas,periphery,True
+5,mendonça,Mendonça,periphery,True
+5,mulato,Mulato,periphery,True
+5,neves,Neves,core,False
+5,padre_serafim,Padre Serafim,periphery,True
+5,palma_cavalao,Palma Cavalão,periphery,True
+5,reverendo_bonifacio,Reverendo Bonifácio,periphery,True
+5,rufino,Rufino,periphery,True
+5,sousa_neto,Sousa Neto,core,False
+5,teles_gama,Teles da Gama,core,True
+5,vargas,Vargas,periphery,True
+5,vladimiro,Vladimiro,periphery,True
+6,abade_custodio,abade Custódio,core,False
+6,afonso_maia,Afonso da Maia,core,True
+6,andre_ega,André da Ega,periphery,True
+6,andre_noronha,André de Noronha,periphery,True
+6,azevedo,Azevedo,periphery,True
+6,brown,Brown,core,False
+6,carlos_maia,Carlos da Maia,core,True
+6,condessa_runa,Condessa de Runa,periphery,True
+6,esteves,Esteves,periphery,False
+6,gertrudes,Gertrudes,periphery,True
+6,marcelina,Marcelina,periphery,True
+6,reverendo_bonifacio,Reverendo Bonifácio,periphery,True
+6,saldanha,Saldanha,periphery,False
+6,teixeira,Teixeira,periphery,True
+6,vicente,Vicente,periphery,True
+6,vilaca_pai,Vilaça,core,False
+7,afonso_maia,Afonso da Maia,core,True
+7,conde_runa,Conde de Runa,core,False
+7,maria_eduarda_runa,Maria Eduarda Runa,core,False
+7,padre_vasques,Padre Vasques,core,False
+7,pedro_maia,Pedro da Maia,core,True
+7,teixeira,Teixeira,periphery,True
+7,tia_fanny,Tia Fanny,periphery,False
+8,carlos_maia,Carlos da Maia,core,True
+8,ana_silveira,D. Ana Silveira,core,False
+8,eugenia_silveira,D. Eugénia Silveira,core,False
+8,eusebiozinho_silveira,Eusebiozinho Silveira,core,True
+8,gertrudes,Gertrudes,periphery,True
+8,lola,Lola,periphery,True
+8,palma_cavalao,Palma Cavalão,periphery,True
+8,teresinha_silveira,Teresinha Silveira,core,False

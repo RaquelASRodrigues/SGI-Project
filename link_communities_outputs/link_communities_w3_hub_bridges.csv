@@ -1,0 +1,214 @@
+hub_id,hub,neighbor_id,neighbor,weight,core_communities_reached
+joao_ega,João da Ega,adelia,Adélia,5.0,none
+carlos_maia,Carlos da Maia,,another removed hub,99.0,none
+afonso_maia,Afonso da Maia,,another removed hub,99.0,none
+carlos_maia,Carlos da Maia,augusta,Augusta,3.0,none
+carlos_maia,Carlos da Maia,baptista,Baptista,67.0,none
+carlos_maia,Carlos da Maia,brown,Brown,12.0,none
+carlos_maia,Carlos da Maia,abade_custodio,abade Custódio,4.0,none
+carlos_maia,Carlos da Maia,ana_silveira,D. Ana Silveira,3.0,none
+carlos_maia,Carlos da Maia,charlie,Charlie,19.0,none
+carlos_maia,Carlos da Maia,clifford,Clifford,8.0,none
+carlos_maia,Carlos da Maia,conde_gouvarinho,Conde de Gouvarinho,32.0,"C1, C5"
+carlos_maia,Carlos da Maia,condessa_gouvarinho,Condessa de Gouvarinho,59.0,C1
+carlos_maia,Carlos da Maia,craft,Craft,130.0,"C1, C5, C6"
+carlos_maia,Carlos da Maia,cruges,Cruges,86.0,"C1, C3"
+carlos_maia,Carlos da Maia,,another removed hub,214.0,none
+damaso_salcede,Dâmaso Salcede,,another removed hub,214.0,none
+carlos_maia,Carlos da Maia,darque,Darque,16.0,"C5, C7"
+carlos_maia,Carlos da Maia,diogo_coutinho,D. Diogo Coutinho,18.0,C6
+carlos_maia,Carlos da Maia,domingos,Domingos,21.0,C2
+carlos_maia,Carlos da Maia,encarnacion,Encarnación,7.0,none
+carlos_maia,Carlos da Maia,eugenia_silveira,D. Eugénia Silveira,4.0,none
+carlos_maia,Carlos da Maia,eusebiozinho_silveira,Eusebiozinho Silveira,48.0,"C1, C3"
+carlos_maia,Carlos da Maia,gertrudes,Gertrudes,4.0,none
+carlos_maia,Carlos da Maia,guimaraes,Guimarães,23.0,C4
+carlos_maia,Carlos da Maia,jacob_cohen,Jacob Cohen,45.0,"C1, C3"
+carlos_maia,Carlos da Maia,joaninha_vilar,Joaninha Vilar,4.0,none
+carlos_maia,Carlos da Maia,,another removed hub,515.0,none
+joao_ega,João da Ega,,another removed hub,515.0,none
+carlos_maia,Carlos da Maia,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,45.0,C2
+carlos_maia,Carlos da Maia,lola,Lola,12.0,C3
+carlos_maia,Carlos da Maia,mac_gren,Mac Gren,10.0,none
+carlos_maia,Carlos da Maia,madame_rughel,Madame Rughel,10.0,none
+carlos_maia,Carlos da Maia,mae_cruges,Mãe Cruges,3.0,none
+carlos_maia,Carlos da Maia,manuel_monforte,Manuel Monforte,11.0,"C4, C9"
+carlos_maia,Carlos da Maia,marcelina,Marcelina,3.0,none
+carlos_maia,Carlos da Maia,maria_cunha,D. Maria da Cunha,15.0,none
+carlos_maia,Carlos da Maia,,another removed hub,212.0,none
+maria_eduarda,Maria Eduarda,,another removed hub,212.0,none
+carlos_maia,Carlos da Maia,maria_monforte,Maria Monforte,20.0,"C4, C9"
+carlos_maia,Carlos da Maia,marques_souselas,Marquês de Souselas,3.0,none
+carlos_maia,Carlos da Maia,melanie,Melanie,15.0,C2
+carlos_maia,Carlos da Maia,mendonça,Mendonça,3.0,none
+carlos_maia,Carlos da Maia,miss_sara,Miss Sara,24.0,C2
+carlos_maia,Carlos da Maia,mulato,Mulato,6.0,none
+carlos_maia,Carlos da Maia,niniche,Niniche,24.0,C2
+carlos_maia,Carlos da Maia,padre_serafim,Padre Serafim,3.0,none
+carlos_maia,Carlos da Maia,palma_cavalao,Palma Cavalão,21.0,C3
+carlos_maia,Carlos da Maia,pedro_maia,Pedro da Maia,16.0,"C4, C9"
+carlos_maia,Carlos da Maia,raquel_cohen,Raquel Cohen,35.0,C1
+carlos_maia,Carlos da Maia,reverendo_bonifacio,Reverendo Bonifácio,7.0,none
+carlos_maia,Carlos da Maia,rosa,Rosa,51.0,C2
+carlos_maia,Carlos da Maia,rufino,Rufino,6.0,none
+carlos_maia,Carlos da Maia,saldanha,Saldanha,3.0,none
+carlos_maia,Carlos da Maia,sequeira,Sequeira,19.0,"C1, C5, C6"
+carlos_maia,Carlos da Maia,sousa_neto,Sousa Neto,13.0,C8
+carlos_maia,Carlos da Maia,steinbroken,Steinbroken,21.0,"C1, C6"
+carlos_maia,Carlos da Maia,taveira,Taveira,44.0,"C1, C3, C5"
+carlos_maia,Carlos da Maia,teixeira,Teixeira,5.0,none
+carlos_maia,Carlos da Maia,teles_gama,Teles da Gama,9.0,"C5, C7"
+carlos_maia,Carlos da Maia,teresinha_silveira,Teresinha Silveira,7.0,none
+carlos_maia,Carlos da Maia,,another removed hub,71.0,none
+tomas_alencar,Tomás de Alencar,,another removed hub,71.0,none
+carlos_maia,Carlos da Maia,trigueiros,Trigueiros,4.0,none
+carlos_maia,Carlos da Maia,vargas,Vargas,10.0,none
+carlos_maia,Carlos da Maia,vicente,Vicente,5.0,none
+carlos_maia,Carlos da Maia,vilaca_junior,Vilaça Júnior,64.0,"C1, C6"
+carlos_maia,Carlos da Maia,vilaca_pai,Vilaça,32.0,C9
+carlos_maia,Carlos da Maia,vladimiro,Vladimiro,10.0,C7
+afonso_maia,Afonso da Maia,conde_gouvarinho,Conde de Gouvarinho,4.0,"C1, C5"
+damaso_salcede,Dâmaso Salcede,conde_gouvarinho,Conde de Gouvarinho,7.0,"C1, C5"
+joao_ega,João da Ega,conde_gouvarinho,Conde de Gouvarinho,29.0,"C1, C5"
+tomas_alencar,Tomás de Alencar,conde_gouvarinho,Conde de Gouvarinho,6.0,"C1, C5"
+afonso_maia,Afonso da Maia,craft,Craft,27.0,"C1, C5, C6"
+damaso_salcede,Dâmaso Salcede,craft,Craft,25.0,"C1, C5, C6"
+joao_ega,João da Ega,craft,Craft,77.0,"C1, C5, C6"
+maria_eduarda,Maria Eduarda,craft,Craft,17.0,"C1, C5, C6"
+tomas_alencar,Tomás de Alencar,craft,Craft,8.0,"C1, C5, C6"
+joao_ega,João da Ega,,another removed hub,73.0,none
+afonso_maia,Afonso da Maia,,another removed hub,73.0,none
+joao_ega,João da Ega,azevedo,Azevedo,4.0,none
+joao_ega,João da Ega,baptista,Baptista,30.0,none
+joao_ega,João da Ega,condessa_gouvarinho,Condessa de Gouvarinho,25.0,C1
+joao_ega,João da Ega,cruges,Cruges,38.0,"C1, C3"
+joao_ega,João da Ega,,another removed hub,81.0,none
+damaso_salcede,Dâmaso Salcede,,another removed hub,81.0,none
+joao_ega,João da Ega,darque,Darque,3.0,"C5, C7"
+joao_ega,João da Ega,diogo_coutinho,D. Diogo Coutinho,12.0,C6
+joao_ega,João da Ega,domingos,Domingos,6.0,C2
+joao_ega,João da Ega,eusebiozinho_silveira,Eusebiozinho Silveira,8.0,"C1, C3"
+joao_ega,João da Ega,gonçalo,Gonçalo,7.0,C8
+joao_ega,João da Ega,guimaraes,Guimarães,56.0,C4
+joao_ega,João da Ega,jacob_cohen,Jacob Cohen,79.0,"C1, C3"
+joao_ega,João da Ega,joana_coutinho,D. Joana Coutinho,3.0,none
+joao_ega,João da Ega,mac_gren,Mac Gren,3.0,none
+joao_ega,João da Ega,manuel_monforte,Manuel Monforte,17.0,"C4, C9"
+joao_ega,João da Ega,,another removed hub,95.0,none
+maria_eduarda,Maria Eduarda,,another removed hub,95.0,none
+joao_ega,João da Ega,maria_monforte,Maria Monforte,11.0,"C4, C9"
+joao_ega,João da Ega,marques_souselas,Marquês de Souselas,3.0,none
+joao_ega,João da Ega,miss_sara,Miss Sara,4.0,C2
+joao_ega,João da Ega,neves,Neves,13.0,C8
+joao_ega,João da Ega,niniche,Niniche,3.0,C2
+joao_ega,João da Ega,palma_cavalao,Palma Cavalão,10.0,C3
+joao_ega,João da Ega,pedro_maia,Pedro da Maia,5.0,"C4, C9"
+joao_ega,João da Ega,raquel_cohen,Raquel Cohen,53.0,C1
+joao_ega,João da Ega,reverendo_bonifacio,Reverendo Bonifácio,9.0,none
+joao_ega,João da Ega,rosa,Rosa,5.0,C2
+joao_ega,João da Ega,rufino,Rufino,15.0,none
+joao_ega,João da Ega,sequeira,Sequeira,13.0,"C1, C5, C6"
+joao_ega,João da Ega,sousa_neto,Sousa Neto,13.0,C8
+joao_ega,João da Ega,steinbroken,Steinbroken,17.0,"C1, C6"
+joao_ega,João da Ega,taveira,Taveira,32.0,"C1, C3, C5"
+joao_ega,João da Ega,teles_gama,Teles da Gama,3.0,"C5, C7"
+joao_ega,João da Ega,,another removed hub,56.0,none
+tomas_alencar,Tomás de Alencar,,another removed hub,56.0,none
+joao_ega,João da Ega,vargas,Vargas,3.0,none
+joao_ega,João da Ega,vilaca_junior,Vilaça Júnior,70.0,"C1, C6"
+joao_ega,João da Ega,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,12.0,C2
+joao_ega,João da Ega,maria_cunha,D. Maria da Cunha,7.0,none
+damaso_salcede,Dâmaso Salcede,raquel_cohen,Raquel Cohen,25.0,C1
+tomas_alencar,Tomás de Alencar,raquel_cohen,Raquel Cohen,9.0,C1
+afonso_maia,Afonso da Maia,abade_custodio,abade Custódio,5.0,none
+afonso_maia,Afonso da Maia,ana_silveira,D. Ana Silveira,6.0,none
+afonso_maia,Afonso da Maia,andre_ega,André da Ega,3.0,none
+afonso_maia,Afonso da Maia,baptista,Baptista,5.0,none
+afonso_maia,Afonso da Maia,brown,Brown,5.0,none
+afonso_maia,Afonso da Maia,conde_runa,Conde de Runa,3.0,none
+afonso_maia,Afonso da Maia,cruges,Cruges,6.0,"C1, C3"
+afonso_maia,Afonso da Maia,,another removed hub,20.0,none
+damaso_salcede,Dâmaso Salcede,,another removed hub,20.0,none
+afonso_maia,Afonso da Maia,diogo_coutinho,D. Diogo Coutinho,13.0,C6
+afonso_maia,Afonso da Maia,eusebiozinho_silveira,Eusebiozinho Silveira,7.0,"C1, C3"
+afonso_maia,Afonso da Maia,jacob_cohen,Jacob Cohen,3.0,"C1, C3"
+afonso_maia,Afonso da Maia,manuel_monforte,Manuel Monforte,12.0,"C4, C9"
+afonso_maia,Afonso da Maia,marcelina,Marcelina,4.0,none
+afonso_maia,Afonso da Maia,,another removed hub,19.0,none
+maria_eduarda,Maria Eduarda,,another removed hub,19.0,none
+afonso_maia,Afonso da Maia,maria_monforte,Maria Monforte,17.0,"C4, C9"
+afonso_maia,Afonso da Maia,padre_vasques,Padre Vasques,5.0,none
+afonso_maia,Afonso da Maia,pedro_maia,Pedro da Maia,43.0,"C4, C9"
+afonso_maia,Afonso da Maia,reverendo_bonifacio,Reverendo Bonifácio,11.0,none
+afonso_maia,Afonso da Maia,rufino,Rufino,3.0,none
+afonso_maia,Afonso da Maia,sebastiao_maia,Sebastião da Maia,3.0,none
+afonso_maia,Afonso da Maia,sequeira,Sequeira,21.0,"C1, C5, C6"
+afonso_maia,Afonso da Maia,steinbroken,Steinbroken,16.0,"C1, C6"
+afonso_maia,Afonso da Maia,taveira,Taveira,6.0,"C1, C3, C5"
+afonso_maia,Afonso da Maia,teixeira,Teixeira,4.0,none
+afonso_maia,Afonso da Maia,tia_fanny,Tia Fanny,3.0,none
+afonso_maia,Afonso da Maia,,another removed hub,4.0,none
+tomas_alencar,Tomás de Alencar,,another removed hub,4.0,none
+afonso_maia,Afonso da Maia,vilaca_junior,Vilaça Júnior,25.0,"C1, C6"
+afonso_maia,Afonso da Maia,vilaca_pai,Vilaça,58.0,C9
+damaso_salcede,Dâmaso Salcede,baptista,Baptista,3.0,none
+maria_eduarda,Maria Eduarda,baptista,Baptista,5.0,none
+tomas_alencar,Tomás de Alencar,baptista,Baptista,5.0,none
+damaso_salcede,Dâmaso Salcede,clifford,Clifford,4.0,none
+damaso_salcede,Dâmaso Salcede,condessa_gouvarinho,Condessa de Gouvarinho,12.0,C1
+damaso_salcede,Dâmaso Salcede,cruges,Cruges,16.0,"C1, C3"
+maria_eduarda,Maria Eduarda,cruges,Cruges,12.0,"C1, C3"
+tomas_alencar,Tomás de Alencar,cruges,Cruges,16.0,"C1, C3"
+damaso_salcede,Dâmaso Salcede,damaso_guedes,Dâmaso Guedes,3.0,none
+damaso_salcede,Dâmaso Salcede,eusebiozinho_silveira,Eusebiozinho Silveira,5.0,"C1, C3"
+damaso_salcede,Dâmaso Salcede,guimaraes,Guimarães,17.0,C4
+damaso_salcede,Dâmaso Salcede,jacob_cohen,Jacob Cohen,22.0,"C1, C3"
+damaso_salcede,Dâmaso Salcede,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,32.0,C2
+damaso_salcede,Dâmaso Salcede,lola,Lola,3.0,C3
+damaso_salcede,Dâmaso Salcede,,another removed hub,32.0,none
+maria_eduarda,Maria Eduarda,,another removed hub,32.0,none
+damaso_salcede,Dâmaso Salcede,melanie,Melanie,5.0,C2
+damaso_salcede,Dâmaso Salcede,miss_sara,Miss Sara,3.0,C2
+damaso_salcede,Dâmaso Salcede,neves,Neves,4.0,C8
+damaso_salcede,Dâmaso Salcede,niniche,Niniche,4.0,C2
+damaso_salcede,Dâmaso Salcede,palma_cavalao,Palma Cavalão,10.0,C3
+damaso_salcede,Dâmaso Salcede,pedro_maia,Pedro da Maia,4.0,"C4, C9"
+damaso_salcede,Dâmaso Salcede,reverendo_bonifacio,Reverendo Bonifácio,3.0,none
+damaso_salcede,Dâmaso Salcede,rosa,Rosa,4.0,C2
+damaso_salcede,Dâmaso Salcede,taveira,Taveira,12.0,"C1, C3, C5"
+damaso_salcede,Dâmaso Salcede,,another removed hub,16.0,none
+tomas_alencar,Tomás de Alencar,,another removed hub,16.0,none
+damaso_salcede,Dâmaso Salcede,vitor,Vítor,3.0,none
+damaso_salcede,Dâmaso Salcede,domingos,Domingos,4.0,C2
+tomas_alencar,Tomás de Alencar,diogo_coutinho,D. Diogo Coutinho,3.0,C6
+maria_eduarda,Maria Eduarda,domingos,Domingos,15.0,C2
+tomas_alencar,Tomás de Alencar,eusebiozinho_silveira,Eusebiozinho Silveira,4.0,"C1, C3"
+tomas_alencar,Tomás de Alencar,jacob_cohen,Jacob Cohen,14.0,"C1, C3"
+maria_eduarda,Maria Eduarda,joaquim_alvares_castro_gomes,Joaquim Álvares de Castro Gomes,18.0,C2
+maria_eduarda,Maria Eduarda,mac_gren,Mac Gren,9.0,none
+tomas_alencar,Tomás de Alencar,madame_estorade,Madame  de  l'Estorade,4.0,none
+maria_eduarda,Maria Eduarda,manuel_monforte,Manuel Monforte,3.0,"C4, C9"
+tomas_alencar,Tomás de Alencar,manuel_monforte,Manuel Monforte,6.0,"C4, C9"
+maria_eduarda,Maria Eduarda,guimaraes,Guimarães,7.0,C4
+maria_eduarda,Maria Eduarda,maria_cunha,D. Maria da Cunha,3.0,none
+maria_eduarda,Maria Eduarda,maria_monforte,Maria Monforte,4.0,"C4, C9"
+maria_eduarda,Maria Eduarda,melanie,Melanie,8.0,C2
+maria_eduarda,Maria Eduarda,miss_sara,Miss Sara,13.0,C2
+maria_eduarda,Maria Eduarda,mulato,Mulato,3.0,none
+maria_eduarda,Maria Eduarda,niniche,Niniche,23.0,C2
+maria_eduarda,Maria Eduarda,palma_cavalao,Palma Cavalão,3.0,C3
+maria_eduarda,Maria Eduarda,pedro_maia,Pedro da Maia,4.0,"C4, C9"
+maria_eduarda,Maria Eduarda,rosa,Rosa,30.0,C2
+maria_eduarda,Maria Eduarda,,another removed hub,7.0,none
+tomas_alencar,Tomás de Alencar,,another removed hub,7.0,none
+maria_eduarda,Maria Eduarda,vilaca_junior,Vilaça Júnior,14.0,"C1, C6"
+tomas_alencar,Tomás de Alencar,maria_monforte,Maria Monforte,14.0,"C4, C9"
+tomas_alencar,Tomás de Alencar,pedro_maia,Pedro da Maia,17.0,"C4, C9"
+tomas_alencar,Tomás de Alencar,rufino,Rufino,6.0,none
+tomas_alencar,Tomás de Alencar,sequeira,Sequeira,3.0,"C1, C5, C6"
+tomas_alencar,Tomás de Alencar,taveira,Taveira,5.0,"C1, C3, C5"
+tomas_alencar,Tomás de Alencar,guimaraes,Guimarães,8.0,C4
+tomas_alencar,Tomás de Alencar,joao_cunha,D. João da Cunha,7.0,none
+tomas_alencar,Tomás de Alencar,teles_gama,Teles da Gama,3.0,"C5, C7"
+tomas_alencar,Tomás de Alencar,vargas,Vargas,3.0,none
+tomas_alencar,Tomás de Alencar,vilaca_junior,Vilaça Júnior,6.0,"C1, C6"

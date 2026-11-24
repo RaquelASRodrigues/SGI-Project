@@ -1,0 +1,3 @@
+cut,partition_density_D,reported_communities,links_in_reported_communities
+Hard: one global height,0.339358934668487,16,247
+Adaptive: best of 5 walks (seed 2026),0.36465984043586513,27,306
