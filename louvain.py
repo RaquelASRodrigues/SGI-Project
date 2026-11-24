@@ -207,7 +207,7 @@ def run_unweighted_degree_null(G_orig, n_shuffles=30, random_seed=42):
     return np.array(null_Qs)
 
 
-def run_weight_shuffled_null(G_orig, n_shuffles=30, random_seed=42):
+def run_weight_shuffled_null(G_orig, n_shuffles=100, random_seed=42):
     """
     Keep real network edges fixed and randomly permute edge weights across them.
     This isolates the effect of weight distribution without assigning massive
@@ -235,7 +235,7 @@ z_unw = (Q_real_unweighted - null_Q_unw.mean()) / null_Q_unw.std()
 null_Q_w_fixed_topo = run_weight_shuffled_null(G, n_shuffles=30)
 z_w_fixed_topo = (best_Q - null_Q_w_fixed_topo.mean()) / null_Q_w_fixed_topo.std()
 
-print("\n--- NULL MODEL COMPARISON (30 SHUFFLES) ---")
+print("\n--- NULL MODEL COMPARISON (100 SHUFFLES) ---")
 print(
     f"[Unweighted Degree-Preserving] Q_real = {Q_real_unweighted:.4f} vs. "
     f"Q_null = {null_Q_unw.mean():.4f} ± {null_Q_unw.std():.4f} (Z-score = {z_unw:+.2f})"
@@ -382,7 +382,7 @@ axes[1].hist(
     color="#95a5a6",
     edgecolor="#2c3e50",
     alpha=0.85,
-    label="Degree-Preserving Null Model (30 swaps)",
+    label="Degree-Preserving Null Model (100 swaps)",
 )
 axes[1].axvline(
     Q_real_unweighted,
