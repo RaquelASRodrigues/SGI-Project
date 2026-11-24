@@ -1,0 +1,104 @@
+﻿character,community_id,community_leader,raw_strength,cosine_strength,degree
+Carlos da Maia,1,Carlos da Maia,2341.0,3.4705,82
+João da Ega,1,Carlos da Maia,1547.0,2.2881,58
+Dâmaso Salcede,1,Carlos da Maia,604.0,1.3038,38
+Maria Eduarda,1,Carlos da Maia,580.0,1.3481,40
+Vilaça Júnior,1,Carlos da Maia,279.0,0.886,35
+Baptista,1,Carlos da Maia,154.0,0.6241,20
+Joaquim Álvares de Castro Gomes,1,Carlos da Maia,152.0,0.6144,18
+Guimarães,1,Carlos da Maia,149.0,0.5592,15
+Rosa,1,Carlos da Maia,141.0,0.6897,14
+Niniche,1,Carlos da Maia,83.0,0.4954,13
+Miss Sara,1,Carlos da Maia,82.0,0.5711,10
+Domingos,1,Carlos da Maia,76.0,0.496,14
+Melanie,1,Carlos da Maia,62.0,0.5291,12
+Mac Gren,1,Carlos da Maia,42.0,0.3361,12
+Madame Rughel,1,Carlos da Maia,20.0,0.2227,3
+Mulato,1,Carlos da Maia,15.0,0.1681,5
+Mãe Cruges,1,Carlos da Maia,8.0,0.1061,5
+Padre Serafim,1,Carlos da Maia,7.0,0.0737,4
+Condessa de Runa,1,Carlos da Maia,6.0,0.1174,3
+Madame Chaplain,1,Carlos da Maia,4.0,0.0622,2
+Viscondessa da Gafanha,1,Carlos da Maia,3.0,0.0589,2
+Chaplain,1,Carlos da Maia,2.0,0.0292,1
+Madame Trelain,1,Carlos da Maia,2.0,0.044,2
+Susana,1,Carlos da Maia,2.0,0.0434,2
+Josefa,1,Carlos da Maia,2.0,0.036,1
+Caetano da Maia,1,Carlos da Maia,1.0,0.0207,1
+D. Adosinda,1,Carlos da Maia,1.0,0.0207,1
+Tomás de Alencar,2,Tomás de Alencar,318.0,1.2241,37
+Pedro da Maia,2,Tomás de Alencar,219.0,1.3694,34
+Maria Monforte,2,Tomás de Alencar,195.0,1.3109,36
+Manuel Monforte,2,Tomás de Alencar,114.0,0.8241,20
+Madame  de  l'Estorade,2,Tomás de Alencar,17.0,0.5491,9
+D. João da Cunha,2,Tomás de Alencar,14.0,0.3069,5
+Tancredo,2,Tomás de Alencar,14.0,0.4034,7
+Dâmaso Guedes,2,Tomás de Alencar,10.0,0.2521,7
+Melo,2,Tomás de Alencar,9.0,0.4014,4
+André de Noronha,2,Tomás de Alencar,7.0,0.2578,4
+D. Joana Coutinho,2,Tomás de Alencar,6.0,0.0941,3
+l'Estorade,2,Tomás de Alencar,6.0,0.3191,6
+Luís Runa,2,Tomás de Alencar,5.0,0.136,4
+D. João Coutinho,2,Tomás de Alencar,4.0,0.1257,3
+Cazoti,2,Tomás de Alencar,3.0,0.1127,3
+D. Maria da Gama,2,Tomás de Alencar,3.0,0.2879,3
+Conde de Gouvarinho,3,Conde de Gouvarinho,194.0,1.0289,29
+Condessa de Gouvarinho,3,Conde de Gouvarinho,191.0,0.7738,24
+Darque,3,Conde de Gouvarinho,82.0,0.7741,23
+Teles da Gama,3,Conde de Gouvarinho,58.0,0.6405,21
+Rufino,3,Conde de Gouvarinho,51.0,0.427,15
+D. Maria da Cunha,3,Conde de Gouvarinho,51.0,0.3592,17
+Sousa Neto,3,Conde de Gouvarinho,48.0,0.567,12
+Neves,3,Conde de Gouvarinho,46.0,0.5498,14
+Vargas,3,Conde de Gouvarinho,40.0,0.5261,16
+Charlie,3,Conde de Gouvarinho,33.0,0.2296,10
+Gonçalo,3,Conde de Gouvarinho,29.0,0.576,9
+Vladimiro,3,Conde de Gouvarinho,28.0,0.4215,6
+Mendonça,3,Conde de Gouvarinho,12.0,0.357,6
+Baronesa de Craben,3,Conde de Gouvarinho,6.0,0.1696,4
+Eusebiozinho Silveira,4,Eusebiozinho Silveira,155.0,0.9073,25
+Palma Cavalão,4,Eusebiozinho Silveira,78.0,0.524,14
+Lola,4,Eusebiozinho Silveira,43.0,0.4936,14
+Teixeira,4,Eusebiozinho Silveira,33.0,0.6331,10
+D. Ana Silveira,4,Eusebiozinho Silveira,28.0,0.638,10
+Gertrudes,4,Eusebiozinho Silveira,23.0,0.7264,10
+Teresinha Silveira,4,Eusebiozinho Silveira,20.0,0.5318,7
+D. Eugénia Silveira,4,Eusebiozinho Silveira,17.0,0.5711,9
+Saldanha,4,Eusebiozinho Silveira,12.0,0.4336,5
+Trigueiros,4,Eusebiozinho Silveira,12.0,0.467,7
+Encarnación,4,Eusebiozinho Silveira,11.0,0.2713,4
+Augusta,4,Eusebiozinho Silveira,7.0,0.1624,4
+Afonso da Maia,5,Afonso da Maia,567.0,1.995,53
+Vilaça,5,Afonso da Maia,171.0,1.1991,24
+Reverendo Bonifácio,5,Afonso da Maia,38.0,0.2421,9
+Brown,5,Afonso da Maia,34.0,0.4071,8
+abade Custódio,5,Afonso da Maia,15.0,0.2431,4
+Marcelina,5,Afonso da Maia,8.0,0.0903,3
+Vicente,5,Afonso da Maia,7.0,0.0708,2
+Sebastião da Maia,5,Afonso da Maia,6.0,0.0947,4
+Esteves,5,Afonso da Maia,6.0,0.1364,3
+Jones Bule,5,Afonso da Maia,4.0,0.1078,3
+Mr. Théodore,5,Afonso da Maia,3.0,0.0604,2
+Craft,6,Craft,437.0,1.0642,33
+Cruges,6,Craft,294.0,0.93,33
+Taveira,6,Craft,224.0,0.9543,30
+Sequeira,6,Craft,153.0,0.8415,26
+Steinbroken,6,Craft,135.0,0.7942,25
+D. Diogo Coutinho,6,Craft,106.0,0.6167,19
+Clifford,6,Craft,31.0,0.3246,9
+Joaninha Vilar,6,Craft,25.0,0.5509,11
+Marquês de Souselas,6,Craft,15.0,0.1872,5
+André da Ega,6,Craft,14.0,0.2111,8
+Viscondessa de Alvim,6,Craft,12.0,0.4006,5
+Jacob Cohen,7,Jacob Cohen,298.0,0.879,22
+Raquel Cohen,7,Jacob Cohen,235.0,0.7777,18
+Vítor,7,Jacob Cohen,16.0,0.2258,8
+Adélia,7,Jacob Cohen,13.0,0.2707,6
+Maria Lima,7,Jacob Cohen,4.0,0.2431,3
+D. Ana Craveiro,7,Jacob Cohen,3.0,0.0805,3
+Padre Vasques,8,Padre Vasques,14.0,0.5847,5
+Maria Eduarda Runa,8,Padre Vasques,10.0,0.7073,5
+Conde de Runa,8,Padre Vasques,9.0,0.476,4
+Tia Fanny,8,Padre Vasques,6.0,0.4187,3
+Azevedo,9,Azevedo,13.0,0.4059,6
+Savedra,9,Azevedo,1.0,0.2774,1
