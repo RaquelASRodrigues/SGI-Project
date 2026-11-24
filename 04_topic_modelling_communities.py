@@ -270,6 +270,7 @@ def run_bertopic(documents: pd.DataFrame, communities: dict[str, set[str]], args
         vectorizer_model=vectorizer,
         language="portuguese",
         min_topic_size=args.min_topic_size,
+        nr_topics=args.n_topics + 1,  # +1 to allow for outliers
         top_n_words=args.top_terms,
         calculate_probabilities=False,
         verbose=True,
