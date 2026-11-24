@@ -392,14 +392,23 @@ comm_df = pd.DataFrame(comm_rows)
 comm_csv_path = os.path.join(DATA_DIR, "louvain_communities_normalized.csv")
 comm_df.to_csv(comm_csv_path, index=False, encoding="utf-8-sig")
 
-# Export characters grouped by community (community_id,characters)
-comm_by_group_rows = [
-    {
-        "community_id": f"community_{idx - 1}",
-        "characters": "; ".join(sorted(comm, key=lambda n: raw_strength[n], reverse=True)),
-    }
-    for idx, comm in enumerate(best_partition, start=1)
-]
+name_to_id = {v: k for k, v in id_to_name.items()}
+
+# Export characters grouped by community (community_id, character_ids, characters)
+comm_by_group_rows = []
+for idx, comm in enumerate(best_partition, start=1):
+    members_sorted = sorted(comm, key=lambda n: raw_strength[n], reverse=True)
+    comm_by_group_rows.append(
+        {
+            "community_id": f"community_{idx - 1}",
+            "character_ids": "; ".join(name_to_id.get(m, m) for m in members_sorted),
+            "characters": "; ".join(members_sorted),
+        }
+    )
+
+comm_by_group_df = pd.DataFrame(comm_by_group_rows)
+comm_by_group_csv_path = os.path.join(DATA_DIR, "louvain_communities_by_community.csv")
+comm_by_group_df.to_csv(comm_by_group_csv_path, index=False, encoding="utf-8-sig")
 comm_by_group_df = pd.DataFrame(comm_by_group_rows)
 comm_by_group_csv_path = os.path.join(DATA_DIR, "louvain_communities_by_community.csv")
 comm_by_group_df.to_csv(comm_by_group_csv_path, index=False, encoding="utf-8-sig")
