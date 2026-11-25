@@ -1,0 +1,75 @@
+{
+  "min_paragraphs": 15,
+  "representation": "dirichlet",
+  "alpha": 20.0,
+  "min_ref_paragraphs": 5,
+  "n_characters": 28,
+  "n_communities": 7,
+  "k_clusters": 7,
+  "communities_dropped_single_member": [],
+  "nearest_community_hit_rate": 0.32142857142857145,
+  "hit_rate_perm_mean": 0.1682857142857143,
+  "hit_rate_p": 0.06493506493506493,
+  "nearest_community_hit_rate_macro": 0.27380952380952384,
+  "hit_rate_macro_perm_mean": 0.11160714285714286,
+  "hit_rate_macro_p": 0.03196803196803197,
+  "knn3_purity": 0.35714285714285715,
+  "knn3_perm_mean": 0.21726190476190477,
+  "knn3_p": 0.003996003996003996,
+  "silhouette_louvain": -0.0716874414739822,
+  "silhouette_perm_mean": -0.1501805825867486,
+  "silhouette_p": 0.014985014985014986,
+  "clustering": {
+    "ward": {
+      "ARI": 0.09787377657779278,
+      "ARI_perm_mean": 0.0016469794127573398,
+      "ARI_p": 0.03896103896103896,
+      "NMI": 0.47910670010979667,
+      "NMI_perm_mean": 0.37126747472043486,
+      "NMI_p": 0.017982017982017984,
+      "cluster_sizes": [
+        6,
+        5,
+        5,
+        4,
+        4,
+        2,
+        2
+      ]
+    },
+    "spectral": {
+      "ARI": 0.1336296707876094,
+      "ARI_perm_mean": -0.002801778024725657,
+      "ARI_p": 0.015984015984015984,
+      "NMI": 0.5012542823410727,
+      "NMI_perm_mean": 0.3651425886259891,
+      "NMI_p": 0.006993006993006993,
+      "cluster_sizes": [
+        7,
+        6,
+        6,
+        3,
+        2,
+        2,
+        2
+      ]
+    },
+    "kmedoids": {
+      "ARI": 0.05717574827321566,
+      "ARI_perm_mean": -0.0004634497313891013,
+      "ARI_p": 0.13686313686313686,
+      "NMI": 0.4324529699837644,
+      "NMI_perm_mean": 0.36619171476425844,
+      "NMI_p": 0.09290709290709291,
+      "cluster_sizes": [
+        6,
+        5,
+        5,
+        4,
+        4,
+        3,
+        1
+      ]
+    }
+  }
+}
