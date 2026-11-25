@@ -1,0 +1,13 @@
+{
+  "threshold": 1,
+  "n_topics": 6,
+  "min_df": 3,
+  "max_df": 0.5,
+  "random_state": 42,
+  "model": "both",
+  "spacy_model": "pt_core_news_lg",
+  "embedding_model": "iara-project/BERTimbau-large-matryoshka-sts-pt",
+  "n_selected_documents": 3333,
+  "n_vocabulary_terms": 2838,
+  "communities_file": "Data\\louvain_communities_by_community.csv"
+}
